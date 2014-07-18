@@ -1,0 +1,624 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ZendSkeletonApplication\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-06-02 01:03+0200\n"
+"PO-Revision-Date: 2014-06-02 01:03+0200\n"
+"Last-Translator: Josh Bour <josh.bourexakis@gmail.com>\n"
+"Language-Team: ZF Contibutors <zf-devteam@zend.com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: translate\n"
+"X-Poedit-Basepath: .\n"
+"X-Generator: Poedit 1.6.5\n"
+"X-Poedit-SearchPath-0: ..\n"
+"X-Poedit-SearchPath-1: C:\\webserver\\apache\\htdocs\\scheduler\\module\n"
+"X-Poedit-SearchPath-2: C:\\webserver\\apache\\htdocs\\scheduler\\js"
+"\\translatable\n"
+"X-Poedit-SearchPath-3: C:\\webserver\\apache\\htdocs\\scheduler\\config"
+"\\autoload\n"
+
+#: C:\webserver\apache\htdocs\scheduler\js\translatable/main.js:72
+msgid ""
+"Are you sure you want to submit the form? All unsaved changes will be lost!"
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\js\translatable/main.js:190
+#: C:\webserver\apache\htdocs\scheduler\js\translatable/main.js:349
+msgid "Something with wrong, please try again."
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\js\translatable/main.js:193
+msgid "There are no changes to save."
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\js\translatable/main.js:332
+msgid "Are you sure about this action?"
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\config\autoload/vocabulary.local.php:5
+msgid "The admin has been created successfully."
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\config\autoload/vocabulary.local.php:6
+msgid "The admin has been removed successfully."
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\config\autoload/vocabulary.local.php:7
+msgid "The admins have been saved successfully"
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\config\autoload/vocabulary.local.php:8
+msgid "There was a problem when removing the admin, please try again."
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\config\autoload/vocabulary.local.php:9
+msgid "Something went wrong when saving the admins, please try again."
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\config\autoload/vocabulary.local.php:10
+msgid "Related Worker: "
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\config\autoload/vocabulary.local.php:11
+msgid "The username can't be empty."
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\config\autoload/vocabulary.local.php:12
+msgid "The username length must be between between 4-15 characters long."
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\config\autoload/vocabulary.local.php:13
+msgid "The username already exists, please try another one."
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\config\autoload/vocabulary.local.php:14
+msgid ""
+"The name can only contain letters, numbers, underscores and no spaces "
+"between."
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\config\autoload/vocabulary.local.php:15
+msgid "The password can't be empty."
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\config\autoload/vocabulary.local.php:16
+msgid "The password length must be between between 4-20 characters long."
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\config\autoload/vocabulary.local.php:18
+msgid "The username/password combination is invalid."
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\config\autoload/vocabulary.local.php:19
+msgid "You are already logged in!"
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\config\autoload/vocabulary.local.php:20
+msgid "Welcome back"
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\config\autoload/vocabulary.local.php:21
+msgid "Enter your username.."
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\config\autoload/vocabulary.local.php:22
+msgid "Enter your password.."
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\config\autoload/vocabulary.local.php:23
+msgid "Username:"
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\config\autoload/vocabulary.local.php:24
+msgid "Password:"
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\config\autoload/vocabulary.local.php:25
+msgid "Remember Me:"
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\config\autoload/vocabulary.local.php:26
+msgid "The username is invalid."
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\config\autoload/vocabulary.local.php:27
+msgid "The password is invalid."
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\config\autoload/vocabulary.local.php:29
+msgid "The exception has been created successfully."
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\config\autoload/vocabulary.local.php:30
+msgid "The exception has been removed successfully."
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\config\autoload/vocabulary.local.php:31
+msgid "The exceptions have been saved successfully."
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\config\autoload/vocabulary.local.php:32
+msgid "There was a problem when removing the exception, please try again."
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\config\autoload/vocabulary.local.php:33
+msgid "There was a problem when saving the exceptions, please try again."
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\config\autoload/vocabulary.local.php:34
+msgid "The entry has been created successfully."
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\config\autoload/vocabulary.local.php:35
+msgid "The entries have been saved successfully."
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\config\autoload/vocabulary.local.php:36
+msgid "There was an error when saving the entries, please try again."
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\config\autoload/vocabulary.local.php:37
+msgid "The start time can't be empty"
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\config\autoload/vocabulary.local.php:38
+msgid "The end time can't be empty"
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\config\autoload/vocabulary.local.php:39
+msgid "Exception:"
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\config\autoload/vocabulary.local.php:40
+msgid "Start Time:"
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\config\autoload/vocabulary.local.php:41
+msgid "End Time:"
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\config\autoload/vocabulary.local.php:42
+msgid "The name can't be empty"
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\config\autoload/vocabulary.local.php:43
+msgid "The color can't be empty"
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\config\autoload/vocabulary.local.php:45
+msgid "The worker has been created successfully."
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\config\autoload/vocabulary.local.php:46
+msgid "The worker has been removed successfully."
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\config\autoload/vocabulary.local.php:47
+msgid "The workers have been saved successfully"
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\config\autoload/vocabulary.local.php:48
+msgid "There was a problem when removing the worker, please try again."
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\config\autoload/vocabulary.local.php:49
+msgid "Something went wrong when saving the workers, please try again."
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\config\autoload/vocabulary.local.php:50
+msgid "The surname can't be empty."
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\config\autoload/vocabulary.local.php:51
+msgid "The email has invalid format."
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\config\autoload/vocabulary.local.php:52
+msgid "None"
+msgstr ""
+
+#: ../view/application/index/login.phtml:2
+#: C:\webserver\apache\htdocs\scheduler\module/Application/view/application/index/login.phtml:2
+msgid "Login to Scheduler"
+msgstr ""
+
+#: ../view/application/index/login.phtml:41
+#: C:\webserver\apache\htdocs\scheduler\module/Application/view/application/index/login.phtml:41
+msgid "Login"
+msgstr ""
+
+#: ../view/error/404.phtml:1
+#: C:\webserver\apache\htdocs\scheduler\module/Application/view/error/404.phtml:1
+msgid "A 404 error occurred"
+msgstr ""
+
+#: ../view/error/404.phtml:10
+#: C:\webserver\apache\htdocs\scheduler\module/Application/view/error/404.phtml:10
+msgid "The requested controller was unable to dispatch the request."
+msgstr ""
+
+#: ../view/error/404.phtml:13
+#: C:\webserver\apache\htdocs\scheduler\module/Application/view/error/404.phtml:13
+msgid ""
+"The requested controller could not be mapped to an existing controller class."
+msgstr ""
+
+#: ../view/error/404.phtml:16
+#: C:\webserver\apache\htdocs\scheduler\module/Application/view/error/404.phtml:16
+msgid "The requested controller was not dispatchable."
+msgstr ""
+
+#: ../view/error/404.phtml:19
+#: C:\webserver\apache\htdocs\scheduler\module/Application/view/error/404.phtml:19
+msgid "The requested URL could not be matched by routing."
+msgstr ""
+
+#: ../view/error/404.phtml:22
+#: C:\webserver\apache\htdocs\scheduler\module/Application/view/error/404.phtml:22
+msgid "We cannot determine at this time why a 404 was generated."
+msgstr ""
+
+#: ../view/error/404.phtml:34
+#: C:\webserver\apache\htdocs\scheduler\module/Application/view/error/404.phtml:34
+msgid "Controller"
+msgstr ""
+
+#: ../view/error/404.phtml:41
+#: C:\webserver\apache\htdocs\scheduler\module/Application/view/error/404.phtml:41
+#, php-format
+msgid "resolves to %s"
+msgstr ""
+
+#: ../view/error/404.phtml:53 ../view/error/index.phtml:8
+#: C:\webserver\apache\htdocs\scheduler\module/Application/view/error/404.phtml:53
+#: C:\webserver\apache\htdocs\scheduler\module/Application/view/error/index.phtml:8
+msgid "Additional information"
+msgstr ""
+
+#: ../view/error/404.phtml:56 ../view/error/404.phtml:80
+#: ../view/error/index.phtml:11 ../view/error/index.phtml:35
+#: C:\webserver\apache\htdocs\scheduler\module/Application/view/error/404.phtml:56
+#: C:\webserver\apache\htdocs\scheduler\module/Application/view/error/404.phtml:80
+#: C:\webserver\apache\htdocs\scheduler\module/Application/view/error/index.phtml:11
+#: C:\webserver\apache\htdocs\scheduler\module/Application/view/error/index.phtml:35
+msgid "File"
+msgstr ""
+
+#: ../view/error/404.phtml:60 ../view/error/404.phtml:84
+#: ../view/error/index.phtml:15 ../view/error/index.phtml:39
+#: C:\webserver\apache\htdocs\scheduler\module/Application/view/error/404.phtml:60
+#: C:\webserver\apache\htdocs\scheduler\module/Application/view/error/404.phtml:84
+#: C:\webserver\apache\htdocs\scheduler\module/Application/view/error/index.phtml:15
+#: C:\webserver\apache\htdocs\scheduler\module/Application/view/error/index.phtml:39
+msgid "Message"
+msgstr ""
+
+#: ../view/error/404.phtml:64 ../view/error/404.phtml:88
+#: ../view/error/index.phtml:19 ../view/error/index.phtml:43
+#: C:\webserver\apache\htdocs\scheduler\module/Application/view/error/404.phtml:64
+#: C:\webserver\apache\htdocs\scheduler\module/Application/view/error/404.phtml:88
+#: C:\webserver\apache\htdocs\scheduler\module/Application/view/error/index.phtml:19
+#: C:\webserver\apache\htdocs\scheduler\module/Application/view/error/index.phtml:43
+msgid "Stack trace"
+msgstr ""
+
+#: ../view/error/404.phtml:74 ../view/error/index.phtml:29
+#: C:\webserver\apache\htdocs\scheduler\module/Application/view/error/404.phtml:74
+#: C:\webserver\apache\htdocs\scheduler\module/Application/view/error/index.phtml:29
+msgid "Previous exceptions"
+msgstr ""
+
+#: ../view/error/404.phtml:103 ../view/error/index.phtml:58
+#: C:\webserver\apache\htdocs\scheduler\module/Application/view/error/404.phtml:103
+#: C:\webserver\apache\htdocs\scheduler\module/Application/view/error/index.phtml:58
+msgid "No Exception available"
+msgstr ""
+
+#: ../view/error/index.phtml:1
+#: C:\webserver\apache\htdocs\scheduler\module/Application/view/error/index.phtml:1
+msgid "An error occurred"
+msgstr ""
+
+#: ../view/layout/layout.phtml:14 ../view/layout/no-header-layout.phtml:14
+#: C:\webserver\apache\htdocs\scheduler\module/Application/view/layout/layout.phtml:14
+#: C:\webserver\apache\htdocs\scheduler\module/Application/view/layout/no-header-layout.phtml:14
+msgid "Please enable javascript for the site to work properly."
+msgstr ""
+
+#: ../view/layout/layout.phtml:35
+#: C:\webserver\apache\htdocs\scheduler\module/Application/view/layout/layout.phtml:35
+msgid "Workers"
+msgstr ""
+
+#: ../view/layout/layout.phtml:36
+#: C:\webserver\apache\htdocs\scheduler\module/Application/view/layout/layout.phtml:36
+msgid "Schedule"
+msgstr ""
+
+#: ../view/layout/layout.phtml:37
+#: C:\webserver\apache\htdocs\scheduler\module/Application/view/layout/layout.phtml:37
+msgid "Admins"
+msgstr ""
+
+#: ../view/layout/layout.phtml:38
+#: C:\webserver\apache\htdocs\scheduler\module/Application/view/layout/layout.phtml:38
+msgid "Changelogs"
+msgstr ""
+
+#: ../view/layout/layout.phtml:39
+#: C:\webserver\apache\htdocs\scheduler\module/Application/view/layout/layout.phtml:39
+msgid "Exceptions"
+msgstr ""
+
+#: ../view/layout/layout.phtml:40
+#: C:\webserver\apache\htdocs\scheduler\module/Application/view/layout/layout.phtml:40
+msgid "Logout"
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\module/Admin/view/admin/index/add.phtml:12
+#: C:\webserver\apache\htdocs\scheduler\module/Admin/view/admin/index/list.phtml:18
+msgid "Add a New User"
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\module/Admin/view/admin/index/add.phtml:15
+#: C:\webserver\apache\htdocs\scheduler\module/Admin/view/admin/index/list.phtml:21
+#: C:\webserver\apache\htdocs\scheduler\module/Admin/view/admin/index/list.phtml:64
+msgid "Username"
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\module/Admin/view/admin/index/add.phtml:16
+#: C:\webserver\apache\htdocs\scheduler\module/Admin/view/admin/index/list.phtml:22
+#: C:\webserver\apache\htdocs\scheduler\module/Admin/view/admin/index/list.phtml:65
+msgid "Password"
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\module/Admin/view/admin/index/add.phtml:17
+#: C:\webserver\apache\htdocs\scheduler\module/Admin/view/admin/index/list.phtml:23
+msgid "Worker Profile"
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\module/Admin/view/admin/index/add.phtml:18
+#: C:\webserver\apache\htdocs\scheduler\module/Admin/view/admin/index/add.phtml:42
+#: C:\webserver\apache\htdocs\scheduler\module/Admin/view/admin/index/list.phtml:24
+#: C:\webserver\apache\htdocs\scheduler\module/Admin/view/admin/index/list.phtml:48
+#: C:\webserver\apache\htdocs\scheduler\module/Schedule/view/schedule/exception/add.phtml:17
+#: C:\webserver\apache\htdocs\scheduler\module/Schedule/view/schedule/exception/add.phtml:35
+#: C:\webserver\apache\htdocs\scheduler\module/Schedule/view/schedule/exception/list.phtml:23
+#: C:\webserver\apache\htdocs\scheduler\module/Schedule/view/schedule/exception/list.phtml:41
+#: C:\webserver\apache\htdocs\scheduler\module/Schedule/view/schedule/index/add.phtml:19
+#: C:\webserver\apache\htdocs\scheduler\module/Schedule/view/schedule/index/add.phtml:49
+#: C:\webserver\apache\htdocs\scheduler\module/Schedule/view/schedule/index/list.phtml:39
+#: C:\webserver\apache\htdocs\scheduler\module/Schedule/view/schedule/index/list.phtml:69
+#: C:\webserver\apache\htdocs\scheduler\module/Worker/view/worker/index/add.phtml:27
+#: C:\webserver\apache\htdocs\scheduler\module/Worker/view/worker/index/add.phtml:105
+#: C:\webserver\apache\htdocs\scheduler\module/Worker/view/worker/index/list.phtml:33
+#: C:\webserver\apache\htdocs\scheduler\module/Worker/view/worker/index/list.phtml:111
+msgid "Add"
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\module/Admin/view/admin/index/list.phtml:2
+msgid "Add User"
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\module/Admin/view/admin/index/list.phtml:3
+#: C:\webserver\apache\htdocs\scheduler\module/Schedule/view/schedule/exception/list.phtml:3
+#: C:\webserver\apache\htdocs\scheduler\module/Schedule/view/schedule/index/list.phtml:5
+#: C:\webserver\apache\htdocs\scheduler\module/Worker/view/worker/index/list.phtml:3
+msgid "Save"
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\module/Admin/view/admin/index/list.phtml:4
+#: C:\webserver\apache\htdocs\scheduler\module/Schedule/view/schedule/exception/list.phtml:4
+#: C:\webserver\apache\htdocs\scheduler\module/Schedule/view/schedule/index/list.phtml:6
+#: C:\webserver\apache\htdocs\scheduler\module/Worker/view/worker/index/list.phtml:4
+msgid "Reset"
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\module/Admin/view/admin/index/list.phtml:66
+msgid "Related Worker"
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\module/Admin/view/admin/index/list.phtml:67
+#: C:\webserver\apache\htdocs\scheduler\module/Schedule/view/schedule/exception/list.phtml:60
+#: C:\webserver\apache\htdocs\scheduler\module/Worker/view/worker/index/list.phtml:139
+msgid "Delete"
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\module/Admin/view/admin/index/list.phtml:89
+#: C:\webserver\apache\htdocs\scheduler\module/Schedule/view/schedule/exception/list.phtml:83
+#: C:\webserver\apache\htdocs\scheduler\module/Schedule/view/schedule/index/list.phtml:166
+#: C:\webserver\apache\htdocs\scheduler\module/Worker/view/worker/index/list.phtml:170
+msgid "Done"
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\module/Schedule/view/schedule/changelog/list.phtml:2
+#: C:\webserver\apache\htdocs\scheduler\module/Schedule/view/schedule/index/list.phtml:2
+msgid "Select Date Range"
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\module/Schedule/view/schedule/changelog/list.phtml:5
+#: C:\webserver\apache\htdocs\scheduler\module/Schedule/view/schedule/index/list.phtml:11
+msgid "Select a Date Range"
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\module/Schedule/view/schedule/changelog/list.phtml:6
+#: C:\webserver\apache\htdocs\scheduler\module/Schedule/view/schedule/index/list.phtml:12
+msgid "From"
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\module/Schedule/view/schedule/changelog/list.phtml:8
+#: C:\webserver\apache\htdocs\scheduler\module/Schedule/view/schedule/index/list.phtml:14
+msgid "To"
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\module/Schedule/view/schedule/changelog/list.phtml:10
+#: C:\webserver\apache\htdocs\scheduler\module/Schedule/view/schedule/index/list.phtml:16
+msgid "Show"
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\module/Schedule/view/schedule/changelog/list.phtml:21
+#: C:\webserver\apache\htdocs\scheduler\module/Schedule/view/schedule/index/add.phtml:15
+#: C:\webserver\apache\htdocs\scheduler\module/Schedule/view/schedule/index/list.phtml:35
+#: C:\webserver\apache\htdocs\scheduler\module/Schedule/view/schedule/index/list.phtml:87
+msgid "Worker"
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\module/Schedule/view/schedule/changelog/list.phtml:22
+msgid "User"
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\module/Schedule/view/schedule/changelog/list.phtml:23
+msgid "Change Time"
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\module/Schedule/view/schedule/changelog/list.phtml:24
+msgid "Old Schedule"
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\module/Schedule/view/schedule/changelog/list.phtml:25
+msgid "New Schedule"
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\module/Schedule/view/schedule/changelog/list.phtml:28
+#: C:\webserver\apache\htdocs\scheduler\module/Schedule/view/schedule/index/add.phtml:17
+#: C:\webserver\apache\htdocs\scheduler\module/Schedule/view/schedule/index/list.phtml:37
+msgid "Start Time"
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\module/Schedule/view/schedule/changelog/list.phtml:29
+#: C:\webserver\apache\htdocs\scheduler\module/Schedule/view/schedule/changelog/list.phtml:32
+#: C:\webserver\apache\htdocs\scheduler\module/Schedule/view/schedule/index/add.phtml:18
+#: C:\webserver\apache\htdocs\scheduler\module/Schedule/view/schedule/index/list.phtml:38
+msgid "End Time"
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\module/Schedule/view/schedule/changelog/list.phtml:30
+#: C:\webserver\apache\htdocs\scheduler\module/Schedule/view/schedule/changelog/list.phtml:33
+#: C:\webserver\apache\htdocs\scheduler\module/Schedule/view/schedule/index/add.phtml:16
+#: C:\webserver\apache\htdocs\scheduler\module/Schedule/view/schedule/index/list.phtml:36
+msgid "Exception"
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\module/Schedule/view/schedule/changelog/list.phtml:31
+msgid "StartTime"
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\module/Schedule/view/schedule/exception/add.phtml:12
+#: C:\webserver\apache\htdocs\scheduler\module/Schedule/view/schedule/index/add.phtml:12
+#: C:\webserver\apache\htdocs\scheduler\module/Schedule/view/schedule/index/list.phtml:32
+msgid "Add a New Entry"
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\module/Schedule/view/schedule/exception/add.phtml:15
+#: C:\webserver\apache\htdocs\scheduler\module/Schedule/view/schedule/exception/list.phtml:21
+#: C:\webserver\apache\htdocs\scheduler\module/Schedule/view/schedule/exception/list.phtml:58
+#: C:\webserver\apache\htdocs\scheduler\module/Worker/view/worker/index/add.phtml:15
+#: C:\webserver\apache\htdocs\scheduler\module/Worker/view/worker/index/list.phtml:21
+#: C:\webserver\apache\htdocs\scheduler\module/Worker/view/worker/index/list.phtml:127
+msgid "Name"
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\module/Schedule/view/schedule/exception/add.phtml:16
+#: C:\webserver\apache\htdocs\scheduler\module/Schedule/view/schedule/exception/list.phtml:22
+#: C:\webserver\apache\htdocs\scheduler\module/Schedule/view/schedule/exception/list.phtml:59
+msgid "Color"
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\module/Schedule/view/schedule/exception/list.phtml:2
+msgid "Add New Exception"
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\module/Schedule/view/schedule/exception/list.phtml:18
+msgid "Add a New Exception"
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\module/Schedule/view/schedule/index/list.phtml:4
+msgid "Add New Entry"
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\module/Schedule/view/schedule/index/list.phtml:8
+msgid "Export Excel"
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\module/Schedule/view/schedule/index/list.phtml:88
+#: C:\webserver\apache\htdocs\scheduler\module/Worker/view/worker/index/add.phtml:17
+#: C:\webserver\apache\htdocs\scheduler\module/Worker/view/worker/index/list.phtml:23
+#: C:\webserver\apache\htdocs\scheduler\module/Worker/view/worker/index/list.phtml:129
+msgid "Position"
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\module/Schedule/view/schedule/index/list.phtml:167
+msgid "Remove"
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\module/Worker/view/worker/index/add.phtml:12
+#: C:\webserver\apache\htdocs\scheduler\module/Worker/view/worker/index/list.phtml:18
+msgid "Add a New Worker"
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\module/Worker/view/worker/index/add.phtml:16
+#: C:\webserver\apache\htdocs\scheduler\module/Worker/view/worker/index/list.phtml:22
+#: C:\webserver\apache\htdocs\scheduler\module/Worker/view/worker/index/list.phtml:128
+msgid "Surname"
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\module/Worker/view/worker/index/add.phtml:18
+#: C:\webserver\apache\htdocs\scheduler\module/Worker/view/worker/index/list.phtml:24
+#: C:\webserver\apache\htdocs\scheduler\module/Worker/view/worker/index/list.phtml:130
+msgid "Email"
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\module/Worker/view/worker/index/add.phtml:19
+#: C:\webserver\apache\htdocs\scheduler\module/Worker/view/worker/index/list.phtml:25
+#: C:\webserver\apache\htdocs\scheduler\module/Worker/view/worker/index/list.phtml:131
+msgid "Address"
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\module/Worker/view/worker/index/add.phtml:20
+#: C:\webserver\apache\htdocs\scheduler\module/Worker/view/worker/index/list.phtml:26
+#: C:\webserver\apache\htdocs\scheduler\module/Worker/view/worker/index/list.phtml:132
+msgid "First Telephone"
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\module/Worker/view/worker/index/add.phtml:21
+#: C:\webserver\apache\htdocs\scheduler\module/Worker/view/worker/index/list.phtml:27
+#: C:\webserver\apache\htdocs\scheduler\module/Worker/view/worker/index/list.phtml:133
+msgid "Second Telephone"
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\module/Worker/view/worker/index/add.phtml:22
+#: C:\webserver\apache\htdocs\scheduler\module/Worker/view/worker/index/list.phtml:28
+#: C:\webserver\apache\htdocs\scheduler\module/Worker/view/worker/index/list.phtml:134
+msgid "Hire Date"
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\module/Worker/view/worker/index/add.phtml:23
+#: C:\webserver\apache\htdocs\scheduler\module/Worker/view/worker/index/list.phtml:29
+#: C:\webserver\apache\htdocs\scheduler\module/Worker/view/worker/index/list.phtml:135
+msgid "Release Date"
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\module/Worker/view/worker/index/add.phtml:24
+#: C:\webserver\apache\htdocs\scheduler\module/Worker/view/worker/index/list.phtml:30
+#: C:\webserver\apache\htdocs\scheduler\module/Worker/view/worker/index/list.phtml:136
+msgid "Work Hours"
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\module/Worker/view/worker/index/add.phtml:25
+#: C:\webserver\apache\htdocs\scheduler\module/Worker/view/worker/index/list.phtml:31
+#: C:\webserver\apache\htdocs\scheduler\module/Worker/view/worker/index/list.phtml:137
+msgid "Salary"
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\module/Worker/view/worker/index/add.phtml:26
+#: C:\webserver\apache\htdocs\scheduler\module/Worker/view/worker/index/list.phtml:32
+#: C:\webserver\apache\htdocs\scheduler\module/Worker/view/worker/index/list.phtml:138
+msgid "Notes"
+msgstr ""
+
+#: C:\webserver\apache\htdocs\scheduler\module/Worker/view/worker/index/list.phtml:2
+msgid "Add Worker"
+msgstr ""

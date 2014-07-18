@@ -1,0 +1,72 @@
+<?php
+echo $this->doctype();
+$children = $this->viewModel()->getCurrent()->getChildren();
+$child = $children[0];
+?>
+<html lang="en">
+<?php
+// The layout's head
+echo $this->partial("header", array('child' => $child));
+?>
+<body<?php echo ($child->bodyClass) ? ' class="' . $child->bodyClass . '"' : ''; ?>>
+<noscript>
+    <div id="nojs">
+        <?php echo $this->translate("Please enable javascript for the site to work properly."); ?>
+    </div>
+</noscript>
+<?php
+$messages = $this->flashMessenger()->getMessages();
+$clearMessages = array();
+if (!empty($messages)) :
+    ?>
+    <div id="flash">
+        <ul class="flashMessages">
+            <?php foreach ($messages as $fMessage) : ?>
+                <li><?php echo $fMessage; ?></li>
+            <?php endforeach; ?>
+        </ul>
+    </div>
+<?php endif; ?>
+<?php
+$route = $this->routeName();
+if ($child->activeRoute)
+    $route = $child->activeRoute;
+
+?>
+<header>
+<!--    <div id="topWrapper">-->
+<!--        --><?php //echo $route == "products_index" ? '<div id="productDataTitle" class="invisible">Product datasheet</div>': ""; ?>
+<!--        <div id="logo">-->
+<!--            <a href="--><?php //echo $this->url('home'); ?><!--"-->
+<!--               title="--><?php //echo $this->translate("Info Lighting"); ?><!--"><img src="--><?php //echo $this->basePath("images/logo.jpg"); ?><!--"/ ></a>-->
+<!--        </div>-->
+<!--        <nav>-->
+<!--            <ul>-->
+<!--                <li>-->
+<!--                    <a href="--><?php //echo $this->url('home'); ?><!--"--><?php //echo $route == "home" ? ' class="active"' : ''; ?><!-->--><?php //echo $this->translate("Home"); ?><!--</a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a href="--><?php //echo $this->url('products_index'); ?><!--"--><?php //echo $route == "products_index" ? ' class="active"' : ''; ?><!-->--><?php //echo $this->translate("Products"); ?><!--</a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a href="--><?php //echo $this->url('about_index'); ?><!--"--><?php //echo $route == "about_index" ? ' class="active"' : ''; ?><!-->--><?php //echo $this->translate("About"); ?><!--</a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a href="--><?php //echo $this->url('posts_index'); ?><!--"--><?php //echo $route == "posts_index" ? ' class="active"' : ''; ?><!-->--><?php //echo $this->translate("News"); ?><!--</a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a href="--><?php //echo $this->url('contact'); ?><!--"--><?php //echo $route == "contact" ? ' class="active"' : ''; ?><!-->--><?php //echo $this->translate("Contact"); ?><!--</a>-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--        </nav>-->
+<!--    </div>-->
+</header>
+<div id="content">
+    <?php echo $this->content; ?>
+</div>
+<?php
+// The layout's footer
+echo $this->partial("footer", array('child' => $child));
+?>
+</body>
+</html>
