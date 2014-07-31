@@ -16,7 +16,8 @@ return array(
         ),
     ),
     'api' => array(
-        'key' => '0835a046-d4ff-487a-81c2-be090525c595'
+        'key' => '0835a046-d4ff-487a-81c2-be090525c595',
+        'key2' => '01d38eeb-363d-46d7-bf69-1126e576d9d4'
     ),
     'doctrine' => array(
         'driver' => array(

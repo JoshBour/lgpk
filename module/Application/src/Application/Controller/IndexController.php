@@ -4,12 +4,10 @@ namespace Application\Controller;
 use Application\Model\SitemapXmlParser;
 use Zend\Http\Request;
 use Zend\Http\Response;
-use Zend\Http\Response\Stream;
 use Zend\Mail\Message;
 use Zend\Mail\Transport\Smtp as SmtpTransport;
 use Zend\Mail\Transport\SmtpOptions;
 use Zend\Session\Container;
-use Zend\View\Model\JsonModel;
 use Zend\View\Model\ViewModel;
 
 /**
@@ -20,23 +18,79 @@ use Zend\View\Model\ViewModel;
  */
 class IndexController extends BaseController
 {
-    private $contactForm;
+    const CONTROLLER_NAME = "Application\Controller\Index";
 
-    private $contentRepository;
+    private $leagueService;
 
-    private $partnerRepository;
+    private $searchForm;
 
-    private $postRepository;
-
-    private $productRepository;
-
-    private $slideRepository;
+    private $searchService;
 
     public function homeAction()
     {
+        $form = $this->getSearchForm();
+        $request = $this->getRequest();
+        if ($request->isPost()) {
+            $data = $request->getPost();
+            $form->setData($data);
+            if ($form->isValid()) {
+                $params = array(
+                    'summoner' => $data['search']['summoner'],
+                    'region' => $data['search']['region'],
+                );
+                if($data['search']['opponent']) $params["opponent"] = $data['search']['opponent'];
+                $this->redirect()->toRoute('result', $params);
+            }
+        }
+        $session = new Container('summoner');
+        $summoner = isset($session->summoner) ? $session->summoner : '';
+        $region = isset($session->region) ? $session->region : '';
         return new ViewModel(array(
-
+            "form" => $form,
+            "summoner" => $summoner,
+            "region" => $region
         ));
+    }
+
+    public function resultAction()
+    {
+        $summoner = $this->params()->fromRoute("summoner");
+        $region = $this->params()->fromRoute("region");
+        $opponent = $this->params()->fromRoute("opponent");
+        $session = new Container('summoner');
+        $results = $this->getSearchService()->getSearchResults($summoner,$region,$opponent);
+        if (is_array($results)) {
+            $session->summoner = $summoner;
+            $session->region = $region;
+            return new ViewModel(array(
+                "results" => $results,
+                "summoner" => $summoner,
+                "region" => $region,
+                "opponent" => $opponent
+            ));
+        } else {
+            $this->flashMessenger()->addMessage($results);
+            $this->redirect()->toRoute("home");
+        }
+    }
+
+    public function searchAction()
+    {
+        $summoner = $this->params()->fromRoute("summoner");
+        $region = $this->params()->fromRoute("region");
+        $champion = $this->params()->fromRoute("champion");
+        $vocabulary = $this->getVocabulary();
+        $championStats = $this->getSearchService()->getUserChampionStats($summoner, $region, $champion);
+        if ($championStats) {
+            return new ViewModel(array(
+                "champion" => $championStats,
+                "region" => $region,
+                "summoner" => $summoner,
+            ));
+        } else {
+            $this->flashMessenger()->addMessage($vocabulary["ERROR_SEARCH"]);
+            $this->redirect()->toRoute("home");
+        }
     }
 
     public function contactAction()
@@ -102,15 +156,13 @@ class IndexController extends BaseController
         $sitemapXmlParser->begin();
         if (!$type) {
             $sitemapXmlParser->addHeader("sitemapindex");
-            $sitemapXmlParser->addSitemap("http://www.infolightingco.com/sitemap/static");
-            $sitemapXmlParser->addSitemap("http://www.infolightingco.com/sitemap/dynamic/products");
-            $sitemapXmlParser->addSitemap("http://www.infolightingco.com/sitemap/dynamic/posts");
+            $sitemapXmlParser->addSitemap("http://www.leaguepick.com/sitemap/static");
         } else {
             if ($type == "static") {
                 $pages = $this->getServiceLocator()->get('Config')['static_pages'];
                 $sitemapXmlParser->addHeader("urlset");
                 foreach ($pages as $page) {
-                    $sitemapXmlParser->addUrl("http://www.infolightingco.com" . $page, "1.0");
+                    $sitemapXmlParser->addUrl("http://www.leaguepick.com" . $page, "1.0");
                 }
             } else {
                 $index = $this->params()->fromRoute("index");
@@ -161,52 +213,33 @@ class IndexController extends BaseController
         return $response;
     }
 
-    public function getContactForm()
-    {
-        if (null === $this->contactForm)
-            $this->contactForm = $this->getServiceLocator()->get('contact_form');
-        return $this->contactForm;
-    }
-
-    public function getContentRepository()
-    {
-        if (null == $this->contentRepository)
-            $this->contentRepository = $this->getEntityManager()->getRepository('Application\Entity\Content');
-        return $this->contentRepository;
-    }
-
-    public function getPartnerRepository()
-    {
-        if (null == $this->partnerRepository)
-            $this->partnerRepository = $this->getEntityManager()->getRepository('Application\Entity\Partner');
-        return $this->partnerRepository;
-    }
-
-
     /**
-     * @return \Post\Repository\PostRepository
+     * @return \League\Service\League
      */
-    public function getPostRepository()
+    public function getLeagueService()
     {
-        if (null == $this->postRepository)
-            $this->postRepository = $this->getEntityManager()->getRepository('Post\Entity\Post');
-        return $this->postRepository;
+        if (null === $this->leagueService)
+            $this->leagueService = $this->getServiceLocator()->get('league_service');
+        return $this->leagueService;
     }
 
     /**
-     * @return \Product\Repository\ProductRepository
+     * @return \Zend\Form\Form
      */
-    public function getProductRepository()
+    public function getSearchForm()
     {
-        if (null == $this->productRepository)
-            $this->productRepository = $this->getEntityManager()->getRepository('Product\Entity\Product');
-        return $this->productRepository;
+        if (null === $this->searchForm)
+            $this->searchForm = $this->getServiceLocator()->get('search_form');
+        return $this->searchForm;
     }
 
-    public function getSlideRepository()
+    /**
+     * @return \Application\Service\Search
+     */
+    public function getSearchService()
     {
-        if (null == $this->slideRepository)
-            $this->slideRepository = $this->getEntityManager()->getRepository('Application\Entity\Slide');
-        return $this->slideRepository;
+        if (null === $this->searchService)
+            $this->searchService = $this->getServiceLocator()->get('search_service');
+        return $this->searchService;
     }
 }

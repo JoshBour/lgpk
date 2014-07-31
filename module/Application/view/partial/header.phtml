@@ -2,35 +2,31 @@
     <?php
     $child = $this->child;
     $isMobile = $this->mobile();
-    $pageTitle = (isset($child->pageTitle)) ? $child->pageTitle : "Info";
+    $pageTitle = (isset($child->pageTitle)) ? $child->pageTitle : "LeaguePick";
     $follow = (isset($child->follow)) ? "noindex, nofollow" : "feed, follow, archieve";
 
     // The website's title.
     echo $this->headTitle($pageTitle);
 
     // The meta tags
-    $description = isset($child->metaInfo['description']) ? $child->metaInfo['description'] : 'The scheduler description.';
-    $keywords = isset($child->metaInfo['keywords']) ? $child->metaInfo['keywords'] : 'the, scheduler, tags';
+    $description = isset($child->metaInfo['description']) ? $child->metaInfo['description'] : 'LeaguePick is a website that picks a league of legends champion for you based on your summoner\'s statistics.';
+    $keywords = isset($child->metaInfo['keywords']) ? $child->metaInfo['keywords'] : 'leaguepick, league, of, legends, champion, picker, generator, statisticks, summoner';
 
     // We append everything to the headMeta
     $this->headMeta()
         ->setCharset('UTF-8')
         ->appendName('viewport', 'width=device-width, initial-scale=1.0')
-        ->appendHttpEquiv('cache-control', 'max-age=0')
-        ->appendHttpEquiv('cache-control', 'no-cache')
-        ->appendHttpEquiv('expires', '0')
-        ->appendHttpEquiv('expires', 'Tue, 01 Jan 1980 1:00:00 GMT')
-        ->appendHttpEquiv('pragma', 'no-cache')
         ->appendName('description', $description)
         ->appendName('keywords', $keywords)
-        ->appendName('robots', "noindex, nofollow")
+        ->appendName('robots', $follow)
         ->appendName('language', 'en')
-        ->appendName('googlebot', "noindex, nofollow");
+        ->appendName('googlebot', $follow);
     echo $this->headMeta();
 
     // We add the favicon and our stylesheets
     $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath('images/favicon.ico')))
          ->headLink(array('rel' => 'gettext', 'type' => 'application/x-po', 'href' => $this->basePath('module/Application/language/'.$this->plugin('translate')->getTranslator()->getLocale().'.po')))
+        ->prependStylesheet($this->basePath('css/jquery.selectbox.css'))
         ->prependStylesheet($this->basePath('css/style.css'));
 //
 //    if ($isMobile) {
@@ -44,4 +40,14 @@
         var baseUrl = '<?php echo $this->basePath(); ?>';
         var isMobile = <?php echo $isMobile ? 'true':'false'; ?>;
     </script>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-48935331-3', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
 </head>

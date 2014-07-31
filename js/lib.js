@@ -15,15 +15,6 @@ function addMessage(message) {
     flash.setRemoveTimeout(5000);
 }
 
-function refreshMarkItUp() {
-    $('textarea').each(function () {
-        var textarea = $(this);
-        if (!textarea.parent().hasClass('markItUpContainer')) {
-            textarea.markItUp(mySettings);
-        }
-    });
-}
-
 String.prototype.lowerize = function () {
     return this.charAt(0).toLowerCase() + this.slice(1);
 };
@@ -31,13 +22,6 @@ String.prototype.lowerize = function () {
 String.prototype.capitalize = function () {
     return this.charAt(0).toUpperCase() + this.slice(1);
 };
-
-function resetActiveField() {
-    $('td, .entry').each(function () {
-        $(this).removeClass('activeField');
-    });
-    $('#editPanel').hide();
-}
 
 var delay = (function () {
     var timer = 0;
@@ -53,83 +37,6 @@ function empty(variable) {
     } else {
         return false;
     }
-}
-
-function setEditableTextfields() {
-    $('textarea').each(function () {
-        var area = $(this);
-        if (area.siblings('.textEditorToggle').length <= 0) {
-            area.hide();
-            $('<span />', {
-                "class": "textEditorToggle",
-                "html": "Click to edit"
-            }).appendTo(area.closest('td'));
-        }
-    });
-}
-
-function updateEditedField() {
-    var span = $('#editDone');
-    var activeField = $('.activeField');
-    var input = span.siblings();
-    var val;
-    if (activeField.hasClass('editImage') || activeField.hasClass('editFile')) {
-        if (input.find('.editInput').val() != "") {
-            console.log(input.formSerialize());
-            input.ajaxSubmit({
-                type: "post",
-                success: function (responseText) {
-                    activeField.addClass('uploadedFile');
-                    if (responseText.success != 1) {
-                        addMessage("There was an issue when uploading the file, please try again.");
-                    } else {
-                        if (activeField.hasClass('editImage')) {
-                            var src = activeField.children('.fileMeta').html().split('/')[1];
-                            var fileImage = activeField.children('.fileImage').addClass('changed');
-                            var split = responseText.name.split('.');
-                            if (fileImage.find('img').length <= 0) {
-                                fileImage.html("");
-                                $('<img/>', {
-                                    "src": baseUrl + "/images/" + src + "/" + split[0] + "-temp." + split[1]
-                                }).appendTo(fileImage);
-                            } else {
-                                fileImage.find('img').attr('src', baseUrl + "/images/" + src + "/" + split[0] + "-temp." + split[1]);
-                            }
-                        } else {
-                            activeField.children('.fileName').html(responseText.name).addClass('changed');
-                        }
-                        activeField.closest('tr').addClass('unsaved');
-                    }
-                }
-            });
-        }
-    } else if (activeField.hasClass('editTextfield')) {
-        val = input.find('textarea').val();
-        if (val != activeField.html()) {
-            var activeTextfield = activeField.find('.activeTextfield');
-            activeTextfield.val(input.find('textarea').val()).removeClass('activeTextfield');
-            activeField.closest('tr').addClass('unsaved');
-        }
-    } else if (activeField.hasClass('editSelect') || activeField.hasClass('editMultiSelect')) {
-        activeField.html('');
-        input.find('option:selected').each(function () {
-            var option = $(this);
-            activeField.append($('<span />', {
-                'class': "option-" + option.val(),
-                'html': option.html()
-            }));
-        });
-        activeField.closest('tr').addClass('unsaved');
-    } else {
-        val = input.val();
-        if (val != activeField.html()) {
-            activeField.html(val);
-            activeField.closest('tr').addClass('unsaved');
-        }
-    }
-    input.val('');
-    activeField.removeClass('activeField');
-    span.parent().hide();
 }
 
 function daysBetween(date1, date2) {

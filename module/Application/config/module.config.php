@@ -28,6 +28,26 @@ return array(
                     ),
                 ),
             ),
+            'search' => array(
+                'type' => 'Zend\Mvc\Router\Http\Segment',
+                'options' => array(
+                    'route' => '/search/:summoner/:region[/:champion]',
+                    'defaults' => array(
+                        'controller' => __NAMESPACE__ . '\Controller\Index',
+                        'action' => 'search',
+                    ),
+                ),
+            ),
+            'result' => array(
+                'type' => 'Zend\Mvc\Router\Http\Segment',
+                'options' => array(
+                    'route' => '/results/:summoner/:region[/:opponent]',
+                    'defaults' => array(
+                        'controller' => __NAMESPACE__ . '\Controller\Index',
+                        'action' => 'result',
+                    ),
+                ),
+            ),
             'home' => array(
                 'type' => 'Zend\Mvc\Router\Http\Literal',
                 'options' => array(
@@ -71,6 +91,12 @@ return array(
         ),
     ),
     'service_manager' => array(
+        'factories' => array(
+            'search_form' => __NAMESPACE__ . '\Factory\SearchFormFactory',
+        ),
+        'invokables' => array(
+            'search_service' => __NAMESPACE__ . '\Service\Search'
+        ),
         'abstract_factories' => array(
             'Zend\Cache\Service\StorageCacheAbstractServiceFactory',
             'Zend\Log\LoggerAbstractServiceFactory',
@@ -123,6 +149,7 @@ return array(
             'error/index' => __DIR__ . '/../view/error/index.phtml',
             'header' => __DIR__ . '/../view/partial/header.phtml',
             'footer' => __DIR__ . '/../view/partial/footer.phtml',
+            'results' => __DIR__ . '/../view/application/index/result.phtml',
         ),
         'template_path_stack' => array(
             __DIR__ . '/../view',

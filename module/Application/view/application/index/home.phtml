@@ -1,1 +1,48 @@
-Test!
+<div id="search">
+    <?php
+    /**
+     * @var \Zend\Form\Form $form
+     */
+    $form->prepare();
+    /**
+     * @var \Zend\Form\Fieldset $fieldset
+     */
+    $fieldset = $form->get('search');
+    $form->setAttribute('action', $this->url('home'));
+
+    echo $this->form()->openTag($form);
+    ?>
+    <div class="element">
+        <?php
+        echo $this->formElementErrors($fieldset->get('summoner'), array('class' => 'formError'));
+        echo $this->formLabel($fieldset->get('summoner'));
+        echo $this->formInput($fieldset->get('summoner')->setValue($summoner));
+        ?>
+    </div>
+
+    <div class="element">
+        <?php
+        echo $this->formElementErrors($fieldset->get('region'), array('class' => 'formError'));
+        echo $this->formLabel($fieldset->get('region'));
+        echo $this->formSelect($fieldset->get('region')->setValue($region));
+        ?>
+    </div>
+
+    <div class="element">
+        <?php
+        echo $this->formElementErrors($fieldset->get('opponent'), array('class' => 'formError'));
+        echo $this->formLabel($fieldset->get('opponent'));
+        echo $this->formSelect($fieldset->get('opponent'));
+        ?>
+    </div>
+    <div class="element">
+        <?php
+        echo $this->formElementErrors($fieldset->get('useNormalStats'), array('class' => 'formError'));
+        echo $this->formLabel($fieldset->get('useNormalStats'));
+        echo $this->formCheckbox($fieldset->get('useNormalStats'));
+        ?>
+    </div>
+    <?php echo $this->formSubmit($form->get('submit')->setValue($this->translate('Search'))); ?>
+
+    <?php echo $this->form()->closeTag() ?>
+</div>

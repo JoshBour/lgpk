@@ -35,6 +35,13 @@ class BaseService implements ServiceManagerAwareInterface
     private $translator;
 
     /**
+     * The application's vocabulary
+     *
+     * @var array
+     */
+    private $vocabulary;
+
+    /**
      * Magic method used to return entity repositories
      * @param $name
      * @param $variables
@@ -88,4 +95,17 @@ class BaseService implements ServiceManagerAwareInterface
             $this->translator = $this->getServiceManager()->get('translator');
         return $this->translator;
     }
+
+    /**
+     * Get the application's vocabulary
+     *
+     * @return array
+     */
+    public function getVocabulary()
+    {
+        if (null == $this->vocabulary)
+            $this->vocabulary = $this->getServiceManager()->get('Config')['vocabulary'];
+        return $this->vocabulary;
+    }
+
 } 

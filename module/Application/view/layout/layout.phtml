@@ -34,35 +34,27 @@ if ($child->activeRoute)
 
 ?>
 <header>
-<!--    <div id="topWrapper">-->
-<!--        --><?php //echo $route == "products_index" ? '<div id="productDataTitle" class="invisible">Product datasheet</div>': ""; ?>
-<!--        <div id="logo">-->
-<!--            <a href="--><?php //echo $this->url('home'); ?><!--"-->
-<!--               title="--><?php //echo $this->translate("Info Lighting"); ?><!--"><img src="--><?php //echo $this->basePath("images/logo.jpg"); ?><!--"/ ></a>-->
-<!--        </div>-->
-<!--        <nav>-->
-<!--            <ul>-->
-<!--                <li>-->
-<!--                    <a href="--><?php //echo $this->url('home'); ?><!--"--><?php //echo $route == "home" ? ' class="active"' : ''; ?><!-->--><?php //echo $this->translate("Home"); ?><!--</a>-->
-<!--                </li>-->
-<!--                <li>-->
-<!--                    <a href="--><?php //echo $this->url('products_index'); ?><!--"--><?php //echo $route == "products_index" ? ' class="active"' : ''; ?><!-->--><?php //echo $this->translate("Products"); ?><!--</a>-->
-<!--                </li>-->
-<!--                <li>-->
-<!--                    <a href="--><?php //echo $this->url('about_index'); ?><!--"--><?php //echo $route == "about_index" ? ' class="active"' : ''; ?><!-->--><?php //echo $this->translate("About"); ?><!--</a>-->
-<!--                </li>-->
-<!--                <li>-->
-<!--                    <a href="--><?php //echo $this->url('posts_index'); ?><!--"--><?php //echo $route == "posts_index" ? ' class="active"' : ''; ?><!-->--><?php //echo $this->translate("News"); ?><!--</a>-->
-<!--                </li>-->
-<!--                <li>-->
-<!--                    <a href="--><?php //echo $this->url('contact'); ?><!--"--><?php //echo $route == "contact" ? ' class="active"' : ''; ?><!-->--><?php //echo $this->translate("Contact"); ?><!--</a>-->
-<!--                </li>-->
-<!--            </ul>-->
-<!--        </nav>-->
-<!--    </div>-->
+    <div id="topWrapper">
+        <div id="logo">
+            <a href="<?php echo $this->url('home'); ?>"
+               title="<?php echo $this->translate("LeaguePick"); ?>">LeaguePick Logo</a>
+        </div>
+        <span>Pick your champion the easy way!</span>
+    </div>
 </header>
 <div id="content">
     <?php echo $this->content; ?>
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<div id="advertisement">
+	<!-- leaguepick desktop -->
+		<ins class="adsbygoogle"
+			 style="display:inline-block;width:728px;height:90px"
+			 data-ad-client="ca-pub-6737088231270252"
+			 data-ad-slot="1963306611"></ins>
+		<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+	</div>
 </div>
 <?php
 // The layout's footer
