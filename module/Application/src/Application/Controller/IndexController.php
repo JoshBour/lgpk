@@ -50,6 +50,7 @@ class IndexController extends BaseController
             "form" => $form,
             "summoner" => $summoner,
             "region" => $region,
+            "bodyClass" => "homePage"
         ));
     }
 

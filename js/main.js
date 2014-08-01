@@ -28,10 +28,11 @@ $(function () {
         }
     });
 
-    $('.selectable').each(function () {
-        var select = $(this);
-        select.selectbox();
-        if (select.hasClass('championSelect')) {
+    if (!isMobile) {
+        $('.selectable').each(function () {
+            var select = $(this);
+            select.selectbox();
+            if (select.hasClass('championSelect')) {
                 select.next('.sbHolder').find('ul li').each(function () {
                     var listItem = $(this);
                     var link = listItem.children('a').addClass('championName');
@@ -43,7 +44,8 @@ $(function () {
                     }).prependTo(listItem);
                 });
             }
-    });
+        });
+    }
 
     $('.extraOptionsToggle').on('click', function () {
         var toggler = $(this);

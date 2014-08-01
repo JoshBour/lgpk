@@ -2,6 +2,7 @@
 echo $this->doctype();
 $children = $this->viewModel()->getCurrent()->getChildren();
 $child = $children[0];
+$isMobile = $this->mobile();
 ?>
 <html lang="en">
 <?php
@@ -46,11 +47,10 @@ if ($child->activeRoute)
     <?php echo $this->content; ?>
 	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	<div id="advertisement">
-	<!-- leaguepick desktop -->
 		<ins class="adsbygoogle"
-			 style="display:inline-block;width:728px;height:90px"
+			 style="display:inline-block;<?php echo $isMobile ? "width:320px;height:50px" : "width:728px;height:90px"; ?>"
 			 data-ad-client="ca-pub-6737088231270252"
-			 data-ad-slot="1963306611"></ins>
+			 data-ad-slot="<?php echo $isMobile ? "4819041412" : "1963306611"; ?>"></ins>
 		<script>
 		(adsbygoogle = window.adsbygoogle || []).push({});
 		</script>

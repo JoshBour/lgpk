@@ -29,9 +29,9 @@
         ->prependStylesheet($this->basePath('css/jquery.selectbox.css'))
         ->prependStylesheet($this->basePath('css/style.css'));
 //
-//    if ($isMobile) {
-//        $this->headLink()->appendStylesheet($this->basePath('css/mobile.css'));
-//    }
+    if ($isMobile) {
+        $this->headLink()->appendStylesheet($this->basePath('css/mobile.css'));
+    }
     echo $this->headLink();
 
     // Some scripts the must be outputted first follow below

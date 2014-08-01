@@ -1,0 +1,27 @@
+#content {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+#main .champions, #searchForm, #content, #topWrapper {
+    width: auto;
+}
+
+#main p {
+    padding: 20px 5px;
+}
+
+.standardForm input, select, textarea, .button {
+    text-indent: 5px;
+    margin-left: 0;
+    width: 100%;
+}
+
+select {
+    background-color: #222;
+}
+
+#advertisement {
+    text-align: inherit;
+    margin-bottom:20px;
+}
