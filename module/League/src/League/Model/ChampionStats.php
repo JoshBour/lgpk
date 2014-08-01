@@ -43,8 +43,8 @@ class ChampionStats {
     public function getScore()
     {
         $ratio = $this->getWinRatio();
-        $k = ($this->gamesWon)*($ratio^2);
-        if($k == 0) $k = 0.001;
+        $a = ($this->gamesWon == 0) ? 1 : $this->gamesWon;
+        $k = log10($a)*($ratio^2);
         return round($k,2,PHP_ROUND_HALF_EVEN);
     }
 
