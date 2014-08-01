@@ -31,20 +31,24 @@ return array(
             'search' => array(
                 'type' => 'Zend\Mvc\Router\Http\Segment',
                 'options' => array(
-                    'route' => '/search/:summoner/:region[/:champion]',
+                    'route' => '/search/:summoner/:region[/:champion][/position/:position][/opponent/:opponent]',
                     'defaults' => array(
                         'controller' => __NAMESPACE__ . '\Controller\Index',
                         'action' => 'search',
+                        'position' => '',
+                        'opponent' => '',
                     ),
                 ),
             ),
             'result' => array(
                 'type' => 'Zend\Mvc\Router\Http\Segment',
                 'options' => array(
-                    'route' => '/results/:summoner/:region[/:opponent]',
+                    'route' => '/results/:summoner/:region[/position/:position][/opponent/:opponent]',
                     'defaults' => array(
                         'controller' => __NAMESPACE__ . '\Controller\Index',
                         'action' => 'result',
+                        'position' => '',
+                        'opponent' => '',
                     ),
                 ),
             ),

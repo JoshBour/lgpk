@@ -1,0 +1,29 @@
+<div id="main">
+    <?php
+        $name = $champion->getName();
+        $kda = $champion->getKda();
+        if($kda >= 6){
+            $comment = "perfect";
+        }else if($kda >= 4.5){
+            $comment = "awesome";
+        }else if($kda >= 3){
+            $comment = "good";
+        }else if($kda >= 2){
+            $comment = "average";
+        }else{
+            $comment = "not good";
+        }
+        ?>
+        <div id="mainSuggestion">
+            <p>Bellow you can see the stats for <strong><?php echo $name; ?></strong></p>
+            <img src="<?php echo $this->basePath('images/champions/' . ucwords($name) . '.png'); ?>"/>
+            <span class="score">LP SCORE: <?php echo $champion->getScore(); ?></span>
+
+            <p>With <?php echo $name; ?> you have a <strong><?php echo $champion->getWinRatio(); ?>%</strong> win ratio. <br/>
+                This means that out of the <strong><?php echo $champion->getTotalGames(); ?></strong> games you have
+                won <strong><?php echo $champion->getGamesWon(); ?></strong>.<br/>
+                Moreover, you have a KDA of <strong><?php echo $kda; ?></strong> which is <?php echo $comment; ?>.
+            </p>
+        </div>
+         <a href="<?php echo $this->url("result",array("summoner"=>$summoner,"region"=>$region, "position" => $position, "opponent"=>$opponent)); ?>" class="redirect">Go Back</a>
+</div>

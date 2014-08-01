@@ -14,7 +14,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Class Champion
  * @package League\Entity
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="\League\Repository\ChampionRepository")
  * @ORM\Table(name="champions")
  */
 class Champion {
@@ -57,7 +57,10 @@ class Champion {
 
     /**
      * @ORM\ManyToMany(targetEntity="Attribute", inversedBy="champions")
-     * @ORM\JoinTable(name="champions_attributes")
+     * @ORM\JoinTable(name="champions_attributes",
+     *      joinColumns={@ORM\JoinColumn(name="champion_id", referencedColumnName="champion_id")},
+     *      inverseJoinColumns={@ORM\JoinColumn(name="attribute_name", referencedColumnName="name")}
+     *      )
      */
     private $attributes;
 

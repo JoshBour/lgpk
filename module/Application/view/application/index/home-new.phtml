@@ -16,7 +16,7 @@
         <?php
         echo $this->formElementErrors($fieldset->get('summoner'), array('class' => 'formError'));
         echo $this->formLabel($fieldset->get('summoner'));
-        echo $this->formInput($fieldset->get('summoner')->setValue($summoner));
+        echo $this->formInput($fieldset->get('summoner'));
         ?>
     </div>
 
@@ -24,12 +24,14 @@
         <?php
         echo $this->formElementErrors($fieldset->get('region'), array('class' => 'formError'));
         echo $this->formLabel($fieldset->get('region'));
-        echo $this->formSelect($fieldset->get('region')->setValue($region));
+        echo $this->formSelect($fieldset->get('region'));
         ?>
     </div>
-    <span class="extraOptionsToggle">Click for additional options +</span>
 
-    <div id="extraOptions">
+
+<!--    <span class="extraOptionsToggle">Click for additional options +</span>-->
+
+<!--    <div id="extraOptions">-->
         <div class="element">
             <?php
             echo $this->formElementErrors($fieldset->get('opponent'), array('class' => 'formError'));
@@ -37,15 +39,21 @@
             echo $this->formSelect($fieldset->get('opponent'));
             ?>
         </div>
-
-        <div class="element">
-            <?php
-            echo $this->formElementErrors($fieldset->get('position'), array('class' => 'formError'));
-            echo $this->formLabel($fieldset->get('position'));
-            echo $this->formSelect($fieldset->get('position'));
-            ?>
-        </div>
-    </div>
+<!--        <div class="element">-->
+<!--            --><?php
+//            echo $this->formElementErrors($fieldset->get('hasMana'), array('class' => 'formError'));
+//            echo $this->formLabel($fieldset->get('hasMana'));
+//            echo $this->formCheckbox($fieldset->get('hasMana'));
+//            ?>
+<!--        </div>-->
+<!--        <div class="element">-->
+<!--            --><?php
+//            echo $this->formElementErrors($fieldset->get('hasCrowdControl'), array('class' => 'formError'));
+//            echo $this->formLabel($fieldset->get('hasCrowdControl'));
+//            echo $this->formCheckbox($fieldset->get('hasCrowdControl'));
+//            ?>
+<!--        </div>-->
+<!--    </div>-->
     <?php echo $this->formSubmit($form->get('submit')->setValue($this->translate('Search'))); ?>
 
     <?php echo $this->form()->closeTag() ?>

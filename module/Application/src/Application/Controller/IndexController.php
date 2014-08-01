@@ -37,6 +37,7 @@ class IndexController extends BaseController
                 $params = array(
                     'summoner' => $data['search']['summoner'],
                     'region' => $data['search']['region'],
+                    'position' => $data['search']['position']
                 );
                 if($data['search']['opponent']) $params["opponent"] = $data['search']['opponent'];
                 $this->redirect()->toRoute('result', $params);
@@ -48,7 +49,7 @@ class IndexController extends BaseController
         return new ViewModel(array(
             "form" => $form,
             "summoner" => $summoner,
-            "region" => $region
+            "region" => $region,
         ));
     }
 
@@ -57,8 +58,9 @@ class IndexController extends BaseController
         $summoner = $this->params()->fromRoute("summoner");
         $region = $this->params()->fromRoute("region");
         $opponent = $this->params()->fromRoute("opponent");
+        $position = $this->params()->fromRoute("position");
         $session = new Container('summoner');
-        $results = $this->getSearchService()->getSearchResults($summoner,$region,$opponent);
+        $results = $this->getSearchService()->getSearchResults($summoner,$region,$opponent,$position);
         if (is_array($results)) {
             $session->summoner = $summoner;
             $session->region = $region;
@@ -66,7 +68,8 @@ class IndexController extends BaseController
                 "results" => $results,
                 "summoner" => $summoner,
                 "region" => $region,
-                "opponent" => $opponent
+                "opponent" => $opponent,
+                "position" => $position
             ));
         } else {
             $this->flashMessenger()->addMessage($results);
@@ -79,6 +82,8 @@ class IndexController extends BaseController
         $summoner = $this->params()->fromRoute("summoner");
         $region = $this->params()->fromRoute("region");
         $champion = $this->params()->fromRoute("champion");
+        $opponent = $this->params()->fromRoute("opponent");
+        $position = $this->params()->fromRoute("position");
         $vocabulary = $this->getVocabulary();
         $championStats = $this->getSearchService()->getUserChampionStats($summoner, $region, $champion);
         if ($championStats) {
@@ -86,6 +91,8 @@ class IndexController extends BaseController
                 "champion" => $championStats,
                 "region" => $region,
                 "summoner" => $summoner,
+                "position" => $position,
+                "opponent" => $opponent,
             ));
         } else {
             $this->flashMessenger()->addMessage($vocabulary["ERROR_SEARCH"]);
