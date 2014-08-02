@@ -22,12 +22,25 @@ class ChampionRepository extends EntityRepository
             ->where($qb->expr()->eq('a.name', '?1'))
             ->setParameter("1", $firstPosition);
         if (is_array($positions) && count($positions) > 1) {
-            foreach ($positions as $position){
-                $qb->orWhere(($qb->expr()->eq('a.name', '?'.$i)))
+            foreach ($positions as $position) {
+                $qb->orWhere(($qb->expr()->eq('a.name', '?' . $i)))
                     ->setParameter($i, $position);
                 $i++;
             }
         };
+
+        $query = $qb->getQuery();
+        return $query->getResult();
+    }
+
+    public function checkChampionAttribute($name, $attribute)
+    {
+        $qb = $this->createQueryBuilder('c');
+        $qb->select('a.name')
+            ->add('from', 'League\Entity\Champion c LEFT JOIN c.attributes a')
+            ->where($qb->expr()->eq('c.name', '?1'))
+            ->andWhere($qb->expr()->eq('a.name', '?2'))
+            ->setParameters(array('1' => $name, '2' => $attribute));
 
         $query = $qb->getQuery();
         return $query->getResult();
@@ -49,7 +62,7 @@ class ChampionRepository extends EntityRepository
 
         $query = $qb->getQuery();
         $positions = array();
-        foreach($query->getResult() as $value){
+        foreach ($query->getResult() as $value) {
             $positions[] = $value["name"];
         }
         return $positions;

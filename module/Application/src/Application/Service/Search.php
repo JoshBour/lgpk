@@ -20,51 +20,62 @@ class Search extends BaseService
 {
     private $leagueService;
 
-    public function getSearchResults($summoner, $region, $opponent, $position)
+    public function getSearchResults($summoner, $region, $params)
     {
         $leagueRepository = $this->getChampionRepository("league");
-        // first, depending on if a opponent champion is entered, we get a list of suggestions
         $suggestionArray = array();
-        if (!empty($opponent)) {
-            $opponent = $leagueRepository->find($opponent);
-            if (!empty($position)) {
-                $champions = $this->getUserChampionArray($summoner, $region, array($position));
+        // check if there is an opponent
+        if (!empty($params["opponent"])) {
+            $opponent = $leagueRepository->find($params["opponent"]);
+            if (!empty($params["position"])) {
+                $champions = $this->getUserChampionArray($summoner, $region, array($params["position"]));
             } else {
                 $opponentPositions = $leagueRepository->findChampionPositions($opponent->getName());
                 $champions = $this->getUserChampionArray($summoner, $region, $opponentPositions);
             }
-            if($curOpponent = $this->championExists($champions,$opponent->getName())){
+            if ($curOpponent = $this->championExists($champions, $opponent->getName())) {
                 $index = array_search($curOpponent, $champions);
                 unset($champions[$index]);
             }
-            $topChampions = array_slice($champions, 0, 9, true);
             if (is_array($champions)) {
+                $topChampions = array_slice($champions, 0, 9, true);
+                if ($params["hasMana"] || $params["hasCC"]) {
+                    $topChampions = $this->filterChampions($topChampions, $params);
+                    if (empty($topChampions)) return array();
+                }
                 $topThreeChampions = array_slice($topChampions, 0, 2, true);
                 foreach ($opponent->getCounters() as $counter) {
                     $name = $counter->getName();
                     if ($champion = $this->championExists($topThreeChampions, $name)) {
                         $suggestionArray["mainSuggestion"]["counter"] = $champion;
-                        $index = array_search($champion, $champions);
-                        unset($champions[$index]);
+                        $index = array_search($champion, $topChampions);
+                        unset($topChampions[$index]);
                         break;
                     }
                 }
                 $mainCount = isset($suggestionArray["mainSuggestion"]) ? count($suggestionArray["mainSuggestion"]) : 0;
-                if ($mainCount != 0) {
-                    $suggestionArray["secondarySuggestions"] = array_slice($champions,0,4,true);
-                } else {
+                if ($mainCount == 0) {
                     $suggestionArray["mainSuggestion"] = array_shift($topChampions);
-                    $suggestionArray["secondarySuggestions"] = $topChampions;
                 }
+                $suggestionArray["secondarySuggestions"] = array_slice($topChampions, 0, 4, true);
             } else {
                 return $champions;
             }
         } else {
-            $champions = $this->getUserChampionArray($summoner, $region, array($position));
+            $champions = $this->getUserChampionArray($summoner, $region, array($params["position"]));
             $topChampions = array_slice($champions, 0, 9, true);
             if (is_array($champions)) {
+                if ($params["hasMana"] || $params["hasCC"]) {
+                    $filteredChampions = $this->filterChampions($champions, $params);
+                    if (!empty($filteredChampions)) {
+                        $suggestionArray["mainSuggestion"] = array_shift($filteredChampions);
+                        $suggestionArray["secondarySuggestions"] = array_slice($filteredChampions, 0, 4, true);
+                        return $suggestionArray;
+                    }
+                }
                 $suggestionArray["mainSuggestion"] = array_shift($topChampions);
                 $suggestionArray["secondarySuggestions"] = $topChampions;
+
             } else {
                 return $champions;
             }
@@ -84,6 +95,27 @@ class Search extends BaseService
             }
         }
         return false;
+    }
+
+    private function filterChampions(&$champions, $params)
+    {
+        $leagueRepository = $this->getChampionRepository("league");
+        $filteredChampions = array();
+        foreach ($champions as $champion) {
+            if ($params["hasMana"]) {
+                if ($leagueRepository->checkChampionAttribute($champion->getName(), "manaless")) {
+                    if ($params["hasCC"]) {
+                        if(!$leagueRepository->checkChampionAttribute($champion->getName(), "hascc")){
+                           continue;
+                        }
+                    }
+                    $filteredChampions[] = $champion;
+                }
+            } else if ($params["hasCC"] && $leagueRepository->checkChampionAttribute($champion->getName(), "hascc")) {
+                $filteredChampions[] = $champion;
+            }
+        }
+        return $filteredChampions;
     }
 
     private function getUserChampionArray($name, $region, $position)

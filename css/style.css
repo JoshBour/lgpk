@@ -214,19 +214,15 @@ header {
     margin: 0 auto;
 }
 
-.homePage #content{
-    min-height:550px;
+.homePage #search{
+    min-height:450px;
 }
 
     /* ===================================================== */
     /*                       Home Page                       */
 
-        #searchForm{
+        .standardForm{
             width:375px;
-        }
-
-        #search{
-            min-height:500px;
         }
 
         .homePage #advertisement{
@@ -255,6 +251,18 @@ header {
         }
 
     /* ===================================================== */
+    /*                      Referral Page                     */
+        #referralForm{
+           margin-top:0px;
+            margin-bottom:150px;
+        }
+
+        #referralForm input[type="email"]{
+            width: 373px;
+            margin-left:0;
+        }
+
+    /* ===================================================== */
     /*                      Results Page                     */
 
         #main{
@@ -274,7 +282,7 @@ header {
             font:bold 16px 'Source Sans Pro',sans-serif;
         }
 
-        #mainSuggestion p{
+        .increasedLineHeight p{
             line-height: 20px;
         }
 
@@ -453,6 +461,7 @@ footer.halfSized {
         font-family: 'Source Sans Pro', sans-serif;
         width:300px;
         padding: 9px 0;
+        text-indent: 5px;
         border: 1px solid #222;
         outline: none;
         background:transparent url(../images/input-bg.png) repeat;

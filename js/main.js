@@ -3,7 +3,7 @@ $(function () {
     var flash = $('#flash');
     var focusedDiv;
     if (flash.is(':visible')) {
-        flash.setRemoveTimeout(3000);
+        flash.setRemoveTimeout(6000);
     }
     var gt = new Gettext({ 'domain': 'messages' });
 

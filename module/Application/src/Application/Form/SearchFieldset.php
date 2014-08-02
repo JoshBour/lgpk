@@ -95,14 +95,22 @@ class SearchFieldset extends BaseFieldset implements InputFilterProviderInterfac
                 'class' => 'selectable'
             )
         ));
-//
-//        $this->add(array(
-//            'type' => 'Zend\Form\Element\Checkbox',
-//            'name' => 'hasCrowdControl',
-//            'options' => array(
-//                'label' => 'The champion should have some kind of cc',
-//            )
-//        ));
+
+        $this->add(array(
+            'type' => 'Zend\Form\Element\Checkbox',
+            'name' => 'hasCrowdControl',
+            'options' => array(
+                'label' => 'The champion should have some kind of cc',
+            )
+        ));
+
+        $this->add(array(
+            'type' => 'Zend\Form\Element\Checkbox',
+            'name' => 'hasMana',
+            'options' => array(
+                'label' => 'The champion should not use mana',
+            )
+        ));
     }
 
     /**
@@ -166,6 +174,9 @@ class SearchFieldset extends BaseFieldset implements InputFilterProviderInterfac
                 ),
             ),
             'position' => array(
+                'required' => false,
+            ),
+            'hasCrowdControl' => array(
                 'required' => false,
             )
         );

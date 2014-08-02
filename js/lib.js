@@ -12,7 +12,7 @@ function addMessage(message) {
             }
         }).prependTo('body').slideDown("slow");
     }
-    flash.setRemoveTimeout(5000);
+    flash.setRemoveTimeout(6000);
 }
 
 String.prototype.lowerize = function () {

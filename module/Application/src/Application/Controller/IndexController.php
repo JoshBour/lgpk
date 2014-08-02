@@ -1,6 +1,8 @@
 <?php
 namespace Application\Controller;
 
+use Application\Entity\ReferralApplication;
+use Application\Entity\ReferralVisitor;
 use Application\Model\SitemapXmlParser;
 use Zend\Http\Request;
 use Zend\Http\Response;
@@ -22,6 +24,12 @@ class IndexController extends BaseController
 
     private $leagueService;
 
+    private $referralApplicationRepository;
+
+    private $referralRepository;
+
+    private $referralForm;
+
     private $searchForm;
 
     private $searchService;
@@ -30,6 +38,21 @@ class IndexController extends BaseController
     {
         $form = $this->getSearchForm();
         $request = $this->getRequest();
+        if ($referral = $this->params()->fromRoute('referral')) {
+            $referralRepository = $this->getReferralRepository();
+            $referral = $referralRepository->find($referral);
+            if ($referral) {
+                if (!$referralRepository->findVisitorByIp($referral->getName(), $_SERVER["REMOTE_ADDR"])) {
+                    $em = $this->getEntityManager();
+                    $visitor = new ReferralVisitor($referral, $_SERVER["REMOTE_ADDR"]);
+                    $referral->addVisitors($visitor);
+                    $referral->increaseViews();
+                    $em->persist($visitor);
+                    $em->persist($referral);
+                    $em->flush();
+                };
+            }
+        }
         if ($request->isPost()) {
             $data = $request->getPost();
             $form->setData($data);
@@ -37,9 +60,11 @@ class IndexController extends BaseController
                 $params = array(
                     'summoner' => $data['search']['summoner'],
                     'region' => $data['search']['region'],
-                    'position' => $data['search']['position']
+                    'position' => $data['search']['position'],
+                    'hasCC' => $data['search']['hasCrowdControl'],
+                    'hasMana' => $data['search']['hasMana']
                 );
-                if($data['search']['opponent']) $params["opponent"] = $data['search']['opponent'];
+                if ($data['search']['opponent']) $params["opponent"] = $data['search']['opponent'];
                 $this->redirect()->toRoute('result', $params);
             }
         }
@@ -54,14 +79,43 @@ class IndexController extends BaseController
         ));
     }
 
+    public function referralAction(){
+        $form = $this->getReferralForm();
+        $request = $this->getRequest();
+        if($request->isPost()){
+            $data = $request->getPost();
+            $form->setData($data);
+            $vocabulary = $this->getVocabulary();
+            if($form->isValid()){
+                $referral = new ReferralApplication($data['referral']['email'],0);
+                $em = $this->getEntityManager();
+                try{
+                    $em->persist($referral);
+                    $em->flush();
+                    $this->flashMessenger()->addMessage($vocabulary["REFERRAL_SUCCESSFUL"]);
+                }catch (\Exception $e){
+                    $this->flashMessenger()->addMessage($vocabulary["ERROR_REFERRAL"]);
+                }
+                $this->redirect()->toRoute('referral');
+            }
+        }
+        return new ViewModel(array(
+            "form" => $form
+        ));
+    }
+
     public function resultAction()
     {
         $summoner = $this->params()->fromRoute("summoner");
         $region = $this->params()->fromRoute("region");
-        $opponent = $this->params()->fromRoute("opponent");
-        $position = $this->params()->fromRoute("position");
+        $params = array(
+            'opponent' => $this->params()->fromRoute("opponent"),
+            'position' => $this->params()->fromRoute("position"),
+            'hasCC' => $this->params()->fromRoute("hasCC"),
+            'hasMana' => $this->params()->fromRoute("hasMana")
+        );
         $session = new Container('summoner');
-        $results = $this->getSearchService()->getSearchResults($summoner,$region,$opponent,$position);
+        $results = $this->getSearchService()->getSearchResults($summoner, $region, $params);
         if (is_array($results)) {
             $session->summoner = $summoner;
             $session->region = $region;
@@ -69,8 +123,7 @@ class IndexController extends BaseController
                 "results" => $results,
                 "summoner" => $summoner,
                 "region" => $region,
-                "opponent" => $opponent,
-                "position" => $position
+                "params" => $params,
             ));
         } else {
             $this->flashMessenger()->addMessage($results);
@@ -229,6 +282,36 @@ class IndexController extends BaseController
         if (null === $this->leagueService)
             $this->leagueService = $this->getServiceLocator()->get('league_service');
         return $this->leagueService;
+    }
+
+    /**
+     * @return \Doctrine\ORM\EntityRepository
+     */
+    public function getReferralApplicationRepository()
+    {
+        if (null === $this->referralApplicationRepository)
+            $this->referralApplicationRepository = $this->getEntityManager()->getRepository('Application\Entity\ReferralApplication');
+        return $this->referralApplicationRepository;
+    }
+
+    /**
+     * @return \Application\Repository\ReferralRepository
+     */
+    public function getReferralRepository()
+    {
+        if (null === $this->referralRepository)
+            $this->referralRepository = $this->getEntityManager()->getRepository('Application\Entity\Referral');
+        return $this->referralRepository;
+    }
+
+    /**
+     * @return \Zend\Form\Form
+     */
+    public function getReferralForm()
+    {
+        if (null === $this->referralForm)
+            $this->referralForm = $this->getServiceLocator()->get('referral_form');
+        return $this->referralForm;
     }
 
     /**

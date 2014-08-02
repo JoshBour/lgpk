@@ -1,5 +1,7 @@
-<footer>&copy <?php echo date('Y'); ?>, LeaguePick. All rights reserved. Made by <a href="http://www.joshbour.com">Josh Bour</a>.
-If you like my work, <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=484HNKDK3MCYA" target="_blank">you can buy me a beer here</a>.</footer>
+<footer>
+<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=484HNKDK3MCYA" target="_blank">Buy me a beer</a> | <a href="<?php echo $this->url('referral'); ?>">Referral Program</a><br/><br/>
+    &copy <?php echo date('Y'); ?>, LeaguePick. Made by <a href="http://www.joshbour.com">Josh Bour</a>.
+</footer>
 <?php
 echo $this->inlineScript()->prependFile($this->basePath('js/main.js'), 'text/javascript')
     ->prependFile($this->basePath('js/lib.js'), 'text/javascript')

@@ -14,5 +14,6 @@
 return array(
     'static_pages' => array(
         '/',
+        '/referrals'
     )
 );

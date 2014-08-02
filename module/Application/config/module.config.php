@@ -31,34 +31,59 @@ return array(
             'search' => array(
                 'type' => 'Zend\Mvc\Router\Http\Segment',
                 'options' => array(
-                    'route' => '/search/:summoner/:region[/:champion][/position/:position][/opponent/:opponent]',
+                    'route' => '/search/:summoner/:region[/:champion][/position/:position][/opponent/:opponent][/hasCC/:hasCC][/manaless/:hasMana]',
                     'defaults' => array(
                         'controller' => __NAMESPACE__ . '\Controller\Index',
                         'action' => 'search',
                         'position' => '',
                         'opponent' => '',
+                        'hasCC' => '',
+                        'hasMana' => '',
                     ),
+                    'constraints' => array(
+                        'position' => 'top|middle|jungle|marksman|support',
+                        'hasCC' => '0|1',
+                        'hasMana' => '0|1'
+                    )
                 ),
             ),
             'result' => array(
                 'type' => 'Zend\Mvc\Router\Http\Segment',
                 'options' => array(
-                    'route' => '/results/:summoner/:region[/position/:position][/opponent/:opponent]',
+                    'route' => '/results/:summoner/:region[/position/:position][/opponent/:opponent][/hasCC/:hasCC][/manaless/:hasMana]',
                     'defaults' => array(
                         'controller' => __NAMESPACE__ . '\Controller\Index',
                         'action' => 'result',
                         'position' => '',
                         'opponent' => '',
+                        'hasCC' => '',
+                        'hasMana' => '',
                     ),
+                    'constraints' => array(
+                        'position' => 'top|middle|jungle|marksman|support',
+                        'hasCC' => '0|1',
+                        'hasMana' => '0|1'
+                    )
                 ),
             ),
             'home' => array(
-                'type' => 'Zend\Mvc\Router\Http\Literal',
+                'type' => 'Zend\Mvc\Router\Http\Segment',
                 'options' => array(
-                    'route' => '/',
+                    'route' => '/[ref/:referral]',
                     'defaults' => array(
                         'controller' => __NAMESPACE__ . '\Controller\Index',
                         'action' => 'home',
+                        'referral' => ''
+                    ),
+                ),
+            ),
+            'referral' => array(
+                'type' => 'Zend\Mvc\Router\Http\Literal',
+                'options' => array(
+                    'route' => '/referrals',
+                    'defaults' => array(
+                        'controller' => __NAMESPACE__ . '\Controller\Index',
+                        'action' => 'referral',
                     ),
                 ),
             ),
@@ -97,6 +122,7 @@ return array(
     'service_manager' => array(
         'factories' => array(
             'search_form' => __NAMESPACE__ . '\Factory\SearchFormFactory',
+            'referral_form' => __NAMESPACE__ . '\Factory\ReferralFormFactory',
         ),
         'invokables' => array(
             'search_service' => __NAMESPACE__ . '\Service\Search'

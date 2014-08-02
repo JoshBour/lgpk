@@ -17,7 +17,7 @@
             $comment = "not good";
         }
         ?>
-        <div id="mainSuggestion">
+        <div class="increasedLineHeight">
             <p>Based on your input, we strongly advise you to play <strong><?php echo $name; ?></strong></p>
             <img src="<?php echo $this->basePath('images/champions/' . ucwords($name) . '.png'); ?>"/>
             <span class="score">LP SCORE: <?php echo $mainSuggestion->getScore(); ?></span>
@@ -43,7 +43,7 @@
                     if ($key == "counter") $counters[] = $champion;
                     ?>
                     <li>
-                        <a href="<?php echo $this->url('search', array('summoner' => $summoner, 'region' => $region, 'champion' => $name, 'position' => $position, 'opponent' => $opponent)); ?>"
+                        <a href="<?php echo $this->url('search', array('summoner' => $summoner, 'region' => $region, 'champion' => $name, 'position' => $params["position"], 'opponent' => $params["opponent"])); ?>"
                            title="Click to see your stats with <?php echo $name; ?>">
                             <img
                                 src="<?php echo $this->basePath('images/champions/' . ucwords($name) . '.png'); ?>"/>
@@ -60,7 +60,7 @@
                 $name = $champion->getName();
                 ?>
                 <li class="shadowed">
-                    <a href="<?php echo $this->url('search', array('summoner' => $summoner, 'region' => $region, 'champion' => $name, 'position' => $position, 'opponent' => $opponent)); ?>"
+                    <a href="<?php echo $this->url('search', array('summoner' => $summoner, 'region' => $region, 'champion' => $name, 'position' => $params["position"], 'opponent' => $params["opponent"])); ?>"
                        title="Click to see your stats with <?php echo $name; ?>">
                         <img
                             src="<?php echo $this->basePath('images/champions/' . ucwords($name) . '.png'); ?>"/>
@@ -73,15 +73,10 @@
     <?php
     elseif (empty($mainSuggestion)):
         ?>
-        <div id="mainSuggestion">
+        <div class="increasedLineHeight">
             <p>Based on your input, we don't have a single champion to suggest.<br>
-                However, you can try one of the following champions:</p>
+                However, you can try searching again with different parameters!</p>
         </div>
-        <ul class="champions">
-            <?php foreach ($results["secondarySuggestions"] as $champion): ?>
-                <li><img src="<?php echo $this->basePath('images/champions/' . ucwords($champion) . '.png'); ?>"/></li>
-            <?php endforeach; ?>
-        </ul>
     <?php
     else:
         $name = $mainSuggestion->getName();
@@ -98,7 +93,7 @@
             $comment = "not good";
         }
         ?>
-        <div id="mainSuggestion">
+        <div class="increasedLineHeight">
             <p>Based on your input, we strongly advise you to play <strong><?php echo $name; ?></strong></p>
             <img src="<?php echo $this->basePath('images/champions/' . ucwords($name) . '.png'); ?>"/>
             <span class="score">LP SCORE: <?php echo $mainSuggestion->getScore(); ?></span>
@@ -118,7 +113,7 @@
                 $name = $champion->getName();
                 ?>
                 <li class="shadowed">
-                    <a href="<?php echo $this->url('search', array('summoner' => $summoner, 'region' => $region, 'champion' => $name, 'position' => $position)); ?>"
+                    <a href="<?php echo $this->url('search', array('summoner' => $summoner, 'region' => $region, 'champion' => $name, 'position' => $params["position"])); ?>"
                        title="Click to see your stats with <?php echo $name; ?>">
                         <img
                             src="<?php echo $this->basePath('images/champions/' . ucwords($name) . '.png'); ?>"/>

@@ -11,12 +11,12 @@ namespace Application\Form;
 
 use Zend\Form\Form;
 
-class SearchForm extends Form{
+class ReferralForm extends Form{
     /**
      * The post form constructor
      */
     public function __construct(){
-        parent::__construct("searchForm");
+        parent::__construct("referralForm");
 
         $this->setAttributes(array(
             'method' => 'post',
@@ -35,13 +35,8 @@ class SearchForm extends Form{
 
         $this->setValidationGroup(array(
 //            'security',
-            'search' => array(
-                'summoner',
-                'region',
-                'opponent',
-                'position',
-                'hasCrowdControl',
-                'hasMana'
+            'referral' => array(
+                'email',
             )
         ));
     }

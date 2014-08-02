@@ -45,6 +45,22 @@
             echo $this->formSelect($fieldset->get('position'));
             ?>
         </div>
+
+        <div class="element">
+            <?php
+            echo $this->formElementErrors($fieldset->get('hasCrowdControl'), array('class' => 'formError'));
+            echo $this->formLabel($fieldset->get('hasCrowdControl'));
+            echo $this->formCheckbox($fieldset->get('hasCrowdControl'));
+            ?>
+        </div>
+
+        <div class="element">
+            <?php
+            echo $this->formElementErrors($fieldset->get('hasMana'), array('class' => 'formError'));
+            echo $this->formLabel($fieldset->get('hasMana'));
+            echo $this->formCheckbox($fieldset->get('hasMana'));
+            ?>
+        </div>
     </div>
     <?php echo $this->formSubmit($form->get('submit')->setValue($this->translate('Search'))); ?>
 

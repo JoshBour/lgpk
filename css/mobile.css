@@ -17,6 +17,10 @@
     width: 100%;
 }
 
+#search{
+    min-height: auto;
+}
+
 select {
     background-color: #222;
 }
