@@ -214,6 +214,30 @@ header {
     min-height:450px;
 }
 
+#announcement {
+    width: 500px;
+    margin: 20px auto 0 auto;
+    padding: 10px;
+    overflow:auto;
+    text-align: center;
+    background: #222;
+    box-shadow: 2px 2px 10px black;
+}
+
+#announcement p{
+    display:inline;
+}
+
+#announcement .remove{
+    float: right;
+    cursor:pointer;
+    color:#aaa;
+}
+
+#announcement .remove:hover{
+    color:#fff;
+}
+
     /* ===================================================== */
     /*                       Home Page                       */
 

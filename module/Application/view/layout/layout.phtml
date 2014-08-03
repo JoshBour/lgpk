@@ -44,6 +44,13 @@ if ($child->activeRoute)
     </div>
 </header>
 <div id="content">
+        <?php if (!isset($_COOKIE['announcement'])): ?>
+            <div id="announcement">
+                <p>LeaguePick now has an about page, you can check it <a href="<?php echo $this->url('about'); ?>">here</a> or at the bottom of the page. </p>
+
+                <div class="remove">X</div>
+            </div>
+        <?php endif; ?>
     <?php echo $this->content; ?>
 	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	<div id="advertisement">

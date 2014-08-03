@@ -28,6 +28,12 @@ $(function () {
         }
     });
 
+    $('#announcement .remove').on('click', function () {
+        var elem = $(this).parent();
+        elem.detach();
+        createCookie("announcement", "true", 5);
+    });
+
     if (!isMobile) {
         $('.selectable').each(function () {
             var select = $(this);
