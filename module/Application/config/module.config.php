@@ -37,8 +37,8 @@ return array(
                         'action' => 'search',
                         'position' => '',
                         'opponent' => '',
-                        'hasCC' => '',
-                        'hasMana' => '',
+                        'hasCC' => '0',
+                        'hasMana' => '0',
                     ),
                     'constraints' => array(
                         'position' => 'top|middle|jungle|marksman|support',
@@ -56,8 +56,8 @@ return array(
                         'action' => 'result',
                         'position' => '',
                         'opponent' => '',
-                        'hasCC' => '',
-                        'hasMana' => '',
+                        'hasCC' => '0',
+                        'hasMana' => '0',
                     ),
                     'constraints' => array(
                         'position' => 'top|middle|jungle|marksman|support',
@@ -69,7 +69,7 @@ return array(
             'home' => array(
                 'type' => 'Zend\Mvc\Router\Http\Segment',
                 'options' => array(
-                    'route' => '/[ref/:referral]',
+                    'route' => '/[:referral]',
                     'defaults' => array(
                         'controller' => __NAMESPACE__ . '\Controller\Index',
                         'action' => 'home',

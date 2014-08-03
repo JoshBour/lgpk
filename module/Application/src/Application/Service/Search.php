@@ -57,7 +57,11 @@ class Search extends BaseService
                 if ($mainCount == 0) {
                     $suggestionArray["mainSuggestion"] = array_shift($topChampions);
                 }
-                $suggestionArray["secondarySuggestions"] = array_slice($topChampions, 0, 4, true);
+                foreach($topChampions as $champ){
+                    if($champ->getScore() != 0){
+                        $suggestionArray["secondarySuggestions"][] = $champ;
+                    }
+                }
             } else {
                 return $champions;
             }
@@ -74,7 +78,11 @@ class Search extends BaseService
                     }
                 }
                 $suggestionArray["mainSuggestion"] = array_shift($topChampions);
-                $suggestionArray["secondarySuggestions"] = $topChampions;
+                foreach($topChampions as $champ){
+                    if($champ->getScore() != 0){
+                        $suggestionArray["secondarySuggestions"][] = $champ;
+                    }
+                }
 
             } else {
                 return $champions;

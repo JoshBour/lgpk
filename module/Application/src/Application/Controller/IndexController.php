@@ -40,7 +40,7 @@ class IndexController extends BaseController
         $request = $this->getRequest();
         if ($referral = $this->params()->fromRoute('referral')) {
             $referralRepository = $this->getReferralRepository();
-            $referral = $referralRepository->find($referral);
+            $referral = $referralRepository->find(strtolower($referral));
             if ($referral) {
                 if (!$referralRepository->findVisitorByIp($referral->getName(), $_SERVER["REMOTE_ADDR"])) {
                     $em = $this->getEntityManager();
@@ -51,6 +51,8 @@ class IndexController extends BaseController
                     $em->persist($referral);
                     $em->flush();
                 };
+            }else{
+                return $this->notFoundAction();
             }
         }
         if ($request->isPost()) {

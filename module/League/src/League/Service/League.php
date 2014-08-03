@@ -23,7 +23,7 @@ class League implements ServiceManagerAwareInterface
     const RATE_LIMIT_MINUTES = 500;
     const RATE_LIMIT_SECONDS = 10;
     const CACHE_LIFETIME_MINUTES = 60;
-    const CACHE_ENABLED = true;
+    const CACHE_ENABLED = false;
     const ERROR_NOT_SUPPORTED_REGION = "The region you selected is not supported.";
 
     public static $supportedRegions = array('br', 'eune', 'euw','kr', 'lan', 'las', 'na', 'oce', 'ru', 'tr');
@@ -159,7 +159,7 @@ class League implements ServiceManagerAwareInterface
         //caching
         if (self::CACHE_ENABLED) {
             $cacheFile = ROOT_PATH . '/data/cache/' . md5($url);
-
+            echo md5($url);
             if (file_exists($cacheFile)) {
                 $fh = fopen($cacheFile, 'r');
                 $cacheTime = trim(fgets($fh));

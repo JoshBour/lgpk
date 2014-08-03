@@ -88,10 +88,6 @@ body {
     background: #111 url(../images/body-bg.png) repeat;
 }
 
-body.homePage{
-    overflow:hidden;
-}
-
 h1, h2, h3 {
     margin: 5px 0;
     text-align: left;
