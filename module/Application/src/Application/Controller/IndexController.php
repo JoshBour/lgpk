@@ -34,6 +34,11 @@ class IndexController extends BaseController
 
     private $searchService;
 
+    public function aboutAction()
+    {
+        return new ViewModel();
+    }
+
     public function homeAction()
     {
         $form = $this->getSearchForm();
@@ -51,7 +56,7 @@ class IndexController extends BaseController
                     $em->persist($referral);
                     $em->flush();
                 };
-            }else{
+            } else {
                 return $this->notFoundAction();
             }
         }
@@ -81,21 +86,22 @@ class IndexController extends BaseController
         ));
     }
 
-    public function referralAction(){
+    public function referralAction()
+    {
         $form = $this->getReferralForm();
         $request = $this->getRequest();
-        if($request->isPost()){
+        if ($request->isPost()) {
             $data = $request->getPost();
             $form->setData($data);
             $vocabulary = $this->getVocabulary();
-            if($form->isValid()){
-                $referral = new ReferralApplication($data['referral']['email'],0);
+            if ($form->isValid()) {
+                $referral = new ReferralApplication($data['referral']['email'], 0);
                 $em = $this->getEntityManager();
-                try{
+                try {
                     $em->persist($referral);
                     $em->flush();
                     $this->flashMessenger()->addMessage($vocabulary["REFERRAL_SUCCESSFUL"]);
-                }catch (\Exception $e){
+                } catch (\Exception $e) {
                     $this->flashMessenger()->addMessage($vocabulary["ERROR_REFERRAL"]);
                 }
                 $this->redirect()->toRoute('referral');

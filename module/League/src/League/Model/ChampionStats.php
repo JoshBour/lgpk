@@ -44,7 +44,7 @@ class ChampionStats {
     {
         $ratio = $this->getWinRatio();
         $a = ($this->gamesWon == 0) ? 1 : $this->gamesWon;
-        $k = log10($a)*($ratio^2);
+        $k = log10($a)*($ratio^2)+round($this->getKda(),0,PHP_ROUND_HALF_EVEN);
         return round($k,2,PHP_ROUND_HALF_EVEN);
     }
 

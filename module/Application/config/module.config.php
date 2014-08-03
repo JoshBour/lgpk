@@ -87,6 +87,16 @@ return array(
                     ),
                 ),
             ),
+            'about' => array(
+                'type' => 'Zend\Mvc\Router\Http\Literal',
+                'options' => array(
+                    'route' => '/about',
+                    'defaults' => array(
+                        'controller' => __NAMESPACE__ . '\Controller\Index',
+                        'action' => 'about',
+                    ),
+                ),
+            ),
             'sitemap_direct' => array(
                 'type' => 'Zend\Mvc\Router\Http\Literal',
                 'options' => array(

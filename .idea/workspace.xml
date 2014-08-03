@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b18605f-95df-4a5f-a812-dacb37521815" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Application/view/application/index/about.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/League/src/League/Model/ChampionStats.php" afterPath="$PROJECT_DIR$/module/League/src/League/Model/ChampionStats.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Application/src/Application/Controller/IndexController.php" afterPath="$PROJECT_DIR$/module/Application/src/Application/Controller/IndexController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/League/src/League/Service/League.php" afterPath="$PROJECT_DIR$/module/League/src/League/Service/League.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Application/src/Application/Service/Search.php" afterPath="$PROJECT_DIR$/module/Application/src/Application/Service/Search.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Application/view/partial/footer.phtml" afterPath="$PROJECT_DIR$/module/Application/view/partial/footer.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/autoload/global.php" afterPath="$PROJECT_DIR$/config/autoload/global.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Application/config/module.config.php" afterPath="$PROJECT_DIR$/module/Application/config/module.config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Application/view/application/index/result.phtml" afterPath="$PROJECT_DIR$/module/Application/view/application/index/result.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Application/view/application/index/search.phtml" afterPath="$PROJECT_DIR$/module/Application/view/application/index/search.phtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -35,43 +35,34 @@
       <file leaf-file-name="IndexController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/module/Application/src/Application/Controller/IndexController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="26" selection-start="755" selection-end="755" vertical-scroll-proportion="5.8846154" vertical-offset="510" max-vertical-offset="5695">
+            <state line="39" column="5" selection-start="889" selection-end="889" vertical-scroll-proportion="-5.8846154" vertical-offset="357" max-vertical-offset="5797">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Search.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/Application/src/Application/Service/Search.php">
+      <file leaf-file-name="about.phtml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module/Application/view/application/index/about.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="17" selection-start="2463" selection-end="2463" vertical-scroll-proportion="3.2692308" vertical-offset="969" max-vertical-offset="3230">
+            <state line="37" column="37" selection-start="2323" selection-end="2323" vertical-scroll-proportion="-24.192308" vertical-offset="0" max-vertical-offset="816">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search.phtml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/Application/view/application/index/search.phtml">
+      <file leaf-file-name="global.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/autoload/global.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="71" selection-start="808" selection-end="808" vertical-scroll-proportion="-7.0" vertical-offset="0" max-vertical-offset="578">
+            <state line="17" column="15" selection-start="495" selection-end="495" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="272">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="result.phtml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/module/Application/view/application/index/result.phtml">
+      <file leaf-file-name="ChampionStats.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module/League/src/League/Model/ChampionStats.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="49" selection-start="1156" selection-end="1156" vertical-scroll-proportion="0.35126236" vertical-offset="122" max-vertical-offset="2295">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="League.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/League/src/League/Service/League.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="31" selection-start="865" selection-end="865" vertical-scroll-proportion="-6.5384617" vertical-offset="119" max-vertical-offset="4182">
+            <state line="50" column="28" selection-start="1285" selection-end="1285" vertical-scroll-proportion="-15.038462" vertical-offset="374" max-vertical-offset="2924">
               <folding />
             </state>
           </provider>
@@ -80,16 +71,7 @@
       <file leaf-file-name="module.config.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/module/Application/config/module.config.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="39" selection-start="1595" selection-end="1595" vertical-scroll-proportion="-22.884615" vertical-offset="85" max-vertical-offset="3349">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="referral.phtml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/Application/view/application/index/referral.phtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="88" selection-start="1342" selection-end="1342" vertical-scroll-proportion="0.0" vertical-offset="527" max-vertical-offset="680">
+            <state line="95" column="42" selection-start="3909" selection-end="3909" vertical-scroll-proportion="-32.73077" vertical-offset="764" max-vertical-offset="3519">
               <folding />
             </state>
           </provider>
@@ -98,25 +80,16 @@
       <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="88" column="1" selection-start="2320" selection-end="2320" vertical-scroll-proportion="0.0" vertical-offset="1218" max-vertical-offset="9316">
+            <state line="385" column="19" selection-start="8251" selection-end="8251" vertical-scroll-proportion="0.0" vertical-offset="5991" max-vertical-offset="10132">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="module.config.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/League/config/module.config.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="13" selection-start="495" selection-end="495" vertical-scroll-proportion="-12.423077" vertical-offset="0" max-vertical-offset="697">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="footer.phtml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="footer.phtml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/module/Application/view/partial/footer.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="126" selection-start="135" selection-end="135" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="289">
+            <state line="2" column="69" selection-start="88" selection-end="88" vertical-scroll-proportion="0.036324788" vertical-offset="0" max-vertical-offset="936">
               <folding />
             </state>
           </provider>
@@ -159,7 +132,6 @@
         <option value="$PROJECT_DIR$/module/League/src/League/Entity/Champion.php" />
         <option value="$PROJECT_DIR$/module/Application/view/partial/header.phtml" />
         <option value="$PROJECT_DIR$/module/Application/view/layout/layout.phtml" />
-        <option value="$PROJECT_DIR$/module/League/src/League/Model/ChampionStats.php" />
         <option value="$PROJECT_DIR$/module/Application/src/Application/Form/SearchFieldset.php" />
         <option value="$PROJECT_DIR$/module/Application/src/Application/Form/SearchForm.php" />
         <option value="$PROJECT_DIR$/module/Application/view/application/index/home.phtml" />
@@ -168,7 +140,6 @@
         <option value="$PROJECT_DIR$/module/Application/src/Application/Repository/ReferralRepository.php" />
         <option value="$PROJECT_DIR$/module/Application/src/Application/Entity/ReferralVisitor.php" />
         <option value="$PROJECT_DIR$/module/Application/src/Application/Entity/Referral.php" />
-        <option value="$PROJECT_DIR$/config/autoload/global.php" />
         <option value="$PROJECT_DIR$/module/Application/src/Application/Entity/ReferralApplications.php" />
         <option value="$PROJECT_DIR$/module/Application/src/Application/Entity/ReferralApplication.php" />
         <option value="$PROJECT_DIR$/module/Application/src/Application/Form/ReferralForm.php" />
@@ -178,15 +149,18 @@
         <option value="$PROJECT_DIR$/js/lib.js" />
         <option value="$PROJECT_DIR$/module/Application/src/Application/Form/ReferralFieldset.php" />
         <option value="$PROJECT_DIR$/config/autoload/vocabulary.local.php" />
-        <option value="$PROJECT_DIR$/module/Application/view/partial/footer.phtml" />
-        <option value="$PROJECT_DIR$/module/Application/src/Application/Controller/IndexController.php" />
-        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/module/League/src/League/Service/League.php" />
         <option value="$PROJECT_DIR$/module/League/config/module.config.php" />
         <option value="$PROJECT_DIR$/module/Application/src/Application/Service/Search.php" />
         <option value="$PROJECT_DIR$/module/Application/view/application/index/search.phtml" />
-        <option value="$PROJECT_DIR$/module/Application/config/module.config.php" />
         <option value="$PROJECT_DIR$/module/Application/view/application/index/result.phtml" />
+        <option value="$PROJECT_DIR$/module/League/src/League/Model/ChampionStats.php" />
+        <option value="$PROJECT_DIR$/module/Application/config/module.config.php" />
+        <option value="$PROJECT_DIR$/module/Application/src/Application/Controller/IndexController.php" />
+        <option value="$PROJECT_DIR$/module/Application/view/application/index/about.phtml" />
+        <option value="$PROJECT_DIR$/config/autoload/global.php" />
+        <option value="$PROJECT_DIR$/module/Application/view/partial/footer.phtml" />
+        <option value="$PROJECT_DIR$/css/style.css" />
       </list>
     </option>
   </component>
@@ -256,6 +230,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -820,34 +795,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="leaguepick" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="leaguepick" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="leaguepick" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="leaguepick" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -886,7 +833,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -899,11 +845,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\webserver\Apache2.2\htdocs\leaguepick\module\Application\view\application\index" />
       <recent name="C:\webserver\Apache2.2\htdocs\leaguepick\module\Application\src\Application\Factory" />
       <recent name="C:\webserver\Apache2.2\htdocs\leaguepick\module\Application\src\Application\Form" />
       <recent name="C:\webserver\Apache2.2\htdocs\leaguepick\module\Application\src\Application\Entity" />
       <recent name="C:\webserver\Apache2.2\htdocs\leaguepick\css" />
-      <recent name="C:\webserver\Apache2.2\htdocs\leaguepick\module\League\src\League\Model" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\webserver\Apache2.2\htdocs\leaguepick\js" />
@@ -971,7 +917,11 @@
       <created>1406992706100</created>
       <updated>1406992706100</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="v1.5 various fixes">
+      <created>1407063252007</created>
+      <updated>1407063252007</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -995,8 +945,8 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929292" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1016,17 +966,13 @@
     <MESSAGE value="v1.2 added the mobile version and the donation link" />
     <MESSAGE value="v1.3 small fixes to the algorithm" />
     <MESSAGE value="v1.4 added the referral program" />
-    <option name="LAST_COMMIT_MESSAGE" value="v1.4 added the referral program" />
+    <MESSAGE value="v1.5 various fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1.5 various fixes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/jquery-1.11.0.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="0" selection-end="96381" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="170" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/jquery.selectbox-0.2.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="7296" selection-start="7296" selection-end="7296" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="926" />
@@ -1050,11 +996,6 @@
     <entry file="file://$PROJECT_DIR$/module/League/src/League/Model/RankedStatsDto.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="37" selection-start="510" selection-end="526" vertical-scroll-proportion="0.4903846" vertical-offset="0" max-vertical-offset="1496" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/League/src/League/Model/PlayerDto.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1292" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/module/Application/src/Application/Service/BaseService.php">
@@ -1147,11 +1088,6 @@
         <state line="20" column="20" selection-start="309" selection-end="309" vertical-scroll-proportion="0.0" vertical-offset="49" max-vertical-offset="612" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/League/src/League/Model/ChampionStats.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="34" selection-start="1156" selection-end="1156" vertical-scroll-proportion="3.2692308" vertical-offset="782" max-vertical-offset="2924" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/module/League/src/League/Entity/Champion.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="71" selection-start="260" selection-end="317" vertical-scroll-proportion="0.18162394" vertical-offset="0" max-vertical-offset="3196" />
@@ -1170,11 +1106,6 @@
     <entry file="file://$PROJECT_DIR$/module/Application/src/Application/Entity/Referral.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="84" column="44" selection-start="1597" selection-end="1597" vertical-scroll-proportion="-26.192308" vertical-offset="662" max-vertical-offset="1802" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/autoload/global.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="19" selection-start="477" selection-end="477" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="255" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/module/Application/src/Application/Entity/ReferralApplication.php">
@@ -1209,98 +1140,118 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="32" selection-start="155" selection-end="155" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1428">
-          <folding />
-        </state>
+        <state line="5" column="32" selection-start="155" selection-end="155" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1428" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/lib.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="28" selection-start="415" selection-end="415" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2958">
-          <folding />
-        </state>
+        <state line="14" column="28" selection-start="415" selection-end="415" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2958" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/module/Application/src/Application/Form/ReferralFieldset.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="107" selection-start="2531" selection-end="2531" vertical-scroll-proportion="0.0" vertical-offset="1224" max-vertical-offset="1717">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Application/view/partial/footer.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="126" selection-start="135" selection-end="135" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="289">
-          <folding />
-        </state>
+        <state line="72" column="107" selection-start="2531" selection-end="2531" vertical-scroll-proportion="0.0" vertical-offset="1224" max-vertical-offset="1717" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/module/Application/view/application/index/referral.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="88" selection-start="1342" selection-end="1342" vertical-scroll-proportion="0.0" vertical-offset="527" max-vertical-offset="680">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="1" selection-start="2320" selection-end="2320" vertical-scroll-proportion="0.0" vertical-offset="1218" max-vertical-offset="9316">
+        <state line="31" column="88" selection-start="1342" selection-end="1342" vertical-scroll-proportion="0.5630342" vertical-offset="0" max-vertical-offset="936">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/module/League/config/module.config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="13" selection-start="495" selection-end="495" vertical-scroll-proportion="-12.423077" vertical-offset="0" max-vertical-offset="697">
+        <state line="19" column="13" selection-start="495" selection-end="495" vertical-scroll-proportion="0.34508547" vertical-offset="0" max-vertical-offset="936">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/autoload/vocabulary.local.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="2" selection-start="1073" selection-end="1178" vertical-scroll-proportion="0.32189348" vertical-offset="0" max-vertical-offset="845">
-          <folding />
-        </state>
+        <state line="16" column="2" selection-start="1073" selection-end="1178" vertical-scroll-proportion="0.32189348" vertical-offset="0" max-vertical-offset="845" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/module/League/src/League/Service/League.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="31" selection-start="865" selection-end="865" vertical-scroll-proportion="-6.5384617" vertical-offset="119" max-vertical-offset="4182">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Application/src/Application/Controller/IndexController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="26" selection-start="755" selection-end="755" vertical-scroll-proportion="5.8846154" vertical-offset="510" max-vertical-offset="5695">
+        <state line="25" column="31" selection-start="865" selection-end="865" vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="4318">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/module/Application/src/Application/Service/Search.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="17" selection-start="2463" selection-end="2463" vertical-scroll-proportion="3.2692308" vertical-offset="969" max-vertical-offset="3230">
+        <state line="58" column="17" selection-start="2463" selection-end="2463" vertical-scroll-proportion="0.0" vertical-offset="986" max-vertical-offset="3332">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/module/Application/view/application/index/search.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="71" selection-start="808" selection-end="808" vertical-scroll-proportion="-7.0" vertical-offset="0" max-vertical-offset="578">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Application/config/module.config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="39" selection-start="1595" selection-end="1595" vertical-scroll-proportion="-22.884615" vertical-offset="85" max-vertical-offset="3349">
+        <state line="21" column="71" selection-start="808" selection-end="808" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="578">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/module/Application/view/application/index/result.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="49" selection-start="1156" selection-end="1156" vertical-scroll-proportion="0.35126236" vertical-offset="122" max-vertical-offset="2295">
+        <state line="39" column="36" selection-start="1156" selection-end="2012" vertical-scroll-proportion="0.60470086" vertical-offset="97" max-vertical-offset="2295">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/League/src/League/Model/PlayerDto.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1292">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/League/src/League/Model/ChampionStats.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="28" selection-start="1285" selection-end="1285" vertical-scroll-proportion="-15.038462" vertical-offset="374" max-vertical-offset="2924">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Application/config/module.config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="95" column="42" selection-start="3909" selection-end="3909" vertical-scroll-proportion="-32.73077" vertical-offset="764" max-vertical-offset="3519">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Application/src/Application/Controller/IndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="5" selection-start="889" selection-end="889" vertical-scroll-proportion="-5.8846154" vertical-offset="357" max-vertical-offset="5797">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Application/view/application/index/about.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="37" selection-start="2323" selection-end="2323" vertical-scroll-proportion="-24.192308" vertical-offset="0" max-vertical-offset="816">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/autoload/global.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="15" selection-start="495" selection-end="495" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="272">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="385" column="19" selection-start="8251" selection-end="8251" vertical-scroll-proportion="0.0" vertical-offset="5991" max-vertical-offset="10132">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Application/view/partial/footer.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="69" selection-start="88" selection-end="88" vertical-scroll-proportion="0.036324788" vertical-offset="0" max-vertical-offset="936">
           <folding />
         </state>
       </provider>

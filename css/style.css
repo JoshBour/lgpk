@@ -246,6 +246,50 @@ header {
             width: 40px;
         }
 
+
+        /* ===================================================== */
+        /*                      About Page                     */
+
+        #about{
+            text-align: left;
+            width: 550px;
+            margin: 0 auto;
+        }
+
+        #about li a{
+            font-size:14px;
+        }
+
+        #about li p{
+            padding:5px 0 10px 0;
+        }
+
+        #about ol{
+            padding: 0 17px 17px 17px;
+        }
+
+        #about ol li{
+            margin:15px 0;
+        }
+
+        #about span{
+            display:block;
+        }
+
+        #about span.question{
+            color:white;
+            font: normal 15px "Source sans pro", sans-serif;
+            margin-bottom: 7px;
+            padding: 7px;
+            border-bottom: 1px solid #888;
+            background: #134;
+        }
+
+        #about p.answer{
+            text-align:left;
+            padding-left:7px;
+        }
+
     /* ===================================================== */
     /*                      Referral Page                     */
         #referralForm{
@@ -336,6 +380,10 @@ footer {
     position: absolute;
     padding: 10px 0;
     width: 100%;
+}
+
+footer nav{
+    margin-bottom:8px;
 }
 
 footer.halfSized {
