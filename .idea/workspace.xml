@@ -2,582 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b18605f-95df-4a5f-a812-dacb37521815" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/firstPaymentsUSD.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/jquery.selectBox-arrow.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/video-mask-hover.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/video-mask.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Admin/src/Admin/Form/AddTutorialFieldset.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Admin/src/Admin/Form/AddTutorialForm.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Admin/src/Admin/Factory/AddTutorialFormFactory.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Admin/src/Admin/Controller/IndexController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Admin/Module.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Admin/src/Admin/Entity/Referral.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Admin/src/Admin/Repository/ReferralRepository.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/League/src/League/Entity/Tutorial.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/League/src/League/Service/Tutorial.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Application/src/Application/Form/TutorialFieldset.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Application/src/Application/Form/TutorialForm.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Application/src/Application/Factory/TutorialFormFactory.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/League/src/League/Repository/TutorialRepository.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Admin/view/admin/index/add-tutorials.phtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Admin/autoload_classmap.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Admin/autoload_function.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Admin/autoload_register.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Admin/view/admin/index/generate.phtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/html2canvas.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Admin/config/module.config.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/perfect-scrollbar.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/perfect-scrollbar.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Application/view/application/index/tutorials.phtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/firstPayments.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/logo-big.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/search-hover.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/search.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Youtube/src/Youtube/Model/Channel.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Youtube/Module.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Youtube/src/Youtube/Model/PlaylistItems.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Youtube/src/Youtube/Model/Response.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Youtube/src/Youtube/Model/Video.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Youtube/src/Youtube/Service/Youtube.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Youtube/src/Youtube/Model/YoutubeEntry.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Youtube/autoload_classmap.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Youtube/autoload_function.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Youtube/autoload_register.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Youtube/config/module.config.php" />
       <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\doctrine\collections\tests\Doctrine\Tests\DoctrineTestCase.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\.gitattributes" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Autoloader.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\CachedObjectStorageFactory.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\CachedObjectStorage\APC.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\CachedObjectStorage\CacheBase.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\CachedObjectStorage\DiscISAM.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\CachedObjectStorage\ICache.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\CachedObjectStorage\Igbinary.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\CachedObjectStorage\Memcache.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\CachedObjectStorage\Memory.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\CachedObjectStorage\MemoryGZip.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\CachedObjectStorage\MemorySerialized.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\CachedObjectStorage\PHPTemp.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\CachedObjectStorage\SQLite.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\CachedObjectStorage\SQLite3.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\CachedObjectStorage\Wincache.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\CalcEngine\CyclicReferenceStack.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\CalcEngine\Logger.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Calculation.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Calculation\Database.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Calculation\DateTime.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Calculation\Engineering.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Calculation\Exception.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Calculation\ExceptionHandler.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Calculation\Financial.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Calculation\FormulaParser.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Calculation\FormulaToken.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Calculation\Function.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Calculation\Functions.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Calculation\Logical.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Calculation\LookupRef.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Calculation\MathTrig.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Calculation\Statistical.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Calculation\TextData.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Calculation\Token\Stack.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Calculation\functionlist.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Cell.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Cell\AdvancedValueBinder.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Cell\DataType.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Cell\DataValidation.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Cell\DefaultValueBinder.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Cell\Hyperlink.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Cell\IValueBinder.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Chart.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Chart\DataSeries.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Chart\DataSeriesValues.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Chart\Exception.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Chart\Layout.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Chart\Legend.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Chart\PlotArea.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Chart\Renderer\PHP Charting Libraries.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Chart\Renderer\jpgraph.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Chart\Title.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Comment.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\DocumentProperties.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\DocumentSecurity.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Exception.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\HashTable.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\IComparable.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\IOFactory.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\NamedRange.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Reader\Abstract.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Reader\CSV.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Reader\DefaultReadFilter.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Reader\Excel2003XML.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Reader\Excel2007.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Reader\Excel2007\Chart.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Reader\Excel2007\Theme.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Reader\Excel5.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Reader\Excel5\Escher.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Reader\Excel5\MD5.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Reader\Excel5\RC4.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Reader\Exception.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Reader\Gnumeric.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Reader\HTML.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Reader\IReadFilter.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Reader\IReader.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Reader\OOCalc.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Reader\SYLK.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\ReferenceHelper.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\RichText.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\RichText\ITextElement.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\RichText\Run.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\RichText\TextElement.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Settings.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Shared\CodePage.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Shared\Date.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Shared\Drawing.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Shared\Escher.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Shared\Escher\DgContainer.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Shared\Escher\DgContainer\SpgrContainer.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Shared\Escher\DgContainer\SpgrContainer\SpContainer.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Shared\Escher\DggContainer.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Shared\Escher\DggContainer\BstoreContainer.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Shared\Escher\DggContainer\BstoreContainer\BSE.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Shared\Escher\DggContainer\BstoreContainer\BSE\Blip.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Shared\Excel5.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Shared\File.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Shared\Font.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Shared\JAMA\CHANGELOG.TXT" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Shared\JAMA\CholeskyDecomposition.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Shared\JAMA\EigenvalueDecomposition.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Shared\JAMA\LUDecomposition.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Shared\JAMA\Matrix.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Shared\JAMA\QRDecomposition.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Shared\JAMA\SingularValueDecomposition.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Shared\JAMA\utils\Error.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Shared\JAMA\utils\Maths.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Shared\OLE.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Shared\OLERead.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Shared\OLE\ChainedBlockStream.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Shared\OLE\PPS.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Shared\OLE\PPS\File.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Shared\OLE\PPS\Root.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Shared\PCLZip\gnu-lgpl.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Shared\PCLZip\pclzip.lib.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Shared\PCLZip\readme.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Shared\PasswordHasher.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Shared\String.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Shared\TimeZone.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Shared\XMLWriter.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Shared\ZipArchive.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Shared\ZipStreamWrapper.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Shared\trend\bestFitClass.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Shared\trend\exponentialBestFitClass.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Shared\trend\linearBestFitClass.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Shared\trend\logarithmicBestFitClass.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Shared\trend\polynomialBestFitClass.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Shared\trend\powerBestFitClass.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Shared\trend\trendClass.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Style.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Style\Alignment.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Style\Border.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Style\Borders.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Style\Color.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Style\Conditional.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Style\Fill.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Style\Font.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Style\NumberFormat.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Style\Protection.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Style\Supervisor.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\WorksheetIterator.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet\AutoFilter.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet\AutoFilter\Column.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet\AutoFilter\Column\Rule.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet\BaseDrawing.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet\CellIterator.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet\ColumnDimension.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet\Drawing.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet\Drawing\Shadow.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet\HeaderFooter.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet\HeaderFooterDrawing.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet\MemoryDrawing.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet\PageMargins.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet\PageSetup.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet\Protection.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet\Row.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet\RowDimension.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet\RowIterator.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Worksheet\SheetView.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Writer\Abstract.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Writer\CSV.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Writer\Excel2007.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Writer\Excel2007\Chart.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Writer\Excel2007\Comments.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Writer\Excel2007\ContentTypes.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Writer\Excel2007\DocProps.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Writer\Excel2007\Drawing.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Writer\Excel2007\Rels.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Writer\Excel2007\RelsRibbon.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Writer\Excel2007\RelsVBA.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Writer\Excel2007\StringTable.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Writer\Excel2007\Style.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Writer\Excel2007\Theme.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Writer\Excel2007\Workbook.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Writer\Excel2007\Worksheet.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Writer\Excel2007\WriterPart.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Writer\Excel5.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Writer\Excel5\BIFFwriter.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Writer\Excel5\Escher.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Writer\Excel5\Font.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Writer\Excel5\Parser.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Writer\Excel5\Workbook.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Writer\Excel5\Worksheet.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Writer\Excel5\Xf.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Writer\Exception.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Writer\HTML.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Writer\IWriter.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Writer\PDF.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Writer\PDF\Core.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Writer\PDF\DomPDF.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Writer\PDF\mPDF.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\Writer\PDF\tcPDF.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\locale\bg\config" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\locale\cs\config" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\locale\cs\functions" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\locale\da\config" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\locale\da\functions" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\locale\de\config" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\locale\de\functions" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\locale\en\uk\config" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\locale\es\config" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\locale\es\functions" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\locale\fi\config" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\locale\fi\functions" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\locale\fr\config" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\locale\fr\functions" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\locale\hu\config" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\locale\hu\functions" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\locale\it\config" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\locale\it\functions" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\locale\nl\config" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\locale\nl\functions" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\locale\no\config" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\locale\no\functions" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\locale\pl\config" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\locale\pl\functions" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\locale\pt\br\config" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\locale\pt\br\functions" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\locale\pt\config" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\locale\pt\functions" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\locale\ru\config" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\locale\ru\functions" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\locale\sv\config" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\locale\sv\functions" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\locale\tr\config" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Classes\PHPExcel\locale\tr\functions" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\01pharSimple.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\01simple-download-pdf.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\01simple-download-xls.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\01simple-download-xlsx.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\01simple.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\01simplePCLZip.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\02types-xls.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\02types.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\03formulas.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\04printing.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\05featuredemo.inc.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\05featuredemo.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\06largescale-with-cellcaching-sqlite.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\06largescale-with-cellcaching-sqlite3.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\06largescale-with-cellcaching.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\06largescale-xls.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\06largescale.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\07reader.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\07readerPCLZip.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\08conditionalformatting.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\08conditionalformatting2.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\09pagebreaks.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\10autofilter-selection-1.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\10autofilter-selection-2.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\10autofilter-selection-display.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\10autofilter.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\11documentsecurity-xls.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\11documentsecurity.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\12cellProtection.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\13calculation.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\14excel5.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\15datavalidation-xls.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\15datavalidation.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\16csv.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\17html.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\18extendedcalculation.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\19namedrange.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\20readexcel5.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\21pdf.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\22heavilyformatted.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\23sharedstyles.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\24readfilter.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\25inmemoryimage.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\26utf8.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\27imagesexcel5.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\28iterator.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\29advancedvaluebinder.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\30template.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\31docproperties_write-xls.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\31docproperties_write.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\32chartreadwrite.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\33chartcreate-area.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\33chartcreate-bar-stacked.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\33chartcreate-bar.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\33chartcreate-column-2.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\33chartcreate-column.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\33chartcreate-composite.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\33chartcreate-line.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\33chartcreate-multiple-charts.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\33chartcreate-pie.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\33chartcreate-radar.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\33chartcreate-scatter.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\33chartcreate-stock.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\34chartupdate.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\35chartrender.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\36chartreadwriteHTML.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\36chartreadwritePDF.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\37page_layout_view.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\38cloneWorksheet.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\40duplicateStyle.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\Excel2003XMLReader.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\Excel2003XMLTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\GnumericReader.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\GnumericTest.gnumeric" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\OOCalcReader.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\OOCalcReaderPCLZip.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\OOCalcTest.ods" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\Quadratic.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\Quadratic2.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\SylkReader.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\SylkTest.slk" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\XMLReader.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\XMLTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\images\officelogo.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\images\paid.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\images\phpexcel_logo.gif" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\images\termsconditions.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\Examples\runall.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\changelog.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\composer.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\install.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\license.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\Classes\PHPExcel\AutoloaderTest.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\Classes\PHPExcel\CalculationTest.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\Classes\PHPExcel\Calculation\DateTimeTest.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\Classes\PHPExcel\Calculation\EngineeringTest.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\Classes\PHPExcel\Calculation\FinancialTest.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\Classes\PHPExcel\Calculation\FunctionsTest.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\Classes\PHPExcel\Calculation\LogicalTest.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\Classes\PHPExcel\Calculation\LookupRefTest.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\Classes\PHPExcel\Calculation\MathTrigTest.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\Classes\PHPExcel\Calculation\TextDataTest.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\Classes\PHPExcel\CellTest.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\Classes\PHPExcel\Cell\AdvancedValueBinderTest.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\Classes\PHPExcel\Cell\DataTypeTest.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\Classes\PHPExcel\Cell\HyperlinkTest.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\Classes\PHPExcel\Chart\DataSeriesValuesTest.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\Classes\PHPExcel\Chart\LayoutTest.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\Classes\PHPExcel\Chart\LegendTest.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\Classes\PHPExcel\ReferenceHelperTest.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\Classes\PHPExcel\Shared\CodePageTest.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\Classes\PHPExcel\Shared\DateTest.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\Classes\PHPExcel\Shared\FileTest.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\Classes\PHPExcel\Shared\FontTest.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\Classes\PHPExcel\Shared\PasswordHasherTest.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\Classes\PHPExcel\Shared\StringTest.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\Classes\PHPExcel\Shared\TimeZoneTest.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\Classes\PHPExcel\Style\ColorTest.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\Classes\PHPExcel\Style\NumberFormatTest.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\Classes\PHPExcel\Worksheet\AutoFilterTest.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\Classes\PHPExcel\Worksheet\AutoFilter\ColumnTest.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\Classes\PHPExcel\Worksheet\AutoFilter\Column\RuleTest.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\Classes\PHPExcel\Worksheet\CellCollectionTest.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\bootstrap.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\custom\Complex.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\custom\complexAssert.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\phpunit-cc.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\phpunit.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\CalculationBinaryComparisonOperation.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\DateTime\DATE.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\DateTime\DATEDIF.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\DateTime\DATEVALUE.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\DateTime\DAY.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\DateTime\DAYS360.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\DateTime\EDATE.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\DateTime\EOMONTH.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\DateTime\HOUR.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\DateTime\MINUTE.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\DateTime\MONTH.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\DateTime\NETWORKDAYS.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\DateTime\SECOND.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\DateTime\TIME.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\DateTime\TIMEVALUE.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\DateTime\WEEKDAY.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\DateTime\WEEKNUM.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\DateTime\WORKDAY.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\DateTime\YEAR.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\DateTime\YEARFRAC.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Engineering\BESSELI.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Engineering\BESSELJ.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Engineering\BESSELK.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Engineering\BESSELY.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Engineering\BIN2DEC.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Engineering\BIN2HEX.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Engineering\BIN2OCT.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Engineering\COMPLEX.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Engineering\CONVERTUOM.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Engineering\DEC2BIN.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Engineering\DEC2HEX.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Engineering\DEC2OCT.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Engineering\DELTA.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Engineering\ERF.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Engineering\ERFC.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Engineering\GESTEP.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Engineering\HEX2BIN.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Engineering\HEX2DEC.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Engineering\HEX2OCT.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Engineering\IMABS.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Engineering\IMAGINARY.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Engineering\IMARGUMENT.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Engineering\IMCONJUGATE.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Engineering\IMCOS.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Engineering\IMDIV.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Engineering\IMEXP.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Engineering\IMLN.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Engineering\IMLOG10.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Engineering\IMLOG2.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Engineering\IMPOWER.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Engineering\IMPRODUCT.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Engineering\IMREAL.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Engineering\IMSIN.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Engineering\IMSQRT.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Engineering\IMSUB.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Engineering\IMSUM.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Engineering\OCT2BIN.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Engineering\OCT2DEC.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Engineering\OCT2HEX.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Financial\ACCRINT.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Financial\ACCRINTM.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Financial\AMORDEGRC.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Financial\AMORLINC.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Financial\COUPDAYBS.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Financial\COUPDAYS.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Financial\COUPDAYSNC.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Financial\COUPNCD.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Financial\COUPNUM.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Financial\COUPPCD.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Financial\CUMIPMT.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Financial\CUMPRINC.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Financial\DB.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Financial\DDB.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Financial\DISC.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Financial\DOLLARDE.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Financial\DOLLARFR.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Financial\EFFECT.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Financial\FV.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Financial\FVSCHEDULE.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Financial\INTRATE.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Financial\IPMT.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Financial\IRR.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Financial\ISPMT.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Financial\MIRR.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Financial\NOMINAL.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Financial\NPER.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Financial\NPV.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Financial\PRICE.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Financial\RATE.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Financial\XIRR.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Functions\ERROR_TYPE.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Functions\IS_BLANK.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Functions\IS_ERR.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Functions\IS_ERROR.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Functions\IS_EVEN.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Functions\IS_LOGICAL.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Functions\IS_NA.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Functions\IS_NONTEXT.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Functions\IS_NUMBER.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Functions\IS_ODD.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Functions\IS_TEXT.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Functions\N.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Functions\TYPE.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Logical\AND.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Logical\IF.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Logical\IFERROR.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Logical\NOT.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\Logical\OR.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\LookupRef\HLOOKUP.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\LookupRef\VLOOKUP.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\MathTrig\ATAN2.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\MathTrig\CEILING.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\MathTrig\COMBIN.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\MathTrig\EVEN.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\MathTrig\FACT.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\MathTrig\FACTDOUBLE.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\MathTrig\FLOOR.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\MathTrig\GCD.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\MathTrig\INT.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\MathTrig\LCM.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\MathTrig\LOG.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\MathTrig\MDETERM.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\MathTrig\MINVERSE.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\MathTrig\MMULT.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\MathTrig\MOD.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\MathTrig\MROUND.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\MathTrig\MULTINOMIAL.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\MathTrig\ODD.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\MathTrig\POWER.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\MathTrig\PRODUCT.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\MathTrig\QUOTIENT.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\MathTrig\ROMAN.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\MathTrig\ROUNDDOWN.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\MathTrig\ROUNDUP.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\MathTrig\SERIESSUM.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\MathTrig\SIGN.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\MathTrig\SQRTPI.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\MathTrig\SUMSQ.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\MathTrig\TRUNC.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\TextData\CHAR.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\TextData\CLEAN.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\TextData\CODE.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\TextData\CONCATENATE.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\TextData\DOLLAR.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\TextData\FIND.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\TextData\FIXED.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\TextData\LEFT.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\TextData\LEN.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\TextData\LOWER.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\TextData\MID.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\TextData\PROPER.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\TextData\REPLACE.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\TextData\RIGHT.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\TextData\SEARCH.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\TextData\SUBSTITUTE.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\TextData\T.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\TextData\TEXT.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\TextData\TRIM.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Calculation\TextData\UPPER.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\CellAbsoluteCoordinate.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\CellAbsoluteReference.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\CellBuildRange.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\CellCoordinates.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\CellExtractAllCellReferencesInRange.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\CellGetRangeBoundaries.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\CellRangeBoundaries.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\CellRangeDimension.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\CellSplitRange.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\ColumnIndex.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\ColumnString.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Shared\CentimeterSizeToPixels.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Shared\CodePage.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Shared\DateTimeExcelToPHP1900.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Shared\DateTimeExcelToPHP1900Timezone.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Shared\DateTimeExcelToPHP1904.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Shared\DateTimeFormatCodes.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Shared\DateTimeFormattedPHPToExcel1900.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Shared\DateTimePHPToExcel1900.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Shared\DateTimePHPToExcel1904.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Shared\FontSizeToPixels.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Shared\InchSizeToPixels.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Shared\PasswordHashes.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Style\ColorChangeBrightness.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Style\ColorGetBlue.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Style\ColorGetGreen.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Style\ColorGetRed.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\rawTestData\Style\NumberFormat.data" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\phpoffice\phpexcel\unitTests\testDataFileIterator.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/cache/.coveralls.yml" afterPath="$PROJECT_DIR$/vendor/doctrine/cache/.coveralls.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/.coveralls.yml" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/.coveralls.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/annotations/.gitignore" afterPath="$PROJECT_DIR$/vendor/doctrine/annotations/.gitignore" />
@@ -607,14 +47,12 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/Input/ArgvInput.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/Input/ArgvInput.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/collections/lib/Doctrine/Common/Collections/ArrayCollection.php" afterPath="$PROJECT_DIR$/vendor/doctrine/collections/lib/Doctrine/Common/Collections/ArrayCollection.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Id/AssignedGenerator.php" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Id/AssignedGenerator.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Application/src/Application/Service/BaseService.php" afterPath="$PROJECT_DIR$/module/Application/src/Application/Service/BaseService.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Types/BooleanType.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Types/BooleanType.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/CHANGELOG.md" afterPath="$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/CHANGELOG.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/cache/lib/Doctrine/Common/Cache/CacheProvider.php" afterPath="$PROJECT_DIR$/vendor/doctrine/cache/lib/Doctrine/Common/Cache/CacheProvider.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/CachedReader.php" afterPath="$PROJECT_DIR$/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/CachedReader.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataInfo.php" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataInfo.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/annotations/tests/Doctrine/Tests/Common/Annotations/Fixtures/ClassWithConstants.php" afterPath="$PROJECT_DIR$/vendor/doctrine/annotations/tests/Doctrine/Tests/Common/Annotations/Fixtures/ClassWithConstants.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/doctrine-module/src/DoctrineModule/Service/CliFactory.php" afterPath="$PROJECT_DIR$/vendor/doctrine/doctrine-module/src/DoctrineModule/Service/CliFactory.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/collections/tests/Doctrine/Tests/Common/Collections/ClosureExpressionVisitorTest.php" afterPath="$PROJECT_DIR$/vendor/doctrine/collections/tests/Doctrine/Tests/Common/Collections/ClosureExpressionVisitorTest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/collections/lib/Doctrine/Common/Collections/Collection.php" afterPath="$PROJECT_DIR$/vendor/doctrine/collections/lib/Doctrine/Common/Collections/Collection.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/collections/tests/Doctrine/Tests/Common/Collections/CollectionTest.php" afterPath="$PROJECT_DIR$/vendor/doctrine/collections/tests/Doctrine/Tests/Common/Collections/CollectionTest.php" />
@@ -646,11 +84,9 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/Helper/Helper.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/Helper/Helper.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Internal/Hydration/HydrationException.php" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Internal/Hydration/HydrationException.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/Annotation/IgnoreAnnotation.php" afterPath="$PROJECT_DIR$/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/Annotation/IgnoreAnnotation.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Application/src/Application/Controller/IndexController.php" afterPath="$PROJECT_DIR$/module/Application/src/Application/Controller/IndexController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/IndexedReader.php" afterPath="$PROJECT_DIR$/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/IndexedReader.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/inflector/lib/Doctrine/Common/Inflector/Inflector.php" afterPath="$PROJECT_DIR$/vendor/doctrine/inflector/lib/Doctrine/Common/Inflector/Inflector.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/inflector/tests/Doctrine/Tests/Common/Inflector/InflectorTest.php" afterPath="$PROJECT_DIR$/vendor/doctrine/inflector/tests/Doctrine/Tests/Common/Inflector/InflectorTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/Josh.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/Josh.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/cache/LICENSE" afterPath="$PROJECT_DIR$/vendor/doctrine/cache/LICENSE" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/collections/LICENSE" afterPath="$PROJECT_DIR$/vendor/doctrine/collections/LICENSE" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/common/LICENSE" afterPath="$PROJECT_DIR$/vendor/doctrine/common/LICENSE" />
@@ -686,17 +122,10 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/README.md" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/README.md" afterPath="$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/Reader.php" afterPath="$PROJECT_DIR$/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/Reader.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Application/src/Application/Entity/Referral.php" afterPath="$PROJECT_DIR$/module/Application/src/Application/Entity/Referral.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Application/src/Application/Entity/ReferralApplication.php" afterPath="$PROJECT_DIR$/module/Application/src/Application/Entity/ReferralApplication.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Application/src/Application/Form/ReferralFieldset.php" afterPath="$PROJECT_DIR$/module/Application/src/Application/Form/ReferralFieldset.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Application/src/Application/Form/ReferralForm.php" afterPath="$PROJECT_DIR$/module/Application/src/Application/Form/ReferralForm.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Application/src/Application/Entity/ReferralVisitor.php" afterPath="$PROJECT_DIR$/module/Application/src/Application/Entity/ReferralVisitor.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/SQLServer2012Platform.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/SQLServer2012Platform.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/SQLServerPlatform.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/SQLServerPlatform.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/SQLSrv/SQLSrvConnection.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/SQLSrv/SQLSrvConnection.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Application/src/Application/Service/Search.php" afterPath="$PROJECT_DIR$/module/Application/src/Application/Service/Search.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/collections/lib/Doctrine/Common/Collections/Selectable.php" afterPath="$PROJECT_DIR$/vendor/doctrine/collections/lib/Doctrine/Common/Collections/Selectable.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/doctrine-orm-module/tests/DoctrineORMModuleTest/Util/ServiceManagerFactory.php" afterPath="$PROJECT_DIR$/vendor/doctrine/doctrine-orm-module/tests/DoctrineORMModuleTest/Util/ServiceManagerFactory.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/Shell.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/Shell.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/SimpleAnnotationReader.php" afterPath="$PROJECT_DIR$/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/SimpleAnnotationReader.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/annotations/tests/Doctrine/Tests/Common/Annotations/SimpleAnnotationReaderTest.php" afterPath="$PROJECT_DIR$/vendor/doctrine/annotations/tests/Doctrine/Tests/Common/Annotations/SimpleAnnotationReaderTest.php" />
@@ -720,12 +149,10 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Version.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Version.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Version.php" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Version.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Tools/Export/Driver/XmlExporter.php" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Tools/Export/Driver/XmlExporter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Application/view/application/index/about.phtml" afterPath="$PROJECT_DIR$/module/Application/view/application/index/about.phtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/reference/advanced-configuration.rst" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/reference/advanced-configuration.rst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/cookbook/advanced-field-value-conversion-using-custom-mapping-types.rst" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/cookbook/advanced-field-value-conversion-using-custom-mapping-types.rst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/cookbook/aggregate-fields.rst" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/cookbook/aggregate-fields.rst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/reference/annotations-reference.rst" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/reference/annotations-reference.rst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/application.config.php" afterPath="$PROJECT_DIR$/config/application.config.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/Tests/Fixtures/application_1.json" afterPath="$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/Tests/Fixtures/application_1.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/Tests/Fixtures/application_1.md" afterPath="$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/Tests/Fixtures/application_1.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/Tests/Fixtures/application_1.xml" afterPath="$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/Tests/Fixtures/application_1.xml" />
@@ -745,7 +172,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/common/build.xml" afterPath="$PROJECT_DIR$/vendor/doctrine/common/build.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/reference/caching.rst" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/reference/caching.rst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/reference/change-tracking-policies.rst" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/reference/change-tracking-policies.rst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bin/classmap_generator.php" afterPath="$PROJECT_DIR$/vendor/bin/classmap_generator.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/Tests/Fixtures/command_1.json" afterPath="$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/Tests/Fixtures/command_1.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/Tests/Fixtures/command_1.md" afterPath="$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/Tests/Fixtures/command_1.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/Tests/Fixtures/command_1.xml" afterPath="$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/Tests/Fixtures/command_1.xml" />
@@ -768,7 +194,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/cookbook/decorator-pattern.rst" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/cookbook/decorator-pattern.rst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/bin/doctrine-dbal" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/bin/doctrine-dbal" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/doctrine-mapping.xsd" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/doctrine-mapping.xsd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bin/doctrine.php" afterPath="$PROJECT_DIR$/vendor/bin/doctrine.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/bin/doctrine" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/bin/doctrine" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/cookbook/dql-custom-walkers.rst" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/cookbook/dql-custom-walkers.rst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/reference/dql-doctrine-query-language.rst" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/reference/dql-doctrine-query-language.rst" />
@@ -778,16 +203,13 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/tutorials/extra-lazy-associations.rst" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/tutorials/extra-lazy-associations.rst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/reference/faq.rst" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/reference/faq.rst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/reference/filters.rst" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/reference/filters.rst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Application/view/partial/footer.phtml" afterPath="$PROJECT_DIR$/module/Application/view/partial/footer.phtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/tutorials/getting-started-database.rst" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/tutorials/getting-started-database.rst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/tutorials/getting-started-models.rst" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/tutorials/getting-started-models.rst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/tutorials/getting-started.rst" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/tutorials/getting-started.rst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Application/view/partial/header.phtml" afterPath="$PROJECT_DIR$/module/Application/view/partial/header.phtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/cookbook/implementing-arrayaccess-for-domain-objects.rst" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/cookbook/implementing-arrayaccess-for-domain-objects.rst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/cookbook/implementing-the-notify-changetracking-policy.rst" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/cookbook/implementing-the-notify-changetracking-policy.rst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/cookbook/implementing-wakeup-or-clone.rst" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/cookbook/implementing-wakeup-or-clone.rst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/reference/improving-performance.rst" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/reference/improving-performance.rst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/index.rst" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/index.rst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/reference/inheritance-mapping.rst" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/reference/inheritance-mapping.rst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/Tests/Fixtures/input_argument_1.json" afterPath="$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/Tests/Fixtures/input_argument_1.json" />
@@ -824,18 +246,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/Tests/Fixtures/input_option_4.xml" afterPath="$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/Tests/Fixtures/input_option_4.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/reference/installation.rst" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/reference/installation.rst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/cookbook/integrating-with-codeigniter.rst" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/cookbook/integrating-with-codeigniter.rst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/jquery.selectbox-0.2.min.js" afterPath="$PROJECT_DIR$/js/jquery.selectbox-0.2.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/jquery.selectbox.css" afterPath="$PROJECT_DIR$/css/jquery.selectbox.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Application/view/layout/layout.phtml" afterPath="$PROJECT_DIR$/module/Application/view/layout/layout.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/leaguepick.iml" afterPath="$PROJECT_DIR$/.idea/leaguepick.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/lib.js" afterPath="$PROJECT_DIR$/js/lib.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/reference/limitations-and-known-issues.rst" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/reference/limitations-and-known-issues.rst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/reference/metadata-drivers.rst" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/reference/metadata-drivers.rst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/mobile.css" afterPath="$PROJECT_DIR$/css/mobile.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Application/config/module.config.php" afterPath="$PROJECT_DIR$/module/Application/config/module.config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/League/config/module.config.php" afterPath="$PROJECT_DIR$/module/League/config/module.config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/doctrine-orm-module/config/module.config.php" afterPath="$PROJECT_DIR$/vendor/doctrine/doctrine-orm-module/config/module.config.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/cookbook/mysql-enums.rst" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/cookbook/mysql-enums.rst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/reference/namingstrategy.rst" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/reference/namingstrategy.rst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/reference/native-sql.rst" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/reference/native-sql.rst" />
@@ -851,16 +263,10 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/common/phpunit.xml.dist" afterPath="$PROJECT_DIR$/vendor/doctrine/common/phpunit.xml.dist" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/inflector/phpunit.xml.dist" afterPath="$PROJECT_DIR$/vendor/doctrine/inflector/phpunit.xml.dist" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/phpunit.xml.dist" afterPath="$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/phpunit.xml.dist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bin/pluginmap_generator.php" afterPath="$PROJECT_DIR$/vendor/bin/pluginmap_generator.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/reference/query-builder.rst" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/reference/query-builder.rst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Application/view/application/index/referral.phtml" afterPath="$PROJECT_DIR$/module/Application/view/application/index/referral.phtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/cookbook/resolve-target-entity-listener.rst" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/cookbook/resolve-target-entity-listener.rst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Application/view/application/index/result.phtml" afterPath="$PROJECT_DIR$/module/Application/view/application/index/result.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Application/view/application/index/search.phtml" afterPath="$PROJECT_DIR$/module/Application/view/application/index/search.phtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/cookbook/sql-table-prefixes.rst" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/cookbook/sql-table-prefixes.rst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/cookbook/strategy-cookbook-introduction.rst" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/cookbook/strategy-cookbook-introduction.rst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bin/templatemap_generator.php" afterPath="$PROJECT_DIR$/vendor/bin/templatemap_generator.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/toc.rst" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/toc.rst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/reference/tools.rst" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/reference/tools.rst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/reference/transactions-and-concurrency.rst" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/reference/transactions-and-concurrency.rst" />
@@ -917,7 +323,7 @@
       <file leaf-file-name="search.phtml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/module/Application/view/application/index/search.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="100" selection-start="1735" selection-end="1735" vertical-scroll-proportion="0.7177778" vertical-offset="0" max-vertical-offset="918">
+            <state line="38" column="100" selection-start="1735" selection-end="1735" vertical-scroll-proportion="1.1254356" vertical-offset="0" max-vertical-offset="918">
               <folding />
             </state>
           </provider>
@@ -1986,6 +1392,7 @@
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32929292" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -2001,7 +1408,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32828283" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929292" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -2310,7 +1716,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/module/Application/view/application/index/search.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="100" selection-start="1735" selection-end="1735" vertical-scroll-proportion="0.7177778" vertical-offset="0" max-vertical-offset="918">
+        <state line="38" column="100" selection-start="1735" selection-end="1735" vertical-scroll-proportion="1.1254356" vertical-offset="0" max-vertical-offset="918">
           <folding />
         </state>
       </provider>
