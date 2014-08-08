@@ -37,6 +37,7 @@ class ReferralForm extends Form{
 //            'security',
             'referral' => array(
                 'email',
+                'uniqueId'
             )
         ));
     }

@@ -1,12 +1,14 @@
 <?php
 return array(
-    // This should be an array of module namespaces used in the application.
+    // This should be an array of module namespaces used in the admin.
     'modules' => array(
 //        'ZendDeveloperTools',
         'DoctrineModule',
         'DoctrineORMModule',
         'Application',
         'League',
+		'Youtube',
+        'Admin',
     ),
 
     // These are various options for the listeners attached to the ModuleManager

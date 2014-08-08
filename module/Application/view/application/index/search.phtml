@@ -1,29 +1,49 @@
 <div id="main">
     <?php
-        $name = $champion->getName();
-        $kda = $champion->getKda();
-        if($kda >= 6){
-            $comment = "perfect";
-        }else if($kda >= 4.5){
-            $comment = "awesome";
-        }else if($kda >= 3){
-            $comment = "good";
-        }else if($kda >= 2){
-            $comment = "average";
-        }else{
-            $comment = "not good";
-        }
-        ?>
-        <div class="increasedLineHeight">
-            <p>Below you can see the stats for <strong><?php echo $name; ?></strong></p>
-            <img src="<?php echo $this->basePath('images/champions/' . ucwords($name) . '.png'); ?>"/>
-            <span class="score">LP SCORE: <?php echo $champion->getScore(); ?></span>
+    $name = $champion->getName();
+    $kda = $champion->getKda();
+    if ($kda >= 6) {
+        $comment = "perfect";
+    } else if ($kda >= 4.5) {
+        $comment = "awesome";
+    } else if ($kda >= 3) {
+        $comment = "good";
+    } else if ($kda >= 2) {
+        $comment = "average";
+    } else {
+        $comment = "not good";
+    }
+    ?>
+    <div class="increasedLineHeight">
+        <p>Below you can see the stats for <strong><?php echo $name; ?></strong></p>
+        <img src="<?php echo $this->basePath('images/champions/' . ucwords($name) . '.png'); ?>"/>
+        <span class="score">LP SCORE: <?php echo $champion->getScore(); ?></span>
 
-            <p>With <?php echo $name; ?> you have a <strong><?php echo $champion->getWinRatio(); ?>%</strong> win ratio. <br/>
-                This means that out of the <strong><?php echo $champion->getTotalGames(); ?></strong> games you have
-                won <strong><?php echo $champion->getGamesWon(); ?></strong>.<br/>
-                Moreover, you have a KDA of <strong><?php echo $kda; ?></strong> which is <?php echo $comment; ?>.
-            </p>
-        </div>
-         <a href="<?php echo $this->url("result",array("summoner"=>$summoner,"region"=>$region, "position" => $position, "opponent"=>$opponent)); ?>" class="redirect">Go Back</a>
+        <p>With <?php echo $name; ?> you have a <strong><?php echo $champion->getWinRatio(); ?>%</strong> win ratio.
+            <br/>
+            This means that out of the <strong><?php echo $champion->getTotalGames(); ?></strong> games you have
+            won <strong><?php echo $champion->getGamesWon(); ?></strong>.<br/>
+            Moreover, you have a KDA of <strong><?php echo $kda; ?></strong> which is <?php echo $comment; ?>.
+        </p>
+    </div>
+    <h2><?php echo $name . ' Pro Gameplay'; ?></h2>
+    <?php if (count($tutorials) > 0): ?>
+        <ul id="tutorials">
+            <?php foreach ($tutorials as $tutorial):
+                $id = $tutorial->getVideoId();
+                ?>
+                <li class="tutorial-<?php echo $id; ?>">
+                    <a href="https://www.youtube.com/watch?v=<?php echo $id; ?>">
+                        <img src="<?php echo $tutorial->getThumbnail('medium'); ?>"/>
+                        <span
+                            class="tutorialTitle"><?php echo $tutorial->getPlayer() . ' - ' . $name . ' vs ' . $tutorial->getOpponent()->getName() . '<br />' . $tutorial->getPosition(); ?></span>
+                    </a>
+                    <div class="videoMask"></div>
+                </li>
+            <?php endforeach; ?>
+        </ul>
+    <?php else: ?>
+        <div class="notFound">There were no gameplay results found for your criteria.</div>
+    <?php endif; ?>
+    <a href="<?php echo $this->url("result", $params); ?>" class="redirect">Go Back</a>
 </div>

@@ -27,7 +27,7 @@ use Zend\ServiceManager\ServiceLocatorInterface;
 use Zend\ServiceManager\ServiceManager;
 
 /**
- * CLI Application ServiceManager factory responsible for instantiating a Symfony CLI application
+ * CLI Admin ServiceManager factory responsible for instantiating a Symfony CLI admin
  *
  * @license MIT
  * @link    http://www.doctrine-project.org/

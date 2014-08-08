@@ -23,6 +23,19 @@ String.prototype.capitalize = function () {
     return this.charAt(0).toUpperCase() + this.slice(1);
 };
 
+
+// returns an array that contains the name,extension,original path
+// of the provided image
+function getImageDetails($imagePath) {
+    var splitImg = $imagePath.split('/');
+    var fullImageName = splitImg[splitImg.length - 1];
+    var fullImageNameArray = fullImageName.split('.');
+    var imagelessPath = $imagePath.substring(0, fullImageName.length);
+    var imageDetails = [fullImageNameArray[0], fullImageNameArray[1], imagelessPath];
+    return imageDetails;
+}
+
+
 var delay = (function () {
     var timer = 0;
     return function (callback, ms) {
@@ -47,6 +60,20 @@ function createCookie(name,value,days) {
     }
     else var expires = "";
     document.cookie = name+"="+value+expires+"; path=/";
+}
+
+function readCookie(key)
+{
+    var allcookies = document.cookie;
+
+    // Get all the cookies pairs in an array
+    var cookiearray  = allcookies.split(';');
+
+    // Now take key value pair out of this array
+    for(var i=0; i<cookiearray.length; i++){
+        var name = $.trim(cookiearray[i].split('=')[0]);
+        if(name == key) return cookiearray[i].split('=')[1];
+    }
 }
 
 function daysBetween(date1, date2) {

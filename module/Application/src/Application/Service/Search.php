@@ -13,7 +13,7 @@ use League\Model\ChampionStats;
 
 /**
  * Class Search
- * @package Application\Service
+ * @package Admin\Service
  * @method ChampionRepository getChampionRepository($namespace)
  */
 class Search extends BaseService
@@ -24,6 +24,7 @@ class Search extends BaseService
     {
         $leagueRepository = $this->getChampionRepository("league");
         $suggestionArray = array();
+        $found = true;
         // check if there is an opponent
         if (!empty($params["opponent"])) {
             $opponent = $leagueRepository->find($params["opponent"]);
@@ -41,12 +42,12 @@ class Search extends BaseService
                 $topChampions = array_slice($champions, 0, 9, true);
                 if ($params["hasMana"] || $params["hasCC"]) {
                     $topChampions = $this->filterChampions($topChampions, $params);
-                    if (empty($topChampions)) return array();
+                    if (empty($topChampions)) return array("found"=>"","suggestions"=>array());;
                 }
-                $topThreeChampions = array_slice($topChampions, 0, 2, true);
+                $topFiveChampions = array_slice($topChampions, 0, 5, true);
                 foreach ($opponent->getCounters() as $counter) {
                     $name = $counter->getName();
-                    if ($champion = $this->championExists($topThreeChampions, $name)) {
+                    if ($champion = $this->championExists($topFiveChampions, $name)) {
                         $suggestionArray["mainSuggestion"]["counter"] = $champion;
                         $index = array_search($champion, $topChampions);
                         unset($topChampions[$index]);
@@ -55,10 +56,11 @@ class Search extends BaseService
                 }
                 $mainCount = isset($suggestionArray["mainSuggestion"]) ? count($suggestionArray["mainSuggestion"]) : 0;
                 if ($mainCount == 0) {
+                    $found = false;
                     $suggestionArray["mainSuggestion"] = array_shift($topChampions);
                 }
                 foreach($topChampions as $champ){
-                    if($champ->getScore() != 0){
+                    if($champ->getScore() > 10){
                         $suggestionArray["secondarySuggestions"][] = $champ;
                     }
                 }
@@ -73,13 +75,19 @@ class Search extends BaseService
                     $filteredChampions = $this->filterChampions($champions, $params);
                     if (!empty($filteredChampions)) {
                         $suggestionArray["mainSuggestion"] = array_shift($filteredChampions);
-                        $suggestionArray["secondarySuggestions"] = array_slice($filteredChampions, 0, 4, true);
-                        return $suggestionArray;
+                        foreach(array_slice($filteredChampions,0,4,true) as $champion){
+                            if($champion->getScore() > 10){
+                                $suggestionArray["secondarySuggestions"][] = $champion;
+                            }
+                        }
+                        return array("found"=>$found,"suggestions"=>$suggestionArray);
+                    }else{
+                        return array("found"=>"","suggestions"=>array());
                     }
                 }
                 $suggestionArray["mainSuggestion"] = array_shift($topChampions);
                 foreach($topChampions as $champ){
-                    if($champ->getScore() != 0){
+                    if($champ->getScore() > 5){
                         $suggestionArray["secondarySuggestions"][] = $champ;
                     }
                 }
@@ -88,7 +96,7 @@ class Search extends BaseService
                 return $champions;
             }
         }
-        return $suggestionArray;
+        return array("found"=>$found,"suggestions"=>$suggestionArray);
     }
 
     public function getUserChampionStats($name, $region, $championName)

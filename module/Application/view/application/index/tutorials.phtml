@@ -1,0 +1,57 @@
+<?php if(!isset($tutorials)): ?>
+    <h2 class="mainTitle">Search For A Matchup</h2>
+<div id="search">
+    <?php
+    /**
+     * @var \Zend\Form\Form $form
+     */
+    $form->prepare();
+    /**
+     * @var \Zend\Form\Fieldset $fieldset
+     */
+    $fieldset = $form->get('tutorial');
+    $form->setAttribute('action', $this->url('tutorials'));
+
+    echo $this->form()->openTag($form);
+    ?>
+    <div class="element">
+        <?php
+        echo $this->formElementErrors($fieldset->get('champion'), array('class' => 'formError'));
+        echo $this->formLabel($fieldset->get('champion'));
+        echo $this->formSelect($fieldset->get('champion'));
+        ?>
+    </div>
+    <div class="element">
+        <?php
+        echo $this->formElementErrors($fieldset->get('opponent'), array('class' => 'formError'));
+        echo $this->formLabel($fieldset->get('opponent'));
+        echo $this->formSelect($fieldset->get('opponent'));
+        ?>
+    </div>
+    <div class="element">
+        <?php
+        echo $this->formElementErrors($fieldset->get('position'), array('class' => 'formError'));
+        echo $this->formLabel($fieldset->get('position'));
+        echo $this->formSelect($fieldset->get('position'));
+        ?>
+    </div>
+    <?php echo $this->formSubmit($form->get('submit')->setValue($this->translate('Search'))); ?>
+
+    <?php echo $this->form()->closeTag() ?>
+</div>
+<?php else: ?>
+    <ul id="tutorials">
+        <?php foreach ($tutorials as $tutorial):
+            $id = $tutorial->getVideoId();
+            ?>
+            <li class="tutorial-<?php echo $id; ?>">
+                <a href="https://www.youtube.com/watch?v=<?php echo $id; ?>">
+                    <img src="<?php echo $tutorial->getThumbnail('medium'); ?>"/>
+                        <span
+                            class="tutorialTitle"><?php echo $tutorial->getPlayer() . ' - ' . $tutorial->getChampion()->getName() . ' vs ' . $tutorial->getOpponent()->getName() . '<br />' . $tutorial->getPosition(); ?></span>
+                </a>
+                <div class="videoMask"></div>
+            </li>
+        <?php endforeach; ?>
+    </ul>
+<?php endif;?>

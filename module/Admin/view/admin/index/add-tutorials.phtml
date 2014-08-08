@@ -1,0 +1,53 @@
+<?php
+/**
+ * @var \Zend\Form\Form $form
+ */
+$form->prepare();
+/**
+ * @var \Zend\Form\Fieldset $fieldset
+ */
+$fieldset = $form->get('tutorial');
+$form->setAttribute('action', $this->url('admin/tutorials/add'));
+
+echo $this->form()->openTag($form);
+?>
+    <div class="element">
+        <?php
+        echo $this->formElementErrors($fieldset->get('player'), array('class' => 'formError'));
+        echo $this->formLabel($fieldset->get('player'));
+        echo $this->formInput($fieldset->get('player'));
+        ?>
+    </div>
+    <div class="element">
+        <?php
+        echo $this->formElementErrors($fieldset->get('champion'), array('class' => 'formError'));
+        echo $this->formLabel($fieldset->get('champion'));
+        echo $this->formSelect($fieldset->get('champion'));
+        ?>
+    </div>
+    <div class="element">
+        <?php
+        echo $this->formElementErrors($fieldset->get('opponent'), array('class' => 'formError'));
+        echo $this->formLabel($fieldset->get('opponent'));
+        echo $this->formSelect($fieldset->get('opponent'));
+        ?>
+    </div>
+
+    <div class="element">
+        <?php
+        echo $this->formElementErrors($fieldset->get('position'), array('class' => 'formError'));
+        echo $this->formLabel($fieldset->get('position'));
+        echo $this->formSelect($fieldset->get('position'));
+        ?>
+    </div>
+
+    <div class="element">
+        <?php
+        echo $this->formElementErrors($fieldset->get('videoId'), array('class' => 'formError'));
+        echo $this->formLabel($fieldset->get('videoId'));
+        echo $this->formInput($fieldset->get('videoId'));
+        ?>
+    </div>
+<?php echo $this->formSubmit($form->get('submit')->setValue($this->translate('Add'))); ?>
+
+<?php echo $this->form()->closeTag() ?>

@@ -23,7 +23,7 @@ use Zend\ServiceManager\ServiceManager;
 use Zend\Mvc\Service\ServiceManagerConfig;
 
 /**
- * Utility used to retrieve a freshly bootstrapped application's service manager
+ * Utility used to retrieve a freshly bootstrapped admin's service manager
  *
  * @license MIT
  * @link    http://www.doctrine-project.org/

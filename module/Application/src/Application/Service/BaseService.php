@@ -35,7 +35,7 @@ class BaseService implements ServiceManagerAwareInterface
     private $translator;
 
     /**
-     * The application's vocabulary
+     * The admin's vocabulary
      *
      * @var array
      */
@@ -97,7 +97,7 @@ class BaseService implements ServiceManagerAwareInterface
     }
 
     /**
-     * Get the application's vocabulary
+     * Get the admin's vocabulary
      *
      * @return array
      */

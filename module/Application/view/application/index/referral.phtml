@@ -1,11 +1,14 @@
 <div id="main">
     <div class="increasedLineHeight">
+        <img src="<?php echo $this->basePath('images/logo-big.jpg'); ?>" />
         <p>
             LeaguePick now offers a referral program!<br/>
             This means that after you get accepted, you can redirect people to us using a unique link (we are gonna
             provide it). <br/>
             After that, each time you reach a threshold of 500-1000 unique visitors, we are gonna <strong>pay you!</strong> <br />
             The payment depends on the <strong>quality and quantity</strong> of the visitors (this means bots and proxies will get you banned)<br />
+            However, while most referral services offer like $2,5 to $5 for 1k viewers, <strong>we pay a lot more than that.</strong><br />
+            <a target="_blank" href="<?php echo $this->basePath('images/firstPayments.jpg'); ?>">First Payments in EUR</a> | <a target="_blank" href="<?php echo $this->basePath('images/firstPaymentsUSD.jpg'); ?>">First Payments in USD</a><br/>
             Add your email bellow and we will send you your unique link asap. <strong>What are you waiting for?!</strong>
         </p>
     </div>
@@ -27,6 +30,13 @@
         echo $this->formElementErrors($fieldset->get('email'), array('class' => 'formError'));
         echo $this->formLabel($fieldset->get('email'));
         echo $this->formEmail($fieldset->get('email'));
+        ?>
+    </div>
+    <div class="element">
+        <?php
+        echo $this->formElementErrors($fieldset->get('uniqueId'), array('class' => 'formError'));
+        echo $this->formLabel($fieldset->get('uniqueId'));
+        echo $this->formInput($fieldset->get('uniqueId'));
         ?>
     </div>
     <?php echo $this->formSubmit($form->get('submit')->setValue($this->translate('Submit'))); ?>

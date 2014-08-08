@@ -2,15 +2,15 @@
     <?php
     $child = $this->child;
     $isMobile = $this->mobile();
-    $pageTitle = (isset($child->pageTitle)) ? $child->pageTitle : "LeaguePick";
+    $pageTitle = (isset($child->pageTitle)) ? $child->pageTitle : "LeaguePick - Let us pick your League of Legends Champion";
     $follow = (isset($child->follow)) ? "noindex, nofollow" : "feed, follow, archieve";
 
     // The website's title.
     echo $this->headTitle($pageTitle);
 
     // The meta tags
-    $description = isset($child->metaInfo['description']) ? $child->metaInfo['description'] : 'LeaguePick is a website that picks a league of legends champion for you based on your summoner\'s statistics.';
-    $keywords = isset($child->metaInfo['keywords']) ? $child->metaInfo['keywords'] : 'leaguepick, league, of, legends, champion, picker, generator, statisticks, summoner';
+    $description = isset($child->metaInfo['description']) ? $child->metaInfo['description'] : 'LeaguePick is a web application that suggests League of Legends champion picks for you based on your performance and input choices.';
+    $keywords = isset($child->metaInfo['keywords']) ? $child->metaInfo['keywords'] : 'leaguepick, league, of, legends, champion, picker, generator, statistics, summoner';
 
     // We append everything to the headMeta
     $this->headMeta()
@@ -20,13 +20,20 @@
         ->appendName('keywords', $keywords)
         ->appendName('robots', $follow)
         ->appendName('language', 'en')
-        ->appendName('googlebot', $follow);
+        ->appendName('googlebot', $follow)
+        ->appendProperty("og:site_name", "LeaguePick")
+        ->appendProperty('og:title', $pageTitle)
+        ->appendProperty('og:type', "website")
+        ->appendProperty('og:url', $this->serverUrl(true))
+        ->appendProperty('og:description', $description)
+        ->appendProperty('og:image', "http://i.imgur.com/IagEVzL.jpg");
     echo $this->headMeta();
 
     // We add the favicon and our stylesheets
     $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath('images/favicon.ico')))
          ->headLink(array('rel' => 'gettext', 'type' => 'application/x-po', 'href' => $this->basePath('module/Application/language/'.$this->plugin('translate')->getTranslator()->getLocale().'.po')))
         ->prependStylesheet($this->basePath('css/jquery.selectbox.css'))
+        ->prependStylesheet($this->basePath('css/perfect-scrollbar.min.css'))
         ->prependStylesheet($this->basePath('css/style.css'));
 //
     if ($isMobile) {

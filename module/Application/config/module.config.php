@@ -107,6 +107,27 @@ return array(
                     ),
                 ),
             ),
+            'download' => array(
+                'type' => 'Zend\Mvc\Router\Http\Segment',
+                'options' => array(
+                    'route' => '/download[/:image]',
+                    'defaults' => array(
+                        'controller' => __NAMESPACE__ . '\Controller\Index',
+                        'action' => 'download',
+                        'image' => ''
+                    ),
+                ),
+            ),
+            'tutorials' => array(
+                'type' => 'Zend\Mvc\Router\Http\Literal',
+                'options' => array(
+                    'route' => '/tutorials',
+                    'defaults' => array(
+                        'controller' => __NAMESPACE__ . '\Controller\Index',
+                        'action' => 'tutorials',
+                    ),
+                ),
+            ),
             'sitemap' => array(
                 'type' => 'Zend\Mvc\Router\Http\Segment',
                 'options' => array(
@@ -133,6 +154,7 @@ return array(
         'factories' => array(
             'search_form' => __NAMESPACE__ . '\Factory\SearchFormFactory',
             'referral_form' => __NAMESPACE__ . '\Factory\ReferralFormFactory',
+            'tutorial_form' => __NAMESPACE__ . '\Factory\TutorialFormFactory',
         ),
         'invokables' => array(
             'search_service' => __NAMESPACE__ . '\Service\Search'

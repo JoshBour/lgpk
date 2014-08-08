@@ -44,24 +44,51 @@ if ($child->activeRoute)
     </div>
 </header>
 <div id="content">
-        <?php if (!isset($_COOKIE['announcement'])): ?>
-            <div id="announcement">
-                <p>LeaguePick now has an about page, you can check it <a href="<?php echo $this->url('about'); ?>">here</a> or at the bottom of the page. </p>
-
-                <div class="remove">X</div>
-            </div>
-        <?php endif; ?>
+    <?php
+    $announcements = array(
+        "about" => 'LeaguePick now has an about page, you can check it <a href="' . $this->url('about') . '">here</a> or at the bottom of the page.',
+        'referral' => 'We have added our first referral payments as well as some proof and more info on the <a href="' . $this->url('referral') . '">referral page</a>.',
+        'facebook' => 'We now have a facebook page! Click <a href="https://www.facebook.com/leaguepick">here</a> and like us :)'
+    );
+    if (isset($_COOKIE['announcement'])) {
+        setcookie("announcement", "", time() - 3600);
+    }
+    if (isset($_COOKIE['announcements'])) {
+        $cookie = json_decode($_COOKIE['announcements'],true);
+    } else {
+        $cookie = array();
+        foreach($announcements as $key => $value){
+            $cookie[$key] = true;
+        }
+        setcookie("announcements", json_encode($cookie), time() + 365 * 24 * 60 * 60, '/');
+    }
+    $available = array_filter($cookie,function($var){
+        return $var;
+    });
+    if(count($available) > 0):
+        $key = array_rand($available);
+        $announcement = $announcements[$key];
+    ?>
+        <div id="announcement" data-target="<?php echo $key; ?>">
+            <p>
+                <?php echo $announcement; ?>
+            </p>
+            <div class="remove">X</div>
+        </div>
+        <?php
+    endif;
+    ?>
     <?php echo $this->content; ?>
-	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-	<div id="advertisement">
-		<ins class="adsbygoogle"
-			 style="display:inline-block;<?php echo $isMobile ? "width:320px;height:50px" : "width:728px;height:90px"; ?>"
-			 data-ad-client="ca-pub-6737088231270252"
-			 data-ad-slot="<?php echo $isMobile ? "4819041412" : "1963306611"; ?>"></ins>
-		<script>
-		(adsbygoogle = window.adsbygoogle || []).push({});
-		</script>
-	</div>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <div id="advertisement">
+        <ins class="adsbygoogle"
+             style="display:inline-block;<?php echo $isMobile ? "width:320px;height:50px" : "width:728px;height:90px"; ?>"
+             data-ad-client="ca-pub-6737088231270252"
+             data-ad-slot="<?php echo $isMobile ? "4819041412" : "1963306611"; ?>"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
 </div>
 <?php
 // The layout's footer

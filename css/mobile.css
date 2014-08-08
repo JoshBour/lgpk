@@ -3,18 +3,41 @@
     font-family: sans-serif;
 }
 
-#main .champions, #searchForm, #content, #topWrapper {
+#main .champions, #searchForm, #content, #topWrapper, #about, #announcement, .standardForm {
     width: auto;
+}
+
+#about ol{
+    padding:0;
+}
+
+#announcement .remove{
+   vertical-align: middle;
+    padding:7px 10px 0 0;
+}
+
+#announcement p{
+    display:inline-block;
+    width:90%;
 }
 
 #main p {
     padding: 20px 5px;
 }
 
-.standardForm input, select, textarea, .button {
+.standardForm input[type="text"], select, textarea, .button,#referralForm input[type="email"], #referralForm input[type="text"]{
     text-indent: 5px;
     margin-left: 0;
     width: 100%;
+}
+
+input[type="checkbox"]{
+    margin-left:0;
+}
+
+#tutorials{
+    width: 75%;
+    margin: 0 auto;
 }
 
 #search{

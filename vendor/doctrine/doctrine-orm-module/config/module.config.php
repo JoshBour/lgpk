@@ -68,7 +68,7 @@ return array(
                 'generate_proxies'  => true,
 
                 // directory where proxies will be stored. By default, this is in
-                // the `data` directory of your application
+                // the `data` directory of your admin
                 'proxy_dir'         => 'data/DoctrineORMModule/Proxy',
 
                 // namespace for generated proxy classes
@@ -130,7 +130,7 @@ return array(
             'orm_default' => array(
                 // name of the object manager to use. By default, the EntityManager is used
                 'objectManager' => 'doctrine.entitymanager.orm_default',
-                //'identityClass' => 'Application\Model\User',
+                //'identityClass' => 'Admin\Model\User',
                 //'identityProperty' => 'username',
                 //'credentialProperty' => 'password'
             ),

@@ -1,0 +1,31 @@
+<div id="main">
+    <ul id="generatedVideos">
+        <?php
+        /**
+         * @var \Youtube\Model\Video $video
+         */
+        foreach ($videos as $video):
+            $split = $video->getSplitTitle();
+            $player = ""; $champion = ""; $opponent = ""; $position = "";
+            if (count($split) == 4){
+                $player = $split[0];
+                $champion = $split[1];
+                $opponent = $split[2];
+                $position = $split[3];
+            }
+                ?>
+                <li>
+                    <input type="text" name="player" value="<?php echo $player; ?>"/>
+                    <input type="text" name="champion" value="<?php echo $champion; ?>"/>
+                    <input type="text" name="opponent" value="<?php echo $opponent; ?>"/>
+                    <input type="text" name="position" value="<?php echo $position; ?>"/>
+                    <input type="hidden" name="videoId" value="<?php echo $video->getId(); ?>"/>
+                    <a href="<?php echo $video->getUri(); ?>" class="title"><?php echo $video->getTitle(); ?></a>
+                    <span class="button">Add</span>
+                </li>
+            <?php
+        endforeach; ?>
+    </ul>
+    <a href="<?php echo $this->url('admin/tutorials/generate',array('token'=>$previousToken)); ?>">Previous Page</a> |
+    <a href="<?php echo $this->url('admin/tutorials/generate',array('token'=>$nextToken)); ?>">Next Page</a>
+</div>

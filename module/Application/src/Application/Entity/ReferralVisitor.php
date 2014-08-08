@@ -12,7 +12,7 @@ use Doctrine\ORM\Mapping as ORM;
 
 /**
  * Class Referral
- * @package Application\Entity
+ * @package Admin\Entity
  * @ORM\Entity
  * @ORM\Table(name="referrals_visitors")
  */
