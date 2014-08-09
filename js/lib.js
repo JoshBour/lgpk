@@ -15,6 +15,25 @@ function addMessage(message) {
     flash.setRemoveTimeout(6000);
 }
 
+var cb = function() {
+    var imports = ['http://fonts.googleapis.com/css?family=Source+Sans+Pro',
+        'http://fonts.googleapis.com/css?family=Source+Sans+Pro:700',
+    'http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz',
+    'http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700',
+    baseUrl + '/css/style.'];
+    var h = $('head');
+    for(var i=0;i<imports.length;i++){
+        $('<link />',{
+            'rel' : 'stylesheet',
+            'href' : imports[i]
+        }).appendTo(h);
+    }
+};
+var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+    webkitRequestAnimationFrame || msRequestAnimationFrame;
+if (raf) raf(cb);
+else window.addEventListener('load', cb);
+
 String.prototype.lowerize = function () {
     return this.charAt(0).toLowerCase() + this.slice(1);
 };
@@ -23,6 +42,13 @@ String.prototype.capitalize = function () {
     return this.charAt(0).toUpperCase() + this.slice(1);
 };
 
+(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=1511938792373555&version=v2.0";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
 
 // returns an array that contains the name,extension,original path
 // of the provided image
@@ -35,6 +61,11 @@ function getImageDetails($imagePath) {
     return imageDetails;
 }
 
+function fbShare(url, winWidth, winHeight) {
+    var winTop = (screen.height / 2) - (winHeight / 2);
+    var winLeft = (screen.width / 2) - (winWidth / 2);
+    window.open(url, 'sharer', 'top=' + winTop + ',left=' + winLeft + ',toolbar=0,status=0,width=' + winWidth + ',height=' + winHeight);
+}
 
 var delay = (function () {
     var timer = 0;

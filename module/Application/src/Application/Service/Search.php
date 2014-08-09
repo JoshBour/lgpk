@@ -20,6 +20,21 @@ class Search extends BaseService
 {
     private $leagueService;
 
+    public function getResultMetaInfo($suggestions){
+        $metaInfo = array();
+        if(isset($suggestions["mainSuggestion"]) && !empty($suggestions["mainSuggestion"])){
+            $main = $suggestions["mainSuggestion"];
+            if(is_array($main)) $main = array_shift($suggestions["mainSuggestion"]);
+            $metaInfo["description"] = <<<EOT
+            With {$main->getName()} you have a {$main->getWinRatio()}% win ratio.
+                This means that out of the {$main->getTotalGames()} games you
+                have won {$main->getGamesWon()}.
+                Moreover, you have a KDA of {$main->getKda()} which is {$main->getKdaComment()}.
+EOT;
+        }
+        return $metaInfo;
+    }
+
     public function getSearchResults($summoner, $region, $params)
     {
         $leagueRepository = $this->getChampionRepository("league");

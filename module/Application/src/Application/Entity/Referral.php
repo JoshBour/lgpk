@@ -14,7 +14,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Class Referral
  * @package Admin\Entity
- * @ORM\Entity(repositoryClass="Admin\Repository\ReferralRepository")
+ * @ORM\Entity(repositoryClass="Application\Repository\ReferralRepository")
  * @ORM\Table(name="referrals")
  */
 class Referral {

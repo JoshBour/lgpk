@@ -26,35 +26,38 @@
         ->appendProperty('og:type', "website")
         ->appendProperty('og:url', $this->serverUrl(true))
         ->appendProperty('og:description', $description)
-        ->appendProperty('og:image', "http://i.imgur.com/IagEVzL.jpg");
+        ->appendProperty('og:image', "http://i.imgur.com/VSk7HIF.jpg");
     echo $this->headMeta();
 
     // We add the favicon and our stylesheets
     $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath('images/favicon.ico')))
-         ->headLink(array('rel' => 'gettext', 'type' => 'application/x-po', 'href' => $this->basePath('module/Application/language/'.$this->plugin('translate')->getTranslator()->getLocale().'.po')))
-        ->prependStylesheet($this->basePath('css/jquery.selectbox.css'))
+        ->headLink(array('rel' => 'gettext', 'type' => 'application/x-po', 'href' => $this->basePath('module/Application/language/' . $this->plugin('translate')->getTranslator()->getLocale() . '.po')))
         ->prependStylesheet($this->basePath('css/perfect-scrollbar.min.css'))
-        ->prependStylesheet($this->basePath('css/style.css'));
-//
+        ->prependStylesheet(APPLICATION_ENV != "production" ? $this->basePath('css/jquery.selectbox.css') : $this->basePath('css/jquery.selectbox.min.css'))
+        ->prependStylesheet(APPLICATION_ENV != "production" ? $this->basePath('css/style.css') : $this->basePath('css/style.min.css'));
     if ($isMobile) {
-        $this->headLink()->appendStylesheet($this->basePath('css/mobile.css'));
+        $this->headLink()->appendStylesheet(APPLICATION_ENV != "production" ? $this->basePath('css/mobile.css') : $this->basePath('css/mobile.min.css'));
     }
     echo $this->headLink();
 
     // Some scripts the must be outputted first follow below
     ?>
+    <script>var baseUrl = '<?php echo $this->basePath(); ?>', isMobile = <?php echo $isMobile ? 'true':'false'; ?>;</script>
     <script>
-        var baseUrl = '<?php echo $this->basePath(); ?>';
-        var isMobile = <?php echo $isMobile ? 'true':'false'; ?>;
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-48935331-3', 'auto');
+        ga('send', 'pageview');
+
     </script>
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-	  ga('create', 'UA-48935331-3', 'auto');
-	  ga('send', 'pageview');
-
-	</script>
 </head>

@@ -1,24 +1,11 @@
 <footer>
-    <nav>
-        <a href="<?php echo $this->url('tutorials'); ?>">Tutorials</a> |
-        <a href="<?php echo $this->url('about'); ?>">About</a> |
-        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=484HNKDK3MCYA" target="_blank">Buy me a beer</a> |
-        <a href="<?php echo $this->url('referral'); ?>">Referral Program</a>
-    </nav>
     &copy <?php echo date('Y'); ?>, LeaguePick. Made by <a href="http://www.joshbour.com">Josh Bour</a>
     <div class="fb-like" data-href="https://www.facebook.com/leaguepick" data-width="110" data-layout="button" data-action="like" data-show-faces="false" data-share="true"></div>
 </footer>
 <div id="fb-root"></div>
-<script>(function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=268335233334900&version=v2.0";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
 <?php
-echo $this->inlineScript()->prependFile($this->basePath('js/main.js'), 'text/javascript')
-    ->prependFile($this->basePath('js/lib.js'), 'text/javascript')
+echo $this->inlineScript()->prependFile(APPLICATION_ENV != "production" ? $this->basePath('js/main.js') : $this->basePath('js/main.min.js'), 'text/javascript')
+    ->prependFile(APPLICATION_ENV != "production" ? $this->basePath('js/lib.js') : $this->basePath('js/lib.min.js'), 'text/javascript')
     ->prependFile($this->basePath('js/Gettext.js'), 'text/javascript')
     ->prependFile($this->basePath('js/respond.min.js', 'text/javascript', array('conditional' => 'lt IE 9')))
     ->prependFile($this->basePath('js/html5shiv.js', 'text/javascript', array('conditional' => 'lt IE 9')))

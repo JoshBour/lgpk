@@ -56,6 +56,22 @@ class ChampionStats {
         return 0;
     }
 
+    public function getKdaComment(){
+        $kda = $this->getKda();
+        if ($kda >= 6) {
+            $comment = "perfect";
+        } else if ($kda >= 4.5) {
+            $comment = "awesome";
+        } else if ($kda >= 3) {
+            $comment = "good";
+        } else if ($kda >= 2) {
+            $comment = "average";
+        } else {
+            $comment = "not good";
+        }
+        return $comment;
+    }
+
     /**
      * @param mixed $assists
      */

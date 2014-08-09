@@ -39,28 +39,13 @@
                 won <strong><?php echo $mainSuggestion->getGamesWon(); ?></strong>.<br/>
                 Moreover, you have a KDA of <strong><?php echo $kda; ?></strong> which is <?php echo $comment; ?>.
             </p>
-            <a id="saveResults" href="<?php echo $this->url('download',array('image'=>'#')); ?>">Save Result Image</a>
-            <!--            <ul class="champions">-->
-            <!--                --><?php
-            //                $counters = array();
-            //                foreach ($mainSuggestion as $key => $champion):
-            //                    $name = $champion->getName();
-            //                    if ($key == "counter") $counters[] = $champion;
-            //                    $params['champion'] = $name;
-            //
-            ?>
-            <!--                    <li>-->
-            <!--                        <a href="--><?php //echo $this->url('search', $params); ?><!--"-->
-            <!--                           title="Click to see your stats with --><?php //echo $name; ?><!--">-->
-            <!--                            <img-->
-            <!--                                src="-->
-            <?php //echo $this->basePath('images/champions/' . ucwords($name) . '.png'); ?><!--"/>-->
-            <!--                            <span class="score">Score: -->
-            <?php //echo $champion->getScore(); ?><!--</span>-->
-            <!--                        </a>-->
-            <!--                    </li>-->
-            <!--                --><?php //endforeach; ?>
-            <!--            </ul>-->
+            <div class="resultShare">
+                <a class="fb-share openInWindow" title="Share your results"
+                   href="http://www.facebook.com/sharer.php?s=100&p[url]=<?php echo $this->serverUrl(true); ?>">Share</a>
+                <a class="twitter-share openInWindow" title="Tweet your results"
+                   href="https://twitter.com/intent/tweet?hashtags=leaguepick&original_referer=http://www.leaguepick.com&text=<?php  echo "My suggested champion is {$mainName} with a LP score of {$mainSuggestion->getScore()}. What's yours? " . $this->serverUrl(True); ?>&tw_p=tweetbutton&url=%2Ffeed%2F1268">Share</a>
+                <a id="saveResults" title="Save your results" href="#">Save Result Image</a>
+            </div>
         </div>
         <?php if (isset($results["secondarySuggestions"]) && count($results["secondarySuggestions"]) > 0): ?>
         <p>If you don't feel like playing any of those, you can try one of the following ones:</p>
@@ -141,7 +126,13 @@
                 Moreover, you have a KDA of <strong><?php echo $kda; ?></strong> which is <?php echo $comment; ?>.
             </p>
         </div>
-        <a id="saveResults" href="<?php echo $this->url('download',array('image'=>'#')); ?>">Save Result Image</a>
+        <div class="resultShare">
+            <a class="fb-share openInWindow" title="Share your results"
+               href="http://www.facebook.com/sharer.php?s=100&p[url]=<?php echo $this->serverUrl(true); ?>">Share</a>
+            <a class="twitter-share openInWindow" title="Tweet your results"
+               href="https://twitter.com/intent/tweet?hashtags=leaguepick&original_referer=http://www.leaguepick.com&text=<?php  echo "My suggested champion is {$mainName} with a LP score of {$mainSuggestion->getScore()}. What's yours? " . $this->serverUrl(True); ?>&tw_p=tweetbutton&url=%2Ffeed%2F1268">Share</a>
+            <a id="saveResults" title="Save your results" href="#">Save Result Image</a>
+        </div>
         <?php if (isset($results["secondarySuggestions"]) && count($results["secondarySuggestions"]) > 0): ?>
         <p>If you feel like playing something else, you can try one of the following champion(s):</p>
         <ul class="champions">

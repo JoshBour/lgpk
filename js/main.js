@@ -67,7 +67,6 @@ $(function () {
         var key = elem.attr('data-target');
         var cookieArray = jQuery.parseJSON(decodeURIComponent(readCookie("announcements")));
         cookieArray[key] = false;
-        console.log(cookieArray);
         var cookie = encodeURIComponent(JSON.stringify(cookieArray));
         elem.detach();
         createCookie("announcements", cookie, 5);
@@ -87,15 +86,15 @@ $(function () {
                         "html": name
                     });
                     link.html(span);
-                    $('<img />', {
+                    var img = $('<img />', {
                         'src': baseUrl + '/images/champions/' + name + '.png',
                         'alt': name + ' thumbnail',
                         'class': 'championThumbnail'
-                    }).prependTo(link);
+                    }).attr('width',45).attr('height',40).prependTo(link);
                 });
                 var holder = select.next('.sbHolder').css('width', '263px');
                 holder.children('.sbSelector, .sbOptions').css('width', '263px');
-                holder.after($('<img class="search hoverable" title="Search for a champion" src="' + baseUrl + '/images/search.png" />'));
+                holder.after($('<img class="search hoverable" width="14" height="14" title="Search for a champion" src="' + baseUrl + '/images/search.png" />'));
             }
         });
     }
@@ -173,6 +172,23 @@ $(function () {
 
     });
 
+    // open in new window
+    $(document).on("click", '.fb-share', function () {
+        var url = $(this).attr("href");
+        fbShare(url,650,400);
+
+        event.preventDefault();
+    });
+
+    $(document).on("click", '.twitter-share', function () {
+        var url = $(this).attr("href");
+        var windowName = "popUp";//$(this).attr("name");
+        var windowSize = "width=650,height=400,scrollbars=yes";
+        window.open(url, windowName, windowSize);
+
+        event.preventDefault();
+    });
+
     $('#tutorials').perfectScrollbar();
 
     var isSearching = false;
@@ -193,10 +209,21 @@ $(function () {
                         results += $(this).prop('outerHTML');
                     }
                 });
-                resultBox.html(results);
+                resultBox.html(results).show();
             }
         }, 150);
 
+    });
+
+    $('nav a').on('mouseenter',function(){
+       var link = $(this);
+        if(!link.hasClass('active')){
+            link.siblings('.active').css('border-bottom','none');
+            link.addClass('hovered');
+        }
+    }).on('mouseleave',function(){
+        $('nav a.hovered').removeClass('hovered');
+        $('nav a.active').css('border-bottom','7px solid #555');
     });
 
     $('#saveResults').on('click', function (e) {

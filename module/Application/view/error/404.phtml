@@ -1,6 +1,7 @@
-<h1><?php echo $this->translate('A 404 error occurred') ?></h1>
-<h2><?php echo $this->message ?></h2>
-
+<div id="errorPage">
+<h1><?php echo $this->translate('404') ?></h1>
+<h2>Oops!<br/>The page was not found.<br/> Maybe you typed something wrong in the URL?</h2>
+<?php if(APPLICATION_ENV == "development"): ?>
 <?php if (isset($this->reason) && $this->reason): ?>
 
 <?php
@@ -105,3 +106,6 @@ if (isset($this->controller_class)
 <?php endif ?>
 
 <?php endif ?>
+
+<?php endif ?>
+</div>

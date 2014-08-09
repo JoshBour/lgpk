@@ -11,9 +11,9 @@ echo $this->partial("header", array('child' => $child));
 ?>
 <body<?php echo ($child->bodyClass) ? ' class="' . $child->bodyClass . '"' : ''; ?>>
 <noscript>
-    <div id="nojs">
-        <?php echo $this->translate("Please enable javascript for the site to work properly."); ?>
-    </div>
+<div id="nojs">
+<?php echo $this->translate("Please enable javascript for the site to work properly."); ?>
+</div>
 </noscript>
 <?php
 $messages = $this->flashMessenger()->getMessages();
@@ -40,7 +40,12 @@ if ($child->activeRoute)
             <a href="<?php echo $this->url('home'); ?>"
                title="<?php echo $this->translate("LeaguePick"); ?>">LeaguePick Logo</a>
         </div>
-        <span>Pick your champion the easy way!</span>
+        <nav>
+            <a href="<?php echo $this->url('home'); ?>"<?php echo $route == "home" ? ' class="active"' : ''; ?> title="Go to homepage">Home</a>
+            <a href="<?php echo $this->url('tutorials'); ?>"<?php echo $route == "tutorials" ? ' class="active"' : ''; ?> title="Search for a tutorial">Tutorials</a>
+            <a href="<?php echo $this->url('about'); ?>"<?php echo $route == "about" ? ' class="active"' : ''; ?> title="Some info about us">About</a>
+            <a href="<?php echo $this->url('referral'); ?>"<?php echo $route == "referral" ? ' class="active"' : ''; ?> title="Our referral program">Referrals</a>
+        </nav>
     </div>
 </header>
 <div id="content">
@@ -85,9 +90,7 @@ if ($child->activeRoute)
              style="display:inline-block;<?php echo $isMobile ? "width:320px;height:50px" : "width:728px;height:90px"; ?>"
              data-ad-client="ca-pub-6737088231270252"
              data-ad-slot="<?php echo $isMobile ? "4819041412" : "1963306611"; ?>"></ins>
-        <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
     </div>
 </div>
 <?php

@@ -189,8 +189,9 @@ class IndexController extends BaseController
             'hasCC' => $this->params()->fromRoute("hasCC"),
             'hasMana' => $this->params()->fromRoute("hasMana")
         );
+        $searchService = $this->getSearchService();
         $session = new Container('summoner');
-        $results = $this->getSearchService()->getSearchResults($params['summoner'], $params['region'], $params);
+        $results = $searchService->getSearchResults($params['summoner'], $params['region'], $params);
         $suggestions = $results['suggestions'];
         if (!empty($suggestions["mainSuggestion"])) {
             $tutorials = $this->getTutorialService()->getTutorials($params, $suggestions["mainSuggestion"]);
@@ -204,8 +205,10 @@ class IndexController extends BaseController
                 "results" => $suggestions,
                 "found" => $results["found"],
                 "params" => $params,
+                "metaInfo" => $searchService->getResultMetaInfo($suggestions),
                 "tutorials" => $tutorials,
-                "bodyClass" => "resultPage"
+                "bodyClass" => "resultPage",
+                "pageTitle" => "LeaguePick - Champion Results"
             ));
         } else {
             $this->flashMessenger()->addMessage($results);
