@@ -128,6 +128,17 @@ return array(
                     ),
                 ),
             ),
+            'streams' => array(
+                'type' => 'Zend\Mvc\Router\Http\Segment',
+                'options' => array(
+                    'route' => '/streams[/:streamId]',
+                    'defaults' => array(
+                        'controller' => __NAMESPACE__ . '\Controller\Index',
+                        'action' => 'streams',
+                        'streamId' => '',
+                    ),
+                ),
+            ),
             'sitemap' => array(
                 'type' => 'Zend\Mvc\Router\Http\Segment',
                 'options' => array(
@@ -155,9 +166,11 @@ return array(
             'search_form' => __NAMESPACE__ . '\Factory\SearchFormFactory',
             'referral_form' => __NAMESPACE__ . '\Factory\ReferralFormFactory',
             'tutorial_form' => __NAMESPACE__ . '\Factory\TutorialFormFactory',
+            'Zend\Session\SessionManager' => __NAMESPACE__ . '\Factory\SessionManagerFactory'
         ),
         'invokables' => array(
-            'search_service' => __NAMESPACE__ . '\Service\Search'
+            'search_service' => __NAMESPACE__ . '\Service\Search',
+            'stream_service' => __NAMESPACE__ . '\Service\Stream'
         ),
         'abstract_factories' => array(
             'Zend\Cache\Service\StorageCacheAbstractServiceFactory',
@@ -208,6 +221,7 @@ return array(
         'template_map' => array(
             'layout/layout' => __DIR__ . '/../view/layout/layout.phtml',
             'error/404' => __DIR__ . '/../view/error/404.phtml',
+            'stream_view' => __DIR__ . '/../view/application/index/stream.phtml',
             'error/index' => __DIR__ . '/../view/error/index.phtml',
             'header' => __DIR__ . '/../view/partial/header.phtml',
             'footer' => __DIR__ . '/../view/partial/footer.phtml',

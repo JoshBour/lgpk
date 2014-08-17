@@ -16,6 +16,10 @@
     padding:7px 10px 0 0;
 }
 
+nav a{
+    padding: 0 10px 9px;
+}
+
 #announcement p{
     display:inline-block;
     width:90%;

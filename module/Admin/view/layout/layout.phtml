@@ -42,10 +42,10 @@ if ($child->activeRoute)
         </div>
         <nav>
             <a href="<?php echo $this->url('home'); ?>"<?php echo $route == "home" ? ' class="active"' : ''; ?> title="Go to homepage">Home</a>
-            <a href="<?php echo $this->url('streams'); ?>"<?php echo $route == "streams" ? ' class="active"' : ''; ?> title="Search for a stream">Streams</a>
             <a href="<?php echo $this->url('tutorials'); ?>"<?php echo $route == "tutorials" ? ' class="active"' : ''; ?> title="Search for a tutorial">Tutorials</a>
+            <a href="<?php echo $this->url('admin/tutorials/add'); ?>"<?php echo $route == "admin/tutorials/add" ? ' class="active"' : ''; ?> title="Add a tutorial">Add Tutorials</a>
             <a href="<?php echo $this->url('about'); ?>"<?php echo $route == "about" ? ' class="active"' : ''; ?> title="Some info about us">About</a>
-            <a href="<?php echo $this->url('referral'); ?>"<?php echo $route == "referral" ? ' class="active"' : ''; ?> title="Our referral program">Referrals</a>
+            <a href="<?php echo $this->url('admin/logout'); ?>"<?php echo $route == "admin/logout" ? ' class="active"' : ''; ?> title="Logout">Logout</a>
         </nav>
     </div>
 </header>

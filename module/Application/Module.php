@@ -27,7 +27,23 @@ class Module
         $translator -> setLocale($locale) -> setFallbackLocale('en_US');
 //        $translator->setLocale(\Locale::acceptFromHttp($_SERVER['HTTP_ACCEPT_LANGUAGE']));
 //            ->setFallbackLocale('el_GR');
+        $this->bootstrapSession($e);
     }
+
+    public function bootstrapSession($e)
+    {
+        $session = $e->getApplication()
+            ->getServiceManager()
+            ->get('Zend\Session\SessionManager');
+        $session->start();
+
+        $container = new Container('initialized');
+        if (!isset($container->init)) {
+            $session->regenerateId(true);
+            $container->init = 1;
+        }
+    }
+
 
     public function getConfig()
     {

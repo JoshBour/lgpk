@@ -14,6 +14,15 @@ return array(
                 ),
             ),
         ),
+        'authentication' => array(
+            'orm_default' => array(
+                'object_manager' => 'Doctrine\ORM\EntityManager',
+                'identity_class' => 'Admin\Entity\Admin',
+                'identity_property' => 'username',
+                'credential_property' => 'password',
+                'credential_callable' => 'Admin\Entity\Admin::hashPassword'
+            ),
+        ),
     ),
     'router' => array(
         'routes' => array(
@@ -64,6 +73,26 @@ return array(
                             ),
                         )
                     ),
+                    'login' => array(
+                        'type' => 'Zend\Mvc\Router\Http\Segment',
+                        'options' => array(
+                            'route' => '[/login]',
+                            'defaults' => array(
+                                'controller' => __NAMESPACE__ . '\Controller\Auth',
+                                'action' => 'login',
+                            ),
+                        ),
+                    ),
+                    'logout' => array(
+                        'type' => 'Zend\Mvc\Router\Http\Literal',
+                        'options' => array(
+                            'route' => '/logout',
+                            'defaults' => array(
+                                'controller' => __NAMESPACE__ . '\Controller\Auth',
+                                'action' => 'logout',
+                            ),
+                        ),
+                    ),
                 )
             ),
         ),
@@ -71,19 +100,35 @@ return array(
     'service_manager' => array(
         'factories' => array(
             'add_tutorial_form' => __NAMESPACE__ . '\Factory\AddTutorialFormFactory',
+            'login_form' => __NAMESPACE__ . '\Factory\LoginFormFactory',
+            'Zend\Authentication\AuthenticationService' => __NAMESPACE__ . '\Factory\AuthFactory',
         ),
-//        'invokables' => array(
-//            'search_service' => __NAMESPACE__ . '\Service\Search'
-//        ),
+        'invokables' => array(
+            'authStorage' => __NAMESPACE__ . '\Model\AuthStorage',
+        ),
+        'aliases' => array(
+            'auth_service' => 'Zend\Authentication\AuthenticationService'
+        ),
+    ),
+    'controller_plugins' => array(
+        'factories' => array(
+            'admin' => __NAMESPACE__ . '\Factory\AdminPluginFactory',
+        )
+    ),
+    'view_helpers' => array(
+        'factories' => array(
+            'admin' => __NAMESPACE__ . '\Factory\AdminViewHelperFactory',
+        ),
     ),
     'controllers' => array(
         'invokables' => array(
             __NAMESPACE__ . '\Controller\Index' => __NAMESPACE__ . '\Controller\IndexController',
+            __NAMESPACE__ . '\Controller\Auth' => __NAMESPACE__ . '\Controller\AuthController'
         ),
     ),
     'view_manager' => array(
         'template_map' => array(
-//            'layout/layout' => __DIR__ . '/../view/layout/layout.phtml',
+            'layout/admin' => __DIR__ . '/../view/layout/layout.phtml',
         ),
         'template_path_stack' => array(
             __DIR__ . '/../view',

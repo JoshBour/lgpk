@@ -1,0 +1,21 @@
+<div id="main">
+    <ul id="streams" class="module">
+        <?php
+        if (!empty($streams)):
+            foreach ($streams as $stream):
+                $active = $stream["stream"];
+                ?>
+                <li>
+                    <a href="<?php echo $this->url("streams", array("streamId" => $active->getStreamId())); ?>" title="Watch the stream">
+                        <img src="<?php echo $active->getThumbnail(); ?>" alt="stream thumbnail"/>
+                        <span><?php echo $active->getName() . ' - ';
+                            echo isset($stream["champion"]) ? $stream["champion"] : " Not in game" ?></span>
+                        <div class="videoMask notInWindow"></div>
+                    </a>
+                </li>
+            <?php
+            endforeach;
+        endif;
+        ?>
+    </ul>
+</div>

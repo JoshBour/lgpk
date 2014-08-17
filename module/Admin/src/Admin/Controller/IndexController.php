@@ -19,6 +19,7 @@ use Doctrine\ORM\EntityRepository;
 class IndexController extends BaseController
 {
     const CONTROLLER_NAME = "Admin\Controller\Index";
+    const LAYOUT_ADMIN = "layout/admin";
 
     /**
      * @var Form The add tutorial form
@@ -42,30 +43,36 @@ class IndexController extends BaseController
 
     public function generateAction()
     {
-        $nextToken = $this->params()->fromRoute("token", null);
-        // LoLProGameplayTV
-        // lolprovods CO4FEAA
-        //leagueofporos
-        // lolsoloq
-        // LoLProGameplayTV
-        $videoAssoc = $this->getTutorialService()->getYoutuberUploads("FissMortunePink", $nextToken);
-        return new ViewModel(array(
-            "nextToken" => $videoAssoc["nextToken"],
-            "videos" => $videoAssoc["videos"],
-            "previousToken" => $videoAssoc["previousToken"]
-        ));
+        if ($this->identity()) {
+            $nextToken = $this->params()->fromRoute("token", null);
+            $this->layout()->setTemplate(self::LAYOUT_ADMIN);
+            // LoLProGameplayTV
+            // lolprovods CO4FEAA
+            //leagueofporos
+            // lolsoloq
+            // LoLProGameplayTV
+            $videoAssoc = $this->getTutorialService()->getYoutuberUploads("FissMortunePink", $nextToken);
+            return new ViewModel(array(
+                "nextToken" => $videoAssoc["nextToken"],
+                "videos" => $videoAssoc["videos"],
+                "previousToken" => $videoAssoc["previousToken"]
+            ));
+        } else {
+            return $this->notFoundAction();
+        }
     }
 
-    public function saveAction(){
+    public function saveAction()
+    {
         $request = $this->getRequest();
-        if($request->isXmlHttpRequest()){
+        if ($request->isXmlHttpRequest()) {
             $data = $request->getPost();
             $vocabulary = $this->getVocabulary();
             $success = 0;
-            if($this->getTutorialService()->save($data)){
+            if ($this->getTutorialService()->save($data)) {
                 $message = $vocabulary["MESSAGE_TUTORIAL_ADD_SUCCESS"];
                 $success = 1;
-            }else{
+            } else {
                 $message = $vocabulary["ERROR_TUTORIAL_ADD"];
             }
             return new JsonModel(array(
@@ -78,21 +85,26 @@ class IndexController extends BaseController
 
     public function addTutorialsAction()
     {
-        $form = $this->getAddTutorialForm();
-        $request = $this->getRequest();
-        if ($request->isPost()) {
-            $data = $request->getPost();
-            $vocabulary = $this->getVocabulary();
-            if ($this->getTutorialService()->create($data)) {
-                $this->flashMessenger()->addMessage($vocabulary["MESSAGE_TUTORIAL_ADD_SUCCESS"]);
-                $this->redirect()->toRoute('admin/tutorials/add');
-            } else {
-                $this->flashMessenger()->addMessage($vocabulary["ERROR_TUTORIAL_ADD"]);
+        if ($this->identity()) {
+            $this->layout()->setTemplate(self::LAYOUT_ADMIN);
+            $form = $this->getAddTutorialForm();
+            $request = $this->getRequest();
+            if ($request->isPost()) {
+                $data = $request->getPost();
+                $vocabulary = $this->getVocabulary();
+                if ($this->getTutorialService()->create($data)) {
+                    $this->flashMessenger()->addMessage($vocabulary["MESSAGE_TUTORIAL_ADD_SUCCESS"]);
+                    $this->redirect()->toRoute('admin/tutorials/add');
+                } else {
+                    $this->flashMessenger()->addMessage($vocabulary["ERROR_TUTORIAL_ADD"]);
+                }
             }
+            return new ViewModel(array(
+                "form" => $form
+            ));
+        } else {
+            return $this->notFoundAction();
         }
-        return new ViewModel(array(
-            "form" => $form
-        ));
     }
 
     /**

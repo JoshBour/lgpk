@@ -19,8 +19,8 @@ var cb = function() {
     var imports = ['http://fonts.googleapis.com/css?family=Source+Sans+Pro',
         'http://fonts.googleapis.com/css?family=Source+Sans+Pro:700',
     'http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz',
-    'http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700',
-    baseUrl + '/css/style.'];
+    'http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700'
+    ];
     var h = $('head');
     for(var i=0;i<imports.length;i++){
         $('<link />',{

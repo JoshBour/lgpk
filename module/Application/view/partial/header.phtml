@@ -11,6 +11,7 @@
     // The meta tags
     $description = isset($child->metaInfo['description']) ? $child->metaInfo['description'] : 'LeaguePick is a web application that suggests League of Legends champion picks for you based on your performance and input choices.';
     $keywords = isset($child->metaInfo['keywords']) ? $child->metaInfo['keywords'] : 'leaguepick, league, of, legends, champion, picker, generator, statistics, summoner';
+    $image = isset($child->metaInfo['image']) ? $this->serverUrl().'/images/'.$child->metaInfo['image'] : "http://i.imgur.com/VSk7HIF.jpg";
 
     // We append everything to the headMeta
     $this->headMeta()
@@ -24,9 +25,11 @@
         ->appendProperty("og:site_name", "LeaguePick")
         ->appendProperty('og:title', $pageTitle)
         ->appendProperty('og:type', "website")
+        ->appendProperty('fb:app_id', '1511938792373555')
+        ->appendProperty('fb:admins', '1124061431')
         ->appendProperty('og:url', $this->serverUrl(true))
         ->appendProperty('og:description', $description)
-        ->appendProperty('og:image', "http://i.imgur.com/VSk7HIF.jpg");
+        ->appendProperty('og:image', $image);
     echo $this->headMeta();
 
     // We add the favicon and our stylesheets

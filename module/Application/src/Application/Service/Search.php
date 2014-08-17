@@ -31,6 +31,7 @@ class Search extends BaseService
                 have won {$main->getGamesWon()}.
                 Moreover, you have a KDA of {$main->getKda()} which is {$main->getKdaComment()}.
 EOT;
+            $metaInfo["image"] = 'champions/facebook/' . $main->getName() . '.png';
         }
         return $metaInfo;
     }

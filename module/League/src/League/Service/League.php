@@ -8,7 +8,9 @@
 
 namespace League\Service;
 
+use League\Model\GameDto;
 use League\Model\RankedStatsDto;
+use League\Model\RecentGamesDto;
 use League\Model\SummonerDto;
 use Zend\ServiceManager\ServiceManager;
 use Zend\ServiceManager\ServiceManagerAwareInterface;
@@ -65,7 +67,8 @@ class League implements ServiceManagerAwareInterface
         '23' => 'Tryndamere', '4' => 'TwistedFate', '29' => 'Twitch', '77' => 'Udyr', '6' => 'Urgot',
         '110' => 'Varus', '67' => 'Vayne', '45' => 'Veigar', '161' => 'Velkoz', '254' => 'Vi', '112' => 'Viktor',
         '8' => 'Vladimir', '106' => 'Volibear', '19' => 'Warwick', '101' => 'Xerath', '5' => 'XinZhao', '157' => 'Yasuo',
-        '83' => 'Yorick', '154' => 'Zac', '238' => 'Zed', '115' => 'Ziggs', '26' => 'Zilean', '143' => 'Zyra', "201" => 'Braum'
+        '83' => 'Yorick', '154' => 'Zac', '238' => 'Zed', '115' => 'Ziggs', '26' => 'Zilean', '143' => 'Zyra', "201" => 'Braum',
+        "150" => "Gnar"
     );
 
     /**
@@ -115,8 +118,16 @@ class League implements ServiceManagerAwareInterface
         return $response;
     }
 
+
+    /**
+     * @param $id
+     * @param $region
+     * @return RecentGamesDto
+     * @throws \Exception
+     */
     public function getGames($id, $region)
     {
+        $region = strtolower($region);
         if (!in_array($region, self::$supportedRegions)) throw new \Exception(self::ERROR_NOT_SUPPORTED_REGION);
         $call = 'game/by-summoner/' . $id . '/recent';
 
@@ -124,13 +135,7 @@ class League implements ServiceManagerAwareInterface
         $call = self::API_URL_1_3 . $call;
 
         $response = json_decode($this->performRequest($call, $region), true);
-        $gameDtoList = array();
-        if (!empty($response['games'])) {
-            foreach ($response['games'] as $game) {
-                $gameDtoList[] = new \League\Model\GameDto($game);
-            }
-        }
-        return $gameDtoList;
+        return new RecentGamesDto($response);
     }
 
     public function getSummoner($name, $region)
@@ -159,7 +164,6 @@ class League implements ServiceManagerAwareInterface
         //caching
         if (self::CACHE_ENABLED) {
             $cacheFile = ROOT_PATH . '/data/cache/' . md5($url);
-            echo md5($url);
             if (file_exists($cacheFile)) {
                 $fh = fopen($cacheFile, 'r');
                 $cacheTime = trim(fgets($fh));
@@ -179,7 +183,7 @@ class League implements ServiceManagerAwareInterface
         $curl = curl_init($url);
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
         curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, true);
-        curl_setopt($curl, CURLOPT_CAINFO, dirname(__FILE__) . '/cacert.pem');
+        curl_setopt($curl, CURLOPT_CAINFO, ROOT_PATH . '/data/cacert.pem');
 
         $response = curl_exec($curl);
         if ($response === false) {

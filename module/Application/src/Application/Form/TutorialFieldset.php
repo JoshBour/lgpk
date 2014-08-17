@@ -54,6 +54,7 @@ class TutorialFieldset extends BaseFieldset implements InputFilterProviderInterf
             'options' => array(
                 'label' => 'Opponent',
                 'object_manager' => $this->getEntityManager(),
+                'empty_option' => 'None',
                 'target_class' => 'League\Entity\Champion',
                 'property' => 'name',
                 'disable_inarray_validator' => true,
@@ -115,7 +116,7 @@ class TutorialFieldset extends BaseFieldset implements InputFilterProviderInterf
                 ),
             ),
             'opponent' => array(
-                'required' => true,
+                'required' => false,
                 'validators' => array(
                     array(
                         'name' => 'NotEmpty',

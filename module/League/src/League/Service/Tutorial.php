@@ -44,8 +44,8 @@ class Tutorial extends BaseService
         $form = $this->getTutorialForm();
         $form->setData($data);
         if ($form->isValid()) {
-            $params = array("champion" => $data['tutorial']['champion'],
-                "opponent" => $data['tutorial']['opponent']);
+            $params = array("champion" => $data['tutorial']['champion']);
+            if(!empty($data['tutorial']['opponent'])) $params["opponent"] = $data['tutorial']['opponent'];
             if ($data['tutorial']['position']) $params["position"] = $data['tutorial']['position'];
             return $this->getTutorialRepository('league')->findBy($params);
         }

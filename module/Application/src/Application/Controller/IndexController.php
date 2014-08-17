@@ -12,6 +12,8 @@ use Zend\Mail\Transport\SmtpOptions;
 use Zend\Session\Container;
 use Zend\View\Model\JsonModel;
 use Zend\View\Model\ViewModel;
+use Zend\Form\Form;
+use Doctrine\ORM\EntityRepository;
 
 /**
  * Class IndexController
@@ -23,21 +25,55 @@ class IndexController extends BaseController
 {
     const CONTROLLER_NAME = "Application\Controller\Index";
 
+    /**
+     * @var \League\Service\League The league service
+     */
     private $leagueService;
 
+    /**
+     * @var EntityRepository The referral application repository
+     */
     private $referralApplicationRepository;
 
+    /**
+     * @var \Application\Repository\ReferralRepository The referral repository
+     */
     private $referralRepository;
 
+    /**
+     * @var Form The referral form
+     */
     private $referralForm;
 
+    /**
+     * @var Form The search form
+     */
     private $searchForm;
 
+    /**
+     * @var \Application\Service\Search The search service
+     */
     private $searchService;
 
-    private $tutorialService;
+    /**
+     * @var EntityRepository The stream repository
+     */
+    private $streamRepository;
 
+    /**
+     * @var \Application\Service\Stream The stream service
+     */
+    private $streamService;
+
+    /**
+     * @var Form The tutorial form;
+     */
     private $tutorialForm;
+
+    /**
+     * @var \League\Service\Tutorial The tutorial service
+     */
+    private $tutorialService;
 
     public function aboutAction()
     {
@@ -117,7 +153,7 @@ class IndexController extends BaseController
 //                $fileContents = file_get_contents($path);
                 header('Content-Description: File Transfer');
                 header('Content-Type: application/octet-stream');
-                header('Content-Disposition: attachment; filename='.basename($file));
+                header('Content-Disposition: attachment; filename=' . basename($file));
                 header('Content-Transfer-Encoding: binary');
                 header('Expires: 0');
                 header('Cache-Control: must-revalidate, post-check=0, pre-check=0');
@@ -133,23 +169,48 @@ class IndexController extends BaseController
 
     }
 
-    public function tutorialsAction(){
+    public function tutorialsAction()
+    {
         $form = $this->getTutorialForm();
         $request = $this->getRequest();
-        if($request->isPost()){
-            if($tutorials = $this->getTutorialService()->findTutorials($request->getPost())){
+        if ($request->isPost()) {
+            if ($tutorials = $this->getTutorialService()->findTutorials($request->getPost())) {
                 return array(
-                    "tutorials" => $tutorials
+                    "tutorials" => $tutorials,
+                    "bodyClass" => "tutorialPage"
                 );
-            }else{
+            } else {
                 $vocabulary = $this->getVocabulary();
-                $this->flashMessenger()->addMessage($vocabulary["MATCHUP_NOT_FOUND"]);
+                $this->flashMessenger()->addMessage($vocabulary["ERROR_RESULTS_NOT_FOUND"]);
                 return $this->redirect()->toRoute('tutorials');
             }
         }
         return array(
             "form" => $form
         );
+    }
+
+    public function streamsAction()
+    {
+        $streamId = $this->params()->fromRoute("streamId");
+        if (!empty($streamId)) {
+            $stream = $this->getStreamRepository()->find($streamId);
+            if ($stream) {
+                $this->getStreamService()->refreshCache($streamId);
+                $viewModel = new ViewModel(array(
+                    "stream" => $stream
+                ));
+                $viewModel->setTemplate('stream_view');
+                return $viewModel;
+            } else {
+                return $this->notFoundAction();
+            }
+        } else {
+            $activeStreams = $this->getStreamService()->getActiveStreams();
+            return array(
+                "streams" => $activeStreams
+            );
+        }
     }
 
     public function referralAction()
@@ -420,6 +481,20 @@ class IndexController extends BaseController
         if (null === $this->searchForm)
             $this->searchForm = $this->getServiceLocator()->get('search_form');
         return $this->searchForm;
+    }
+
+    public function getStreamRepository()
+    {
+        if (null === $this->streamRepository)
+            $this->streamRepository = $this->getEntityManager()->getRepository('Application\Entity\Stream');
+        return $this->streamRepository;
+    }
+
+    public function getStreamService()
+    {
+        if (null === $this->streamService)
+            $this->streamService = $this->getServiceLocator()->get('stream_service');
+        return $this->streamService;
     }
 
     /**

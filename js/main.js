@@ -265,7 +265,7 @@ $(function () {
      * @description Creates the stage and plays a video.
      */
     $(document).on('click', '.videoMask, #tutorials li a', function (e) {
-        if (!isMobile) {
+        if (!isMobile && !$(this).hasClass('notInWindow')) {
             e.preventDefault();
             e.stopPropagation();
             var playBtn = $(this).parent();

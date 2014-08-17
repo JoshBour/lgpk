@@ -2,23 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b18605f-95df-4a5f-a812-dacb37521815" name="Default" comment="v1.8 added the share buttons and page speed optimisations">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/sprites.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery.selectbox-0.2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/jquery.selectbox.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/lib.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/main.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/mobile.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/style.min.css" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\images\btn_submit_2-hover.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\images\btn_submit_2.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\images\default-light.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\images\english.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\images\greek.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\images\house.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\images\zoom-cursor.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\module\Admin\src\Admin\Entity\Referral.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\module\Admin\src\Admin\Repository\ReferralRepository.php" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Admin/src/Admin/Entity/Admin.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Admin/src/Admin/Plugin/Admin.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Admin/src/Admin/View/Helper/Admin.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Admin/src/Admin/Factory/AdminPluginFactory.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Admin/src/Admin/Factory/AdminViewHelperFactory.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Admin/src/Admin/Controller/AuthController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Admin/src/Admin/Factory/AuthFactory.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Admin/src/Admin/Model/AuthStorage.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Admin/src/Admin/Form/LoginFieldset.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Admin/src/Admin/Form/LoginForm.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Admin/src/Admin/Factory/LoginFormFactory.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/League/src/League/Model/RecentGamesDto.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Application/src/Application/Factory/SessionManagerFactory.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Application/src/Application/Entity/Stream.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Application/src/Application/Service/Stream.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Admin/src/Admin/Model/StreamModel.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Application/src/Application/Entity/StreamSummoner.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Admin/view/layout/layout.phtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Admin/view/admin/auth/login.phtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/autoload/session.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Application/view/application/index/stream.phtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Application/view/application/index/streams.phtml" />
       <change type="DELETED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\vendor\doctrine\collections\tests\Doctrine\Tests\DoctrineTestCase.php" afterPath="" />
+      <change type="MOVED" beforePath="C:\webserver\Apache2.2\htdocs\leaguepick\module\League\src\League\Service\cacert.pem" afterPath="$PROJECT_DIR$/data/cacert.pem" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/cache/.coveralls.yml" afterPath="$PROJECT_DIR$/vendor/doctrine/cache/.coveralls.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/.coveralls.yml" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/.coveralls.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/.gitignore" afterPath="$PROJECT_DIR$/vendor/.gitignore" />
@@ -34,7 +41,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/cache/.travis.yml" afterPath="$PROJECT_DIR$/vendor/doctrine/cache/.travis.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/collections/.travis.yml" afterPath="$PROJECT_DIR$/vendor/doctrine/collections/.travis.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/common/.travis.yml" afterPath="$PROJECT_DIR$/vendor/doctrine/common/.travis.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Application/view/error/404.phtml" afterPath="$PROJECT_DIR$/module/Application/view/error/404.phtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php" afterPath="$PROJECT_DIR$/vendor/doctrine/lexer/lib/Doctrine/Common/Lexer/AbstractLexer.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/AbstractPlatform.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/AbstractPlatform.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/annotations/tests/Doctrine/Tests/Common/Annotations/AbstractReaderTest.php" afterPath="$PROJECT_DIR$/vendor/doctrine/annotations/tests/Doctrine/Tests/Common/Annotations/AbstractReaderTest.php" />
@@ -55,7 +61,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/CHANGELOG.md" afterPath="$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/CHANGELOG.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/cache/lib/Doctrine/Common/Cache/CacheProvider.php" afterPath="$PROJECT_DIR$/vendor/doctrine/cache/lib/Doctrine/Common/Cache/CacheProvider.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/CachedReader.php" afterPath="$PROJECT_DIR$/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/CachedReader.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/League/src/League/Model/ChampionStats.php" afterPath="$PROJECT_DIR$/module/League/src/League/Model/ChampionStats.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataInfo.php" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/ClassMetadataInfo.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/annotations/tests/Doctrine/Tests/Common/Annotations/Fixtures/ClassWithConstants.php" afterPath="$PROJECT_DIR$/vendor/doctrine/annotations/tests/Doctrine/Tests/Common/Annotations/Fixtures/ClassWithConstants.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/collections/tests/Doctrine/Tests/Common/Collections/ClosureExpressionVisitorTest.php" afterPath="$PROJECT_DIR$/vendor/doctrine/collections/tests/Doctrine/Tests/Common/Collections/ClosureExpressionVisitorTest.php" />
@@ -86,10 +91,10 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/FileCacheReader.php" afterPath="$PROJECT_DIR$/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/FileCacheReader.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/annotations/tests/Doctrine/Tests/Common/Annotations/FileCacheReaderTest.php" afterPath="$PROJECT_DIR$/vendor/doctrine/annotations/tests/Doctrine/Tests/Common/Annotations/FileCacheReaderTest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/cache/lib/Doctrine/Common/Cache/FilesystemCache.php" afterPath="$PROJECT_DIR$/vendor/doctrine/cache/lib/Doctrine/Common/Cache/FilesystemCache.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/Gettext.js" afterPath="$PROJECT_DIR$/js/Gettext.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/Helper/Helper.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/Helper/Helper.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Internal/Hydration/HydrationException.php" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Internal/Hydration/HydrationException.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/Annotation/IgnoreAnnotation.php" afterPath="$PROJECT_DIR$/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/Annotation/IgnoreAnnotation.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Admin/src/Admin/Controller/IndexController.php" afterPath="$PROJECT_DIR$/module/Admin/src/Admin/Controller/IndexController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Application/src/Application/Controller/IndexController.php" afterPath="$PROJECT_DIR$/module/Application/src/Application/Controller/IndexController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/IndexedReader.php" afterPath="$PROJECT_DIR$/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/IndexedReader.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/inflector/lib/Doctrine/Common/Inflector/Inflector.php" afterPath="$PROJECT_DIR$/vendor/doctrine/inflector/lib/Doctrine/Common/Inflector/Inflector.php" />
@@ -100,11 +105,13 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/LICENSE" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/LICENSE" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/LICENSE" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/LICENSE" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/LICENSE" afterPath="$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/League/src/League/Service/League.php" afterPath="$PROJECT_DIR$/module/League/src/League/Service/League.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Tools/Pagination/LimitSubqueryOutputWalker.php" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Tools/Pagination/LimitSubqueryOutputWalker.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/Command/ListCommand.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/Command/ListCommand.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/Tests/Command/ListCommandTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/Tests/Command/ListCommandTest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/Makefile" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/Makefile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connections/MasterSlaveConnection.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connections/MasterSlaveConnection.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Application/Module.php" afterPath="$PROJECT_DIR$/module/Application/Module.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Sharding/SQLAzure/Schema/MultiTenantVisitor.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Sharding/SQLAzure/Schema/MultiTenantVisitor.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/Mysqli/MysqliConnection.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/Mysqli/MysqliConnection.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/Output/NullOutput.php" afterPath="$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/Output/NullOutput.php" />
@@ -129,7 +136,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/README.md" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/README.md" afterPath="$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/Reader.php" afterPath="$PROJECT_DIR$/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/Reader.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Application/src/Application/Entity/Referral.php" afterPath="$PROJECT_DIR$/module/Application/src/Application/Entity/Referral.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/SQLServer2012Platform.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/SQLServer2012Platform.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/SQLServerPlatform.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Platforms/SQLServerPlatform.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/SQLSrv/SQLSrvConnection.php" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/SQLSrv/SQLSrvConnection.php" />
@@ -148,6 +154,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/annotations/tests/Doctrine/Tests/TestInit.php" afterPath="$PROJECT_DIR$/vendor/doctrine/annotations/tests/Doctrine/Tests/TestInit.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/cache/tests/Doctrine/Tests/TestInit.php" afterPath="$PROJECT_DIR$/vendor/doctrine/cache/tests/Doctrine/Tests/TestInit.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/TokenParser.php" afterPath="$PROJECT_DIR$/vendor/doctrine/annotations/lib/Doctrine/Common/Annotations/TokenParser.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/League/src/League/Service/Tutorial.php" afterPath="$PROJECT_DIR$/module/League/src/League/Service/Tutorial.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Application/src/Application/Form/TutorialFieldset.php" afterPath="$PROJECT_DIR$/module/Application/src/Application/Form/TutorialFieldset.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/UPGRADE.md" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/UPGRADE.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/dbal/UPGRADE" afterPath="$PROJECT_DIR$/vendor/doctrine/dbal/UPGRADE" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/common/UPGRADE_TO_2_1" afterPath="$PROJECT_DIR$/vendor/doctrine/common/UPGRADE_TO_2_1" />
@@ -162,7 +170,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/cookbook/advanced-field-value-conversion-using-custom-mapping-types.rst" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/cookbook/advanced-field-value-conversion-using-custom-mapping-types.rst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/cookbook/aggregate-fields.rst" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/cookbook/aggregate-fields.rst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/reference/annotations-reference.rst" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/reference/annotations-reference.rst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/application.config.php" afterPath="$PROJECT_DIR$/config/application.config.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/Tests/Fixtures/application_1.json" afterPath="$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/Tests/Fixtures/application_1.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/Tests/Fixtures/application_1.md" afterPath="$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/Tests/Fixtures/application_1.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/Tests/Fixtures/application_1.xml" afterPath="$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/Tests/Fixtures/application_1.xml" />
@@ -173,9 +180,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/Tests/Fixtures/application_renderexception_doublewidth1decorated.txt" afterPath="$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/Tests/Fixtures/application_renderexception_doublewidth1decorated.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/reference/architecture.rst" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/reference/architecture.rst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/reference/association-mapping.rst" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/reference/association-mapping.rst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Admin/autoload_classmap.php" afterPath="$PROJECT_DIR$/module/Admin/autoload_classmap.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Application/autoload_classmap.php" afterPath="$PROJECT_DIR$/module/Application/autoload_classmap.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/League/autoload_classmap.php" afterPath="$PROJECT_DIR$/module/League/autoload_classmap.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/reference/basic-mapping.rst" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/reference/basic-mapping.rst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/reference/batch-processing.rst" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/reference/batch-processing.rst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/reference/best-practices.rst" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/reference/best-practices.rst" />
@@ -216,18 +220,14 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/tutorials/extra-lazy-associations.rst" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/tutorials/extra-lazy-associations.rst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/reference/faq.rst" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/reference/faq.rst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/reference/filters.rst" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/reference/filters.rst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Application/view/partial/footer.phtml" afterPath="$PROJECT_DIR$/module/Application/view/partial/footer.phtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/tutorials/getting-started-database.rst" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/tutorials/getting-started-database.rst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/tutorials/getting-started-models.rst" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/tutorials/getting-started-models.rst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/tutorials/getting-started.rst" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/tutorials/getting-started.rst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Application/view/partial/header.phtml" afterPath="$PROJECT_DIR$/module/Application/view/partial/header.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/html2canvas.js" afterPath="$PROJECT_DIR$/js/html2canvas.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/cookbook/implementing-arrayaccess-for-domain-objects.rst" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/cookbook/implementing-arrayaccess-for-domain-objects.rst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/cookbook/implementing-the-notify-changetracking-policy.rst" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/cookbook/implementing-the-notify-changetracking-policy.rst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/cookbook/implementing-wakeup-or-clone.rst" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/cookbook/implementing-wakeup-or-clone.rst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/reference/improving-performance.rst" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/reference/improving-performance.rst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Application/view/error/index.phtml" afterPath="$PROJECT_DIR$/module/Application/view/error/index.phtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/index.rst" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/index.rst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/reference/inheritance-mapping.rst" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/reference/inheritance-mapping.rst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/Tests/Fixtures/input_argument_1.json" afterPath="$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/Tests/Fixtures/input_argument_1.json" />
@@ -264,12 +264,16 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/Tests/Fixtures/input_option_4.xml" afterPath="$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/Tests/Fixtures/input_option_4.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/reference/installation.rst" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/reference/installation.rst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/cookbook/integrating-with-codeigniter.rst" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/cookbook/integrating-with-codeigniter.rst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/jquery.selectbox-0.2.min.js" afterPath="$PROJECT_DIR$/js/jquery.selectbox-0.2.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Application/view/layout/layout.phtml" afterPath="$PROJECT_DIR$/module/Application/view/layout/layout.phtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/lib.js" afterPath="$PROJECT_DIR$/js/lib.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/reference/limitations-and-known-issues.rst" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/reference/limitations-and-known-issues.rst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.min.js" afterPath="$PROJECT_DIR$/js/main.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/reference/metadata-drivers.rst" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/reference/metadata-drivers.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/mobile.css" afterPath="$PROJECT_DIR$/css/mobile.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/mobile.min.css" afterPath="$PROJECT_DIR$/css/mobile.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Admin/config/module.config.php" afterPath="$PROJECT_DIR$/module/Admin/config/module.config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Application/config/module.config.php" afterPath="$PROJECT_DIR$/module/Application/config/module.config.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/cookbook/mysql-enums.rst" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/cookbook/mysql-enums.rst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/reference/namingstrategy.rst" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/reference/namingstrategy.rst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/reference/native-sql.rst" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/reference/native-sql.rst" />
@@ -286,12 +290,12 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/inflector/phpunit.xml.dist" afterPath="$PROJECT_DIR$/vendor/doctrine/inflector/phpunit.xml.dist" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/phpunit.xml.dist" afterPath="$PROJECT_DIR$/vendor/symfony/console/Symfony/Component/Console/phpunit.xml.dist" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/reference/query-builder.rst" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/reference/query-builder.rst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Application/view/application/index/referral.phtml" afterPath="$PROJECT_DIR$/module/Application/view/application/index/referral.phtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/cookbook/resolve-target-entity-listener.rst" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/cookbook/resolve-target-entity-listener.rst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Application/view/application/index/result.phtml" afterPath="$PROJECT_DIR$/module/Application/view/application/index/result.phtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/cookbook/sql-table-prefixes.rst" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/cookbook/sql-table-prefixes.rst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/cookbook/strategy-cookbook-introduction.rst" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/cookbook/strategy-cookbook-introduction.rst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.min.css" afterPath="$PROJECT_DIR$/css/style.min.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/toc.rst" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/toc.rst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/reference/tools.rst" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/reference/tools.rst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/reference/transactions-and-concurrency.rst" afterPath="$PROJECT_DIR$/vendor/doctrine/orm/docs/en/reference/transactions-and-concurrency.rst" />
@@ -328,19 +332,73 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name=".htaccess" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.htaccess">
+      <file leaf-file-name="Stream.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module/Application/src/Application/Service/Stream.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="31" selection-start="1277" selection-end="1277" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="850">
+            <state line="40" column="48" selection-start="1252" selection-end="1255" vertical-scroll-proportion="16.137255" vertical-offset="1384" max-vertical-offset="2295">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layout.phtml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/Application/view/layout/layout.phtml">
+      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="92" column="66" selection-start="3727" selection-end="3727" vertical-scroll-proportion="-60.153847" vertical-offset="0" max-vertical-offset="1819">
+            <state line="266" column="63" selection-start="0" selection-end="10975" vertical-scroll-proportion="-12.48" vertical-offset="4210" max-vertical-offset="5185">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IndexController.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/module/Application/src/Application/Controller/IndexController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="184" column="63" selection-start="6138" selection-end="6138" vertical-scroll-proportion="0.2542735" vertical-offset="2686" max-vertical-offset="8721">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.min.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/main.min.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="5579" selection-start="5579" selection-end="5579" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="423" column="31" selection-start="0" selection-end="19216" vertical-scroll-proportion="0.0" vertical-offset="6972" max-vertical-offset="15436">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.min.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/style.min.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="10033" selection-start="10033" selection-end="10033" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mobile.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/mobile.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="1" selection-start="0" selection-end="840" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1071">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mobile.min.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/mobile.min.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="654" selection-start="654" selection-end="654" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
               <folding />
             </state>
           </provider>
@@ -349,16 +407,7 @@
       <file leaf-file-name="lib.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/lib.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="26" selection-start="751" selection-end="751" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4114">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/vendor/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="8" selection-start="70" selection-end="70" vertical-scroll-proportion="0.21841542" vertical-offset="0" max-vertical-offset="467">
+            <state line="22" column="6" selection-start="0" selection-end="6679" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="4114">
               <folding />
             </state>
           </provider>
@@ -368,51 +417,6 @@
         <entry file="file://$PROJECT_DIR$/js/lib.min.js">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="3226" selection-start="3226" selection-end="3226" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="40" selection-start="354" selection-end="354" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="14960">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jquery.selectbox.min.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/jquery.selectbox.min.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="1908" selection-start="1908" selection-end="1908" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.phtml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/Application/view/partial/header.phtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="20" selection-start="2022" selection-end="2022" vertical-scroll-proportion="-16.346153" vertical-offset="170" max-vertical-offset="1156">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="96" column="83" selection-start="0" selection-end="10939" vertical-scroll-proportion="-10.08" vertical-offset="1380" max-vertical-offset="5185">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.min.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/main.min.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="5545" selection-start="5545" selection-end="5545" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
               <folding />
             </state>
           </provider>
@@ -436,57 +440,57 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/module/League/config/module.config.php" />
-        <option value="$PROJECT_DIR$/module/Youtube/src/Youtube/Service/Youtube.php" />
-        <option value="$PROJECT_DIR$/module/Admin/view/admin/index/generate.phtml" />
-        <option value="$PROJECT_DIR$/module/Youtube/src/Youtube/Model/Video.php" />
-        <option value="$PROJECT_DIR$/module/Admin/src/Admin/Controller/IndexController.php" />
-        <option value="$PROJECT_DIR$/css/jquery.selectbox.css" />
-        <option value="$PROJECT_DIR$/js/jquery-1.11.0.min.js" />
-        <option value="$PROJECT_DIR$/module/League/src/League/Repository/TutorialRepository.php" />
-        <option value="$PROJECT_DIR$/module/League/src/League/Entity/Tutorial.php" />
-        <option value="$PROJECT_DIR$/module/Application/src/Application/Form/ReferralFieldset.php" />
-        <option value="$PROJECT_DIR$/module/Application/src/Application/Form/ReferralForm.php" />
-        <option value="$PROJECT_DIR$/module/Application/src/Application/Entity/ReferralApplication.php" />
-        <option value="$PROJECT_DIR$/css/mobile.css" />
-        <option value="$USER_HOME$/Downloads/leetfeed-master/leetfeed-master/public/css/style.css" />
-        <option value="$PROJECT_DIR$/module/Admin/src/Admin/Repository/ReferralRepository.php" />
-        <option value="$PROJECT_DIR$/module/Application/config/module.config.php" />
-        <option value="$PROJECT_DIR$/module/Application/src/Application/Form/TutorialFieldset.php" />
-        <option value="$PROJECT_DIR$/module/Application/src/Application/Factory/TutorialFormFactory.php" />
-        <option value="$PROJECT_DIR$/module/Application/src/Application/Form/TutorialForm.php" />
-        <option value="$PROJECT_DIR$/module/League/src/League/Service/Tutorial.php" />
-        <option value="$PROJECT_DIR$/config/autoload/vocabulary.local.php" />
-        <option value="$PROJECT_DIR$/module/Application/view/application/index/search.phtml" />
-        <option value="$PROJECT_DIR$/module/Application/view/application/index/referral.phtml" />
-        <option value="$PROJECT_DIR$/module/Application/src/Application/Entity/Referral.php" />
-        <option value="$PROJECT_DIR$/module/League/src/League/Model/ChampionStats.php" />
-        <option value="$PROJECT_DIR$/module/Application/src/Application/Controller/IndexController.php" />
-        <option value="$PROJECT_DIR$/module/Application/view/application/index/result.phtml" />
-        <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/module/Application/view/error/404.phtml" />
-        <option value="$PROJECT_DIR$/module/Application/view/error/index.phtml" />
-        <option value="$PROJECT_DIR$/module/Application/view/application/index/tutorials.phtml" />
-        <option value="$PROJECT_DIR$/js/html2canvas.js" />
-        <option value="$PROJECT_DIR$/js/Gettext.js" />
-        <option value="$PROJECT_DIR$/css/mobile.min.css" />
-        <option value="$PROJECT_DIR$/module/Application/view/partial/footer.phtml" />
-        <option value="$PROJECT_DIR$/config/application.config.php" />
-        <option value="$PROJECT_DIR$/js/jquery.selectbox-0.2.js" />
-        <option value="$PROJECT_DIR$/module/Application/src/Application/Service/Search.php" />
-        <option value="$PROJECT_DIR$/js/jquery.selectbox-0.2.min.js" />
-        <option value="$PROJECT_DIR$/css/style.css" />
-        <option value="$PROJECT_DIR$/css/style.min.css" />
-        <option value="$PROJECT_DIR$/css/jquery.selectbox.min.css" />
-        <option value="$PROJECT_DIR$/module/Application/view/layout/layout.phtml" />
-        <option value="$PROJECT_DIR$/module/Application/view/partial/header.phtml" />
         <option value="$PROJECT_DIR$/css/imports.css" />
-        <option value="$PROJECT_DIR$/js/lib.min.js" />
-        <option value="$PROJECT_DIR$/js/main.js" />
-        <option value="$PROJECT_DIR$/js/main.min.js" />
-        <option value="$PROJECT_DIR$/.htaccess" />
-        <option value="$PROJECT_DIR$/js/lib.js" />
         <option value="$PROJECT_DIR$/vendor/.gitignore" />
+        <option value="$PROJECT_DIR$/css/mobile.css" />
+        <option value="$PROJECT_DIR$/module/Application/view/partial/header.phtml" />
+        <option value="$PROJECT_DIR$/module/Application/src/Application/Service/Search.php" />
+        <option value="$PROJECT_DIR$/module/Application/src/Application/Form/TutorialFieldset.php" />
+        <option value="$PROJECT_DIR$/module/League/src/League/Service/Tutorial.php" />
+        <option value="$PROJECT_DIR$/module/Admin/src/Admin/Entity/Admin.php" />
+        <option value="$PROJECT_DIR$/module/Admin/src/Admin/Model/AuthStorage.php" />
+        <option value="$PROJECT_DIR$/module/Admin/src/Admin/Factory/AuthFactory.php" />
+        <option value="$PROJECT_DIR$/module/Admin/src/Admin/Factory/UserPluginFactory.php" />
+        <option value="$PROJECT_DIR$/module/Admin/src/Admin/View/Helper/User.php" />
+        <option value="$PROJECT_DIR$/module/Admin/src/Admin/Plugin/User.php" />
+        <option value="$PROJECT_DIR$/module/Admin/src/Admin/View/Helper/Admin.php" />
+        <option value="$PROJECT_DIR$/module/Admin/src/Admin/Plugin/Admin.php" />
+        <option value="$PROJECT_DIR$/module/Admin/src/Admin/Factory/AdminPluginFactory.php" />
+        <option value="$PROJECT_DIR$/config/autoload/doctrine.local.php" />
+        <option value="$PROJECT_DIR$/.htaccess" />
+        <option value="$PROJECT_DIR$/config/autoload/session.php" />
+        <option value="$PROJECT_DIR$/module/Application/src/Application/Factory/SessionManagerFactory.php" />
+        <option value="$PROJECT_DIR$/module/Application/Module.php" />
+        <option value="$PROJECT_DIR$/js/lib.js" />
+        <option value="$PROJECT_DIR$/module/Admin/src/Admin/Factory/LoginFormFactory.php" />
+        <option value="$PROJECT_DIR$/config/autoload/vocabulary.local.php" />
+        <option value="$PROJECT_DIR$/module/Admin/src/Admin/Form/LoginForm.php" />
+        <option value="$PROJECT_DIR$/module/Admin/src/Admin/Form/LoginFieldset.php" />
+        <option value="$PROJECT_DIR$/module/Admin/view/layout/layout.phtml" />
+        <option value="$PROJECT_DIR$/module/Admin/src/Admin/Controller/AuthController.php" />
+        <option value="$PROJECT_DIR$/module/Admin/config/module.config.php" />
+        <option value="$PROJECT_DIR$/module/Admin/src/Admin/Controller/IndexController.php" />
+        <option value="$PROJECT_DIR$/module/Admin/view/admin/auth/login.phtml" />
+        <option value="$PROJECT_DIR$/module/Application/src/Application/Entity/StreamSummoner.php" />
+        <option value="$PROJECT_DIR$/module/Admin/src/Admin/Model/StreamModel.php" />
+        <option value="$PROJECT_DIR$/module/League/src/League/Model/RecentGamesDto.php" />
+        <option value="$PROJECT_DIR$/module/League/src/League/Service/League.php" />
+        <option value="$PROJECT_DIR$/module/Application/view/layout/layout.phtml" />
+        <option value="$PROJECT_DIR$/module/Application/view/application/index/tutorials.phtml" />
+        <option value="$PROJECT_DIR$/module/Application/config/module.config.php" />
+        <option value="$PROJECT_DIR$/module/Application/view/application/index/stream.phtml" />
+        <option value="$PROJECT_DIR$/module/Application/src/Application/Entity/Stream.php" />
+        <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/module/Application/view/application/index/search.phtml" />
+        <option value="$PROJECT_DIR$/module/Application/view/application/index/result.phtml" />
+        <option value="$PROJECT_DIR$/module/Application/view/application/index/streams.phtml" />
+        <option value="$PROJECT_DIR$/js/main.js" />
+        <option value="$PROJECT_DIR$/css/style.min.css" />
+        <option value="$PROJECT_DIR$/css/mobile.min.css" />
+        <option value="$PROJECT_DIR$/js/lib.min.js" />
+        <option value="$PROJECT_DIR$/js/main.min.js" />
+        <option value="$PROJECT_DIR$/module/Application/src/Application/Controller/IndexController.php" />
+        <option value="$PROJECT_DIR$/module/Application/src/Application/Service/Stream.php" />
       </list>
     </option>
   </component>
@@ -497,10 +501,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1912" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1616" />
-    <option name="height" value="916" />
+    <option name="width" value="1936" />
+    <option name="height" value="1096" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -556,6 +560,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -584,7 +589,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
+              <option name="myItemId" value="module" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -599,6 +604,96 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="module" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="League" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leaguepick" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leaguepick" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="League" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="League" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leaguepick" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leaguepick" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="League" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="League" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leaguepick" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leaguepick" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="League" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="League" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Model" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -639,10 +734,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="partial" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -669,28 +760,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="leaguepick" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="leaguepick" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="module" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -749,14 +818,6 @@
               <option name="myItemId" value="Application" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="View" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Helper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -813,6 +874,300 @@
               <option name="myItemId" value="Application" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Plugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leaguepick" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leaguepick" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leaguepick" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leaguepick" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leaguepick" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leaguepick" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leaguepick" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leaguepick" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leaguepick" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leaguepick" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leaguepick" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leaguepick" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="auth" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leaguepick" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leaguepick" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leaguepick" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leaguepick" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leaguepick" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leaguepick" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Form" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leaguepick" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leaguepick" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leaguepick" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leaguepick" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -842,9 +1197,40 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leaguepick" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leaguepick" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leaguepick" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leaguepick" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="autoload" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -857,18 +1243,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\webserver\Apache2.2\htdocs\leaguepick\css" />
-      <recent name="C:\webserver\Apache2.2\htdocs\leaguepick\js" />
-      <recent name="C:\webserver\Apache2.2\htdocs\leaguepick\images" />
-      <recent name="C:\webserver\Apache2.2\htdocs\leaguepick\module\Application\src\Application\Factory" />
-      <recent name="C:\webserver\Apache2.2\htdocs\leaguepick\module\Application\src\Application\Form" />
+      <recent name="C:\webserver\Apache2.2\htdocs\leaguepick\module\Application\view\application\index" />
+      <recent name="C:\webserver\Apache2.2\htdocs\leaguepick\module\League\src\League\Model" />
+      <recent name="C:\webserver\Apache2.2\htdocs\leaguepick\module\Application\src\Application\Service" />
+      <recent name="C:\webserver\Apache2.2\htdocs\leaguepick\module\Application\src\Application\Entity" />
+      <recent name="C:\webserver\Apache2.2\htdocs\leaguepick\module\Admin\view" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\webserver\Apache2.2\htdocs\leaguepick\data" />
       <recent name="C:\webserver\Apache2.2\htdocs\leaguepick\css" />
       <recent name="C:\webserver\Apache2.2\htdocs\leaguepick\images" />
       <recent name="C:\webserver\Apache2.2\htdocs\leaguepick\module\Admin\view\admin\index" />
       <recent name="C:\webserver\Apache2.2\htdocs\leaguepick\js" />
-      <recent name="C:\webserver\Apache2.2\htdocs\leaguepick\module\Application\src\Application\Form" />
     </key>
   </component>
   <component name="RunManager">
@@ -947,7 +1333,11 @@
       <created>1407539151677</created>
       <updated>1407539151677</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="v1.8 added the share buttons and page speed optimisations">
+      <created>1407596201994</created>
+      <updated>1407596201994</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -971,15 +1361,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1616" height="916" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32962963" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962963" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.235" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28177083" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929292" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -991,8 +1381,8 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929292" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1024,345 +1414,311 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/module/Admin/src/Admin/Controller/IndexController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="111" column="5" selection-start="3165" selection-end="3165" vertical-scroll-proportion="-54.346153" vertical-offset="372" max-vertical-offset="2329" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Application/src/Application/Form/ReferralFieldset.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="118" column="44" selection-start="4368" selection-end="4368" vertical-scroll-proportion="0.0" vertical-offset="2006" max-vertical-offset="2703" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Application/src/Application/Form/ReferralForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="26" selection-start="802" selection-end="802" vertical-scroll-proportion="0.0" vertical-offset="663" max-vertical-offset="833" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Application/src/Application/Entity/ReferralApplication.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="0" selection-start="1526" selection-end="1526" vertical-scroll-proportion="0.0" vertical-offset="1547" max-vertical-offset="1683" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/leetfeed-master/leetfeed-master/public/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="898" column="0" selection-start="22613" selection-end="22724" vertical-scroll-proportion="0.0" vertical-offset="15021" max-vertical-offset="21573" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/League/config/module.config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="54" selection-start="540" selection-end="540" vertical-scroll-proportion="-12.423077" vertical-offset="0" max-vertical-offset="714" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Application/src/Application/Form/TutorialFieldset.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="62" selection-start="1687" selection-end="1687" vertical-scroll-proportion="0.0" vertical-offset="935" max-vertical-offset="2431" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Application/src/Application/Form/SearchForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="939" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Application/src/Application/Form/TutorialForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="21" selection-start="745" selection-end="745" vertical-scroll-proportion="0.6720086" vertical-offset="0" max-vertical-offset="936" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Application/src/Application/Factory/TutorialFormFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="50" selection-start="751" selection-end="762" vertical-scroll-proportion="0.5448718" vertical-offset="0" max-vertical-offset="936" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Application/config/module.config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="126" column="46" selection-start="5151" selection-end="5151" vertical-scroll-proportion="0.5630342" vertical-offset="1615" max-vertical-offset="3893" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/autoload/vocabulary.local.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="97" selection-start="2112" selection-end="2112" vertical-scroll-proportion="0.52307695" vertical-offset="0" max-vertical-offset="845" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/module/League/src/League/Service/Tutorial.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="30" selection-start="906" selection-end="906" vertical-scroll-proportion="0.0" vertical-offset="748" max-vertical-offset="3451">
-          <folding />
-        </state>
+        <state line="47" column="106" selection-start="1119" selection-end="1119" vertical-scroll-proportion="-0.16346154" vertical-offset="799" max-vertical-offset="3298" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/Application/view/application/index/search.phtml">
+    <entry file="file://$PROJECT_DIR$/module/Admin/src/Admin/Entity/Admin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="100" selection-start="1735" selection-end="1735" vertical-scroll-proportion="0.0" vertical-offset="646" max-vertical-offset="918" />
+        <state line="79" column="28" selection-start="1480" selection-end="1480" vertical-scroll-proportion="-48.384617" vertical-offset="0" max-vertical-offset="1904" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/Application/view/application/index/referral.phtml">
+    <entry file="file://$PROJECT_DIR$/module/Admin/src/Admin/Factory/AuthFactory.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="87" selection-start="715" selection-end="715" vertical-scroll-proportion="0.20592193" vertical-offset="0" max-vertical-offset="850">
-          <folding />
-        </state>
+        <state line="8" column="15" selection-start="104" selection-end="104" vertical-scroll-proportion="0.05448718" vertical-offset="0" max-vertical-offset="936" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/Application/src/Application/Entity/Referral.php">
+    <entry file="file://$PROJECT_DIR$/module/Admin/src/Admin/Model/AuthStorage.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="24" selection-start="246" selection-end="246" vertical-scroll-proportion="0.20238096" vertical-offset="0" max-vertical-offset="1785">
-          <folding />
-        </state>
+        <state line="1" column="15" selection-start="21" selection-end="21" vertical-scroll-proportion="0.018619934" vertical-offset="0" max-vertical-offset="913" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/League/src/League/Model/ChampionStats.php">
+    <entry file="file://$PROJECT_DIR$/module/Admin/src/Admin/Plugin/Admin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="33" selection-start="1507" selection-end="1520" vertical-scroll-proportion="0.45238096" vertical-offset="559" max-vertical-offset="3196">
-          <folding />
-        </state>
+        <state line="37" column="6" selection-start="682" selection-end="682" vertical-scroll-proportion="0.599359" vertical-offset="0" max-vertical-offset="1717" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/Application/src/Application/Controller/IndexController.php">
+    <entry file="file://$PROJECT_DIR$/module/Admin/src/Admin/View/Helper/Admin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="202" column="49" selection-start="7458" selection-end="7458" vertical-scroll-proportion="0.505291" vertical-offset="2882" max-vertical-offset="7480">
-          <folding />
-        </state>
+        <state line="54" column="40" selection-start="1025" selection-end="1025" vertical-scroll-proportion="0.14529915" vertical-offset="714" max-vertical-offset="1666" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/Application/view/application/index/result.phtml">
+    <entry file="file://$PROJECT_DIR$/module/Admin/src/Admin/Factory/AdminPluginFactory.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="45" selection-start="3154" selection-end="3154" vertical-scroll-proportion="0.41991925" vertical-offset="589" max-vertical-offset="3111">
-          <folding>
-            <marker date="1407588451852" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1407588451852" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1407588451852" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1407588451852" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1407588451852" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1407588451852" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1407588451852" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
+        <state line="14" column="11" selection-start="242" selection-end="242" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="646" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/Application/view/error/404.phtml">
+    <entry file="file://$PROJECT_DIR$/module/Admin/src/Admin/Factory/AdminViewHelperFactory.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="160" selection-end="206" vertical-scroll-proportion="0.06746032" vertical-offset="0" max-vertical-offset="1972">
-          <folding />
-        </state>
+        <state line="18" column="36" selection-start="371" selection-end="371" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="629" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/Application/view/error/index.phtml">
+    <entry file="file://$PROJECT_DIR$/config/autoload/doctrine.local.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="19" selection-start="3351" selection-end="3351" vertical-scroll-proportion="0.83201057" vertical-offset="561" max-vertical-offset="1326">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Application/view/application/index/tutorials.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="17" selection-start="50" selection-end="50" vertical-scroll-proportion="0.022880215" vertical-offset="0" max-vertical-offset="1037">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/html5shiv.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="769">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/html2canvas.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="37760" selection-start="37760" selection-end="37760" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="769">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/jquery-1.11.0.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="769">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/Gettext.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="10149" selection-start="10149" selection-end="10149" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="769">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/perfect-scrollbar.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="769">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/mobile.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="0" selection-start="612" selection-end="612" vertical-scroll-proportion="0.730179" vertical-offset="41" max-vertical-offset="1003">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/mobile.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="629" selection-start="629" selection-end="629" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="769">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Application/view/partial/footer.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="114" selection-start="607" selection-end="607" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="340">
-          <folding>
-            <marker date="1407591525411" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
+        <state line="10" column="34" selection-start="373" selection-end="373" vertical-scroll-proportion="0.22486773" vertical-offset="0" max-vertical-offset="756" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/application.config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="49" selection-start="1823" selection-end="1823" vertical-scroll-proportion="-23.538462" vertical-offset="153" max-vertical-offset="1292">
-          <folding />
-        </state>
+        <state line="45" column="49" selection-start="1823" selection-end="1823" vertical-scroll-proportion="0.8173077" vertical-offset="0" max-vertical-offset="1292" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="21" selection-start="431" selection-end="431" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="510">
-          <folding />
-        </state>
+        <state line="1" column="0" selection-start="35" selection-end="35" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="850" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/config-cache/module-config-cache.2245023265ae4cf87d02c8b6ba991139.php">
+    <entry file="file://$PROJECT_DIR$/module/Application/src/Application/Factory/SearchFormFactory.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-11.986111" vertical-offset="8630" max-vertical-offset="9350">
-          <folding />
-        </state>
+        <state line="28" column="40" selection-start="0" selection-end="924" vertical-scroll-proportion="-12.423077" vertical-offset="0" max-vertical-offset="629" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/config-cache/module-classmap-cache.d6e694d9c3973c4e4b67e35db7933e49.php">
+    <entry file="file://$PROJECT_DIR$/config/autoload/session.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="759">
-          <folding />
-        </state>
+        <state line="10" column="19" selection-start="303" selection-end="313" vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="391" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/jquery.selectbox.css">
+    <entry file="file://$PROJECT_DIR$/module/Application/src/Application/Factory/SessionManagerFactory.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="18" selection-start="0" selection-end="2498" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2278">
-          <folding />
-        </state>
+        <state line="9" column="0" selection-start="120" selection-end="120" vertical-scroll-proportion="-0.0" vertical-offset="153" max-vertical-offset="1258" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/module/Application/Module.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="816">
+        <state line="45" column="0" selection-start="1415" selection-end="1415" vertical-scroll-proportion="-24.192308" vertical-offset="0" max-vertical-offset="1088" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/autoload/vocabulary.local.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="30" selection-start="2150" selection-end="2150" vertical-scroll-proportion="-17.653847" vertical-offset="0" max-vertical-offset="799" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Admin/src/Admin/Factory/LoginFormFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="77" selection-start="1115" selection-end="1115" vertical-scroll-proportion="-22.23077" vertical-offset="0" max-vertical-offset="901" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Admin/src/Admin/Form/LoginForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="37" selection-start="319" selection-end="319" vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="731" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Admin/src/Admin/Form/LoginFieldset.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="98" column="38" selection-start="3623" selection-end="3623" vertical-scroll-proportion="0.6356838" vertical-offset="1020" max-vertical-offset="1972" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Admin/config/module.config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="130" column="25" selection-start="5367" selection-end="5367" vertical-scroll-proportion="-25.538462" vertical-offset="1546" max-vertical-offset="2482" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Admin/view/layout/layout.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="111" selection-start="1575" selection-end="1575" vertical-scroll-proportion="-29.423077" vertical-offset="0" max-vertical-offset="2040" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Admin/src/Admin/Controller/IndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="40" selection-start="513" selection-end="513" vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="2533" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Admin/src/Admin/Controller/AuthController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="54" selection-start="401" selection-end="442" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="2839" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Admin/view/admin/auth/login.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="936" />
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_7.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="453" column="9" selection-start="13657" selection-end="13657" vertical-scroll-proportion="0.34437087" vertical-offset="7441" max-vertical-offset="18989">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Admin/src/Admin/Model/StreamModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="126" column="0" selection-start="2708" selection-end="2708" vertical-scroll-proportion="0.0" vertical-offset="2142" max-vertical-offset="2261">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/module/Application/src/Application/Service/Search.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="96" selection-start="1035" selection-end="1035" vertical-scroll-proportion="-16.346153" vertical-offset="0" max-vertical-offset="3621">
+        <state line="205" column="0" selection-start="8437" selection-end="8707" vertical-scroll-proportion="0.0" vertical-offset="3485" max-vertical-offset="3740">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/jquery.selectbox-0.2.js">
+    <entry file="file://$PROJECT_DIR$/module/League/src/League/Model/ChampionStatsDto.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="200" column="36" selection-start="0" selection-end="20448" vertical-scroll-proportion="0.0" vertical-offset="3138" max-vertical-offset="8942">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1071" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/jquery.selectbox-0.2.min.js">
+    <entry file="file://$PROJECT_DIR$/module/League/src/League/Model/GameDto.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="7469" selection-start="7469" selection-end="7469" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="746">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6902">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.min.css">
+    <entry file="file://$PROJECT_DIR$/module/League/src/League/Model/PlayerDto.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="9953" selection-start="9953" selection-end="9953" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="746">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/jquery.selectbox.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="1908" selection-start="1908" selection-end="1908" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="746">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="40" selection-start="354" selection-end="354" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="14960">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/lib.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="3226" selection-start="3226" selection-end="3226" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="746">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Application/view/application/index/home.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="56" selection-start="791" selection-end="791" vertical-scroll-proportion="0.37380627" vertical-offset="151" max-vertical-offset="1241">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="83" selection-start="0" selection-end="10939" vertical-scroll-proportion="-10.08" vertical-offset="1380" max-vertical-offset="5185">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/main.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="5545" selection-start="5545" selection-end="5545" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="769">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1292">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/module/Application/view/layout/layout.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="66" selection-start="3727" selection-end="3727" vertical-scroll-proportion="-60.153847" vertical-offset="0" max-vertical-offset="1819">
+        <state line="44" column="153" selection-start="1451" selection-end="1451" vertical-scroll-proportion="-17.038462" vertical-offset="305" max-vertical-offset="2040">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/Application/view/partial/header.phtml">
+    <entry file="file://$PROJECT_DIR$/module/League/src/League/Model/RecentGamesDto.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="20" selection-start="2022" selection-end="2022" vertical-scroll-proportion="-16.346153" vertical-offset="170" max-vertical-offset="1156">
+        <state line="26" column="17" selection-start="317" selection-end="317" vertical-scroll-proportion="0.09419496" vertical-offset="271" max-vertical-offset="1207">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.htaccess">
+    <entry file="file://$PROJECT_DIR$/module/Application/src/Application/Entity/StreamSummoner.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="31" selection-start="1277" selection-end="1277" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="850">
+        <state line="33" column="14" selection-start="604" selection-end="604" vertical-scroll-proportion="-18.307692" vertical-offset="0" max-vertical-offset="1496">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/League/src/League/Service/League.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="22" selection-start="3713" selection-end="3713" vertical-scroll-proportion="-13.941176" vertical-offset="309" max-vertical-offset="4216">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Application/src/Application/Entity/Stream.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="138" selection-start="1710" selection-end="1710" vertical-scroll-proportion="-31.846153" vertical-offset="5" max-vertical-offset="1819">
+          <folding>
+            <marker date="1408301324851" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Application/view/application/index/tutorials.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="20" selection-start="1975" selection-end="2021" vertical-scroll-proportion="0.7922222" vertical-offset="137" max-vertical-offset="1037">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Application/config/module.config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="214" column="28" selection-start="8435" selection-end="8435" vertical-scroll-proportion="-16.153847" vertical-offset="3218" max-vertical-offset="4131">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Application/view/application/index/search.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="6" selection-start="372" selection-end="372" vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="918">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Application/view/application/index/result.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="154" column="44" selection-start="8592" selection-end="8592" vertical-scroll-proportion="-7.9411764" vertical-offset="2213" max-vertical-offset="3111">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Application/view/application/index/stream.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="43" selection-start="105" selection-end="105" vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="153">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Application/view/application/index/streams.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="57" selection-start="687" selection-end="698" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="442">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="423" column="31" selection-start="0" selection-end="19216" vertical-scroll-proportion="0.0" vertical-offset="6972" max-vertical-offset="15436">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="10033" selection-start="10033" selection-end="10033" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="949">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/mobile.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="1" selection-start="0" selection-end="840" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1071">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/mobile.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="654" selection-start="654" selection-end="654" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="949">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/lib.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="26" selection-start="751" selection-end="751" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4114">
+        <state line="22" column="6" selection-start="0" selection-end="6679" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="4114">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/.gitignore">
+    <entry file="file://$PROJECT_DIR$/js/lib.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="8" selection-start="70" selection-end="70" vertical-scroll-proportion="0.21841542" vertical-offset="0" max-vertical-offset="467">
+        <state line="0" column="3226" selection-start="3226" selection-end="3226" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="949">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="266" column="63" selection-start="0" selection-end="10975" vertical-scroll-proportion="-12.48" vertical-offset="4210" max-vertical-offset="5185">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/main.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="5579" selection-start="5579" selection-end="5579" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="949">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Application/src/Application/Service/Stream.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="48" selection-start="1252" selection-end="1255" vertical-scroll-proportion="16.137255" vertical-offset="1384" max-vertical-offset="2295">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Application/src/Application/Controller/IndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="184" column="63" selection-start="6138" selection-end="6138" vertical-scroll-proportion="0.2542735" vertical-offset="2686" max-vertical-offset="8721">
           <folding />
         </state>
       </provider>

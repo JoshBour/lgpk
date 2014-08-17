@@ -200,7 +200,7 @@ nav a:hover{
 
 #flash {
     position: absolute;
-    top: 105px;
+    top: 115px;
     width: 500px;
     left: 50%;
     margin-left: -250px;
@@ -213,8 +213,9 @@ nav a:hover{
 }
 
 #advertisement{
-	text-align: center;
-    margin-top: 50px;
+    width: 728px;
+    text-align: center;
+    margin: 50px auto 10px auto;
 }
 
 .hover {
@@ -321,6 +322,10 @@ nav a:hover{
             border-top: 1px solid #222;
         }
 
+        .tutorialPage #tutorials{
+            max-height:none;
+        }
+
         #tutorials{
             position:relative;
             max-height: 300px;
@@ -331,7 +336,7 @@ nav a:hover{
             border-bottom: 1px solid #222;
         }
 
-        #tutorials li{
+        .module li{
             display: inline-block;
             padding-bottom: 5px;
             position:relative;
@@ -341,14 +346,14 @@ nav a:hover{
             box-shadow: 2px 2px 10px black;
         }
 
-        #tutorials li img{
+        .module li img{
             display: block;
             width: 200px;
             margin: 0 auto 4px auto;
             border-bottom: 1px solid #222;
         }
 
-        #tutorials .tutorialTitle{
+        .module li span{
             display: block;
             padding: 5px 0;
             font-size: 13px;
@@ -420,6 +425,31 @@ nav a:hover{
         }
 
         /* ===================================================== */
+        /*                      Stream Page                     */
+
+            #streams li .videoMask{
+                height:79%;
+            }
+
+            /*#streams li{*/
+                /*display: inline-block;*/
+                /* padding: 0px 0; */
+                /*margin: 5px;*/
+                /*border: 1px solid #222;*/
+                /*background: #111;*/
+            /*}*/
+
+            /*#streams li span{*/
+                /*padding: 10px;*/
+                /*display: block;*/
+            /*}*/
+
+            /*#streams li img{*/
+                /*width:200px;*/
+                /*display:block;*/
+            /*}*/
+
+        /* ===================================================== */
         /*                      Error Page                     */
 
         #errorPage{
@@ -447,7 +477,7 @@ nav a:hover{
         #about{
             text-align: left;
             width: 550px;
-            margin: 30px auto 0 auto;
+            margin: 0 auto;
         }
 
         #about li a{
@@ -519,13 +549,9 @@ nav a:hover{
 
         #main{
             text-align: center;
+            margin-top:30px;
         }
 
-
-        #main a{
-            color: tan;
-            font: bold 19px 'source sans pro';
-        }
 
         #main p{
             padding:20px 0;
@@ -836,6 +862,8 @@ footer.halfSized {
 .redirect{
      margin: 20px 0;
      display: block;
+    color: tan;
+    font: bold 19px 'source sans pro';
 }
 
 .blackBorder {
