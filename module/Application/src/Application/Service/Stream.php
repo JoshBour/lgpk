@@ -24,37 +24,50 @@ class Stream extends BaseService
     public function getActiveStreams()
     {
         $fetchedStreams = $this->getStreamRepository("application")->findAll();
+        $cacheFile = ROOT_PATH . '/data/' . md5("active-streams");
         /**
          * @var \Application\Entity\Stream $stream
          */
         $streams = array();
-        foreach ($fetchedStreams as $stream) {
-            $isStreamActive = $this->isStreamActive($stream->getStreamId());
-            if (isset($isStreamActive["stream"]) && $isStreamActive["stream"]) {
-                $activeStream = array();
-                $activeStream["stream"] = $stream;
-                foreach ($stream->getSummoners() as $summoner) {
-                    $activeGame = $this->isInGame($summoner->getSummoner(),$summoner->getRegion());
-                    if(isset($activeGame["error"])){
-                        continue;
-                    }else{
-                        $id = $this->getActiveChampionId($activeGame["game"],$summoner->getSummoner());
-                        if(!isset(\League\Service\League::$championList[$id])) continue;
-                        else $champion = \League\Service\League::$championList[$id];
-                        $activeStream["champion"] = $champion;
-                        break;
+        if (file_exists($cacheFile) && (filemtime($cacheFile) > (time() - 60 * 10))) {
+            return unserialize(file_get_contents($cacheFile));
+        } else {
+            foreach ($fetchedStreams as $stream) {
+                $id = $stream->getStreamId();
+                $isStreamActive = $this->isStreamActive($id);
+                if (isset($isStreamActive["stream"]) && $isStreamActive["stream"]) {
+                    $activeStream = array();
+                    $activeStream["stream"]["streamId"] = $id;
+                    $activeStream["stream"]["name"] = $stream->getName();
+                    foreach ($stream->getSummoners() as $summoner) {
+                        $activeGame = $this->isInGame($summoner->getSummoner(), $summoner->getRegion());
+                        if (isset($activeGame["error"])) {
+                            continue;
+                        } else {
+                            $id = $this->getActiveChampionId($activeGame["game"], $summoner->getSummoner());
+//                            if (!isset(\League\Service\League::$championList[$id])) continue;
+//                            else
+                            $champion = \League\Service\League::$championList[$id];
+                            $activeStream["stream"]["summoner"] = $summoner->getSummoner();
+                            $activeStream["stream"]["region"] = $summoner->getRegion();
+                            $activeStream["champion"] = $champion;
+                            break;
+                        }
                     }
+                    $streams[] = $activeStream;
                 }
-                $streams[] = $activeStream;
             }
+            file_put_contents($cacheFile, serialize($streams), LOCK_EX);
         }
         return $streams;
     }
 
-    private function getActiveChampionId($game,$name){
-        foreach($game["playerChampionSelections"] as $selection){
-            foreach($selection as $attribute){
-                if($attribute["summonerInternalName"] == strtolower($name))
+    private function getActiveChampionId($game, $name)
+    {
+        foreach ($game["playerChampionSelections"] as $selection) {
+            foreach ($selection as $attribute) {
+                $name = strtolower(preg_replace('/\s+/', '', $name));
+                if ($attribute["summonerInternalName"] == $name)
                     return $attribute["championId"];
             }
         }
@@ -64,38 +77,41 @@ class Stream extends BaseService
     private function isStreamActive($name)
     {
         $url = "https://api.twitch.tv/kraken/streams/" . $name;
-
-        $cacheFile = ROOT_PATH . '/data/stream-cache/' . md5($url);
-        if (file_exists($cacheFile)) {
-            $lastMod = new \DateTime();
-            $lastMod->setTimestamp(strtotime(filemtime($cacheFile)));
-            $now = new \DateTime();
-            if ($lastMod->diff($now)->format('%s') <= 300) {
-                $array = unserialize(file_get_contents($cacheFile));
-                return $array;
-            }
-        }
         try {
-            $response = $this->performRequest($url, true);
-
-            $fh = fopen($cacheFile, 'w+');
-            fwrite($fh, serialize($response));
-            fclose($fh);
-            return $response;
+            return $this->performRequest($url, true);
         } catch (\Exception $e) {
             return false;
         }
     }
 
-    public function refreshCache($name){
+    public function refreshCache($name)
+    {
+        $cacheFile = ROOT_PATH . '/data/' . md5("active-streams");
+        $streams = unserialize(file_get_contents($cacheFile));
         $url = "https://api.twitch.tv/kraken/streams/" . $name;
-        $cacheFile = ROOT_PATH . '/data/stream-cache/' . md5($url);
         try {
             $response = $this->performRequest($url, true);
 
-            $fh = fopen($cacheFile, 'w+');
-            fwrite($fh, serialize($response));
-            fclose($fh);
+            for($i=0;$i<count($streams);$i++){
+                if($streams[$i]["stream"]["streamId"] == $name){
+                    if (isset($response["stream"]) && $response["stream"]) {
+                        if(isset($streams[$i]["stream"]["summoner"])){
+                            $activeGame = $this->isInGame($streams[$i]["stream"]["summoner"],$streams[$i]["stream"]["region"]);
+                            if (isset($activeGame["error"])) {
+                                unset($streams[$i]["champion"]);
+                            }else{
+                                $id = $this->getActiveChampionId($activeGame["game"],$streams[$i]["stream"]["summoner"]);
+                                if (isset(\League\Service\League::$championList[$id]))
+                                    $streams[$i]["champion"] = $id;
+                            }
+                        }
+                    }else{
+                        unset($streams[$i]);
+                    }
+                    break;
+                }
+            }
+            file_put_contents($cacheFile, serialize($streams), LOCK_EX);
             return $response;
         } catch (\Exception $e) {
             return false;
@@ -106,10 +122,10 @@ class Stream extends BaseService
     {
         $name = urlencode($name);
         $url = "https://community-league-of-legends.p.mashape.com/api/v1.0/{$region}/summoner/retrieveInProgressSpectatorGameInfo/{$name}";
-        return $this->performRequest($url,true, array("X-Mashape-Key: vNOffyjGxfmshPHW16c8Uzqsd6glp1kkvLEjsn37OWSng6LVtj"));
+        return $this->performRequest($url, true, array("X-Mashape-Key: vNOffyjGxfmshPHW16c8Uzqsd6glp1kkvLEjsn37OWSng6LVtj"));
     }
 
-    private function performRequest($url,$decode = true, $extraHeaders = null)
+    private function performRequest($url, $decode = true, $extraHeaders = null)
     {
         $curl = curl_init($url);
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
@@ -122,7 +138,7 @@ class Stream extends BaseService
             throw new \Exception(curl_error($curl));
         }
         curl_close($curl);
-        return $decode ? json_decode($response,true) : $response;
+        return $decode ? json_decode($response, true) : $response;
     }
 
     /**

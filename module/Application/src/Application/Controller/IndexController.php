@@ -197,6 +197,10 @@ class IndexController extends BaseController
             $stream = $this->getStreamRepository()->find($streamId);
             if ($stream) {
                 $this->getStreamService()->refreshCache($streamId);
+//                echo "<pre>";
+//                $isInGame = $this->getStreamService()->isInGame("DyrudeJstorm RMX","NA");
+//                var_dump($isInGame);
+//                echo "</pre>";
                 $viewModel = new ViewModel(array(
                     "stream" => $stream
                 ));

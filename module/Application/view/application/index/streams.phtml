@@ -6,9 +6,9 @@
                 $active = $stream["stream"];
                 ?>
                 <li>
-                    <a href="<?php echo $this->url("streams", array("streamId" => $active->getStreamId())); ?>" title="Watch the stream">
-                        <img src="<?php echo $active->getThumbnail(); ?>" alt="stream thumbnail"/>
-                        <span><?php echo $active->getName() . ' - ';
+                    <a href="<?php echo $this->url("streams", array("streamId" => $active["streamId"])); ?>" title="Watch the stream" target="_blank">
+                        <img src="http://static-cdn.jtvnw.net/previews-ttv/live_user_<?php echo $active["streamId"]; ?>-320x200.jpg" alt="stream thumbnail"/>
+                        <span><?php echo $active["name"] . ' - ';
                             echo isset($stream["champion"]) ? $stream["champion"] : " Not in game" ?></span>
                         <div class="videoMask notInWindow"></div>
                     </a>

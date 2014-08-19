@@ -90,7 +90,7 @@ $(function () {
                         'src': baseUrl + '/images/champions/' + name + '.png',
                         'alt': name + ' thumbnail',
                         'class': 'championThumbnail'
-                    }).attr('width',45).attr('height',40).prependTo(link);
+                    }).attr('width', 45).attr('height', 40).prependTo(link);
                 });
                 var holder = select.next('.sbHolder').css('width', '263px');
                 holder.children('.sbSelector, .sbOptions').css('width', '263px');
@@ -175,7 +175,7 @@ $(function () {
     // open in new window
     $(document).on("click", '.fb-share', function () {
         var url = $(this).attr("href");
-        fbShare(url,650,400);
+        fbShare(url, 650, 400);
 
         event.preventDefault();
     });
@@ -215,15 +215,15 @@ $(function () {
 
     });
 
-    $('nav a').on('mouseenter',function(){
-       var link = $(this);
-        if(!link.hasClass('active')){
-            link.siblings('.active').css('border-bottom','none');
+    $('nav a').on('mouseenter',function () {
+        var link = $(this);
+        if (!link.hasClass('active')) {
+            link.siblings('.active').css('border-bottom', 'none');
             link.addClass('hovered');
         }
-    }).on('mouseleave',function(){
+    }).on('mouseleave', function () {
         $('nav a.hovered').removeClass('hovered');
-        $('nav a.active').css('border-bottom','7px solid #555');
+        $('nav a.active').css('border-bottom', '7px solid #555');
     });
 
     $('#saveResults').on('click', function (e) {
@@ -242,17 +242,17 @@ $(function () {
                         "image": img
                     }
                 }).success(function (data) {
-                    if (data.name){
+                    if (data.name) {
                         window.location = baseUrl + '/download/' + data.name;
                         $.ajax({
                             type: "POST",
                             url: baseUrl + "/download",
                             data: {
                                 "image": data.name,
-                                "delete" : "delete"
+                                "delete": "delete"
                             }
                         });
-                    }else{
+                    } else {
                         addMessage("Something went wrong, please try again!");
                     }
                 });
@@ -265,36 +265,38 @@ $(function () {
      * @description Creates the stage and plays a video.
      */
     $(document).on('click', '.videoMask, #tutorials li a', function (e) {
-        if (!isMobile && !$(this).hasClass('notInWindow')) {
-            e.preventDefault();
-            e.stopPropagation();
-            var playBtn = $(this).parent();
-            var listItem = playBtn.closest('li');
-            var videoId = listItem.attr('class').substr(9);
-            var stageWrapper = $('<div/>', {
-                'id': "stageWrapper"
-            }).prependTo($('body'));
+        if (!$(this).hasClass('notInWindow')) {
+            if (!isMobile) {
+                e.preventDefault();
+                e.stopPropagation();
+                var playBtn = $(this).parent();
+                var listItem = playBtn.closest('li');
+                var videoId = listItem.attr('class').substr(9);
+                var stageWrapper = $('<div/>', {
+                    'id': "stageWrapper"
+                }).prependTo($('body'));
 
-            var stage = $('<div/>', {
-                'id': 'stage'
-            }).appendTo(stageWrapper);
+                var stage = $('<div/>', {
+                    'id': 'stage'
+                }).appendTo(stageWrapper);
 
-            var videoWrapper = $('<div/>', {
-                'id': 'videoWrapper'
-            }).appendTo(stage);
+                var videoWrapper = $('<div/>', {
+                    'id': 'videoWrapper'
+                }).appendTo(stage);
 
-            var videoPlayer = $('<iframe/>', {
-                "id": "youtubeVideo",
-                "frameborder": 0,
-                "src": "http://www.youtube.com/embed/" + videoId + "?autoplay=1"
-            }).appendTo(videoWrapper);
+                var videoPlayer = $('<iframe/>', {
+                    "id": "youtubeVideo",
+                    "frameborder": 0,
+                    "src": "http://www.youtube.com/embed/" + videoId + "?autoplay=1"
+                }).appendTo(videoWrapper);
 
-            focusedDiv = stageWrapper;
-            stageWrapper.addClass('target-' + videoId).focusLight();
-            body.addClass('unscrollable');
-        } else {
-            var playLink = $(this).siblings('a');
-            window.location.href = playLink.attr('href');
+                focusedDiv = stageWrapper;
+                stageWrapper.addClass('target-' + videoId).focusLight();
+                body.addClass('unscrollable');
+            } else {
+                var playLink = $(this).siblings('a');
+                window.location.href = playLink.attr('href');
+            }
         }
     });
 });
